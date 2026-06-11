@@ -10,5 +10,6 @@ export { OxHugoFlavouredMarkdown } from "./oxhugofm"
 export { SyntaxHighlighting } from "./syntax"
 export { TableOfContents } from "./toc"
 export { HardLineBreaks } from "./linebreaks"
+export { Tabs } from "./tabs"
 export { RoamFlavoredMarkdown } from "./roam"
 
