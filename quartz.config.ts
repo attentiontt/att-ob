@@ -37,8 +37,8 @@ const config: QuartzConfig = {
       Plugin.SyntaxHighlighting({ theme: { light: "github-light", dark: "github-dark" }, keepBackground: false }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
-      Plugin.HardLineBreaks(),`r`n      Plugin.Tabs(),
-      Plugin.TableOfContents(),
+      Plugin.HardLineBreaks(),`r`n
+Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
