@@ -121,6 +121,83 @@ transformers: [
 
 ---
 
+## 3. FLEXPLORER 排序集成（自定义 Explorer sortFn）
+
+将 Obsidian FLEXPLORER 插件的自定义排序同步到 Quartz 侧边栏 Explorer 组件。
+
+### 问题
+
+Obsidian 中用 FLEXPLORER 插件给文件夹和文件排了自定义顺序（拖拽排序），但网站侧边栏的目录树（Explorer）还是按字母序排列。
+
+### 解决方案
+
+在 Explorer 组件的 `sortFn` 中嵌入 FLEXPLORER 的排序映射数据，通过节点的 slug 推导出父级路径，找到该层级的自定义排序。
+
+**核心逻辑**（`quartz.layout.ts` 中的 `sortFn`）:
+1. 读取子节点的 `slug`，推导出其父级路径
+2. 根据父级路径查找 FLEXPLORER 排序映射
+3. 若找到则按自定义顺序排序，否则回退到字母序
+
+### 文件说明
+
+| 文件 | 说明 |
+|------|------|
+| `quartz.layout.ts` | Explorer 组件传入自定义 `sortFn`，内嵌 FLEXPLORER 排序数据 |
+| `update-flex-order.js` | Node.js 脚本，读取 FLEXPLORER 的 `data.json` 并更新布局文件 |
+| `Z:\test-ob\.obsidian\plugins\flexplorer\data.json` | FLEXPLORER 的排序数据源 |
+
+### 更新排序的流程
+
+当用户在 Obsidian FLEXPLORER 中调整排序后，运行同步脚本即可：
+
+```powershell
+cd D:\test-ob-site
+.\sync-content.ps1
+```
+
+`sync-content.ps1` 会自动调用 `update-flex-order.js`，读取最新 FLEXPLORER 数据并更新 `quartz.layout.ts` 中的排序映射，然后提交笔记变更。
+
+### sortFn 工作原理
+
+```typescript
+sortFn: (a, b) => {
+  // 1. FLEXPLORER 排序映射（嵌在函数体内，序列化成字符串后传到浏览器）
+  const FO = {"/": ["产品开发", "产品研发", ...], "产品开发": ["项目管理", ...], ...};
+
+  // 2. 从子节点 slug 推导父级路径
+  let s = a.slug;
+  if (s.endsWith("/index")) s = s.slice(0, -6);
+  const i = s.lastIndexOf("/");
+  const p = i >= 0 ? s.slice(0, i) : "/";  // 根路径用 "/"
+
+  // 3. 查找该层级的自定义排序
+  const o = FO[p];
+  if (o) {
+    const ai = o.indexOf(a.displayName);
+    const bi = o.indexOf(b.displayName);
+    if (ai >= 0 && bi >= 0) return ai - bi;
+    if (ai >= 0) return -1;
+    if (bi >= 0) return 1;
+  }
+
+  // 4. 回退到默认排序（文件夹优先 + 字母序）
+  if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+    return a.displayName.localeCompare(b.displayName, undefined, {
+      numeric: true, sensitivity: "base",
+    });
+  }
+  return a.isFolder ? -1 : 1;
+}
+```
+
+### 注意事项
+
+- FLEXPLORER 的排序数据硬编码在 `sortFn` 函数体内（不是外部引用），因为 `Explorer.tsx` 通过 `.toString()` 序列化函数并发送到浏览器执行
+- 根路径 FLEXPLORER 用 `"/"`，排序函数中对应 `p = "/"`
+- 更新排序时只需运行 `sync-content.ps1`，不需要手动修改 `quartz.layout.ts`
+- FLEXPLORER 数据文件路径为 `Z:\test-ob\.obsidian\plugins\flexplorer\data.json`
+
+
 ## 工作流程
 
 ### 日常更新笔记
