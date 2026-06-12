@@ -18,3 +18,5 @@ git -c http.sslbackend=openssl -c http.proxy="" push
 
 Write-Host ""
 Write-Host "已发布！等待 1-2 分钟 Netlify 构建完成" -ForegroundColor Cyan
+
+# Trigger rebuild 2026-06-12 16:31
