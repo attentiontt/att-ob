@@ -12,7 +12,7 @@
 | 仓库 | attentiontt/att-ob |
 | 对应 GitHub Pages | https://attentiontt.github.io/att-ob |
 | 本地项目路径 | D:\test-ob-site |
-| Obsidian 笔记来源 | Z:\test-ob（网络共享）或 D:\att.OB |
+| Obsidian 笔记来源 | Z:\test-ob（网络共享） |
 | 框架 | Quartz v4 (https://quartz.jzhao.xyz) |
 | 部署方式 | GitHub Actions（推送到 main 自动构建部署） |
 
@@ -21,8 +21,7 @@
 ## 项目结构
 
 > ⚠️ 注意：以下文件结构仅为当前快照，后续可能会因内容增减或配置调整而变化。
-> AI 在执行任务时应先通过 `ls`、`dir` 等命令确认实际目录结构，不要死板依赖此结构。
-
+> AI 在执行任务时应先通过 `dir` 等命令确认实际目录结构。
 
 ```
 D:\test-ob-site/           ← 实际路径可能变化，以 AI 确认的为准
@@ -37,14 +36,87 @@ D:\test-ob-site/           ← 实际路径可能变化，以 AI 确认的为准
 │   ├── 模板文件/
 │   └── Z变更说明/
 ├── public/                   # 构建产物（HTML），不提交到 git
-├── quartz/                   # Quartz 引擎源码（来自上游，不修改）
+├── quartz/                   # Quartz 引擎源码
+│   ├── components/           # 页面组件（Head.tsx 等）
+│   └── plugins/transformers/ # 自定义转换插件
+│       ├── tabs.ts           # Tab 缩进保留插件（自定义，见下方说明）
+│       └── ...
 ├── .github/workflows/
 │   └── deploy.yml            # GitHub Actions 自动部署
-├── quartz.config.ts          # 站点配置（标题、主题、语言、SEO）
+├── quartz.config.ts          # 站点配置（标题、主题、语言、SEO、插件列表）
 ├── quartz.layout.ts          # 页面布局（侧边栏、导航、页脚）
 ├── sync-content.ps1          # 从 Obsidian 仓库同步笔记到 content/
 ├── QUARTZ-DEPLOY-GUIDE.md    # 人类看的部署指南
+├── AI-MAINTENANCE-GUIDE.md   # 本文件
 └── package.json
+```
+
+---
+
+## 已生效的插件配置
+
+### 1. HardLineBreaks（内置插件）
+
+处理 Obsidian 中的单换行问题（当前已生效）。
+
+**问题**: Obsidian 中单换行显示正常，但部署到网站后同一段落的内容会挤成一行。
+**解决**: 添加 `Plugin.HardLineBreaks()` 到 transformers 列表，将单换行渲染为 `<br>`。
+**配置位置**: `quartz.config.ts` → `plugins.transformers`
+**插件源码**: `quartz/plugins/transformers/linebreaks.ts`
+
+### 2. Tabs（自定义插件）
+
+处理 Obsidian 中的 Tab 缩进在网站消失的问题（当前已生效）。
+
+**问题**: Obsidian 中用 Tab 缩进/对齐的内容（如 `【字段】\t值`），部署后缩进消失，HTML 会折叠空白字符。
+**解决方案**: 自定义 `textTransform` 插件，在 Markdown 解析前将 Tab 字符替换为 2 个全角空格（`\u3000`），确保缩进可见。
+
+**插件源码**（`quartz/plugins/transformers/tabs.ts`）:
+
+```typescript
+import { QuartzTransformerPlugin } from "../types"
+
+export const Tabs: QuartzTransformerPlugin = () => {
+  return {
+    name: "Tabs",
+    textTransform: (_ctx, src) => {
+      // Replace tabs with 2 CJK full-width spaces for visual alignment
+      return src.replace(/\t/g, "\u3000\u3000")
+    },
+  }
+}
+```
+
+**为什么不直接用 CSS white-space: pre-wrap**:
+- Markdown 解析器（remark-parse）在解析阶段就会把 Tab 转为空格，CSS 无法干预
+- 必须在解析前替换，所以用 `textTransform` 钩子
+
+**为什么用 \u3000（全角空格）而不是 \u00A0（不断行空格）**:
+- \u00A0 在中文字体/编码下可能显示为乱码 `�`（在中国用户设备上测试发现）
+- \u3000 是全角空格，中文环境所有字体都支持
+- 2 个全角空格视觉上相当于 4 个半角空格的对齐效果
+
+**添加方式**: 
+1. 在 `quartz/plugins/transformers/` 下创建 `tabs.ts`（文件已存在）
+2. 在 `quartz/plugins/transformers/index.ts` 中导出 `export { Tabs } from "./tabs"`（已添加）
+3. 在 `quartz.config.ts` 的 transformers 中添加 `Plugin.Tabs()`（已添加）
+
+**当前在 quartz.config.ts 中的配置顺序**:
+
+```typescript
+transformers: [
+  Plugin.FrontMatter(),
+  Plugin.CreatedModifiedDate({ priority: ["frontmatter", "filesystem"] }),
+  Plugin.SyntaxHighlighting({ ... }),
+  Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
+  Plugin.GitHubFlavoredMarkdown(),
+  Plugin.HardLineBreaks(),    // ← 单换行 → <br>
+  Plugin.Tabs(),              // ← Tab → 全角空格
+  Plugin.TableOfContents(),
+  Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
+  Plugin.Description(),
+  Plugin.Latex({ renderEngine: "katex" }),
+]
 ```
 
 ---
@@ -69,6 +141,7 @@ git push
 
 > git push 可能需要 SSL 绕过：
 > `git config --global http.sslverify false`（已配置可跳过）
+> 或者使用: `git -c http.sslbackend=openssl -c http.proxy="" push`
 
 ### 构建站点（本地预览用）
 
@@ -141,23 +214,25 @@ git log --oneline -3
 cd D:\test-ob-site
 git add .
 git commit -m "描述改动"
-git -c http.sslbackend=openssl push
+git -c http.sslbackend=openssl -c http.proxy="" push
 ```
 
-### 3. 查看 GitHub Actions 运行状态
-通过 GitHub API 检查（无需 token 可查看公开信息）：
-```
-GET https://api.github.com/repos/attentiontt/att-ob/actions/runs
-```
-
-### 4. 更新笔记并推送（完整流程）
+### 3. 更新笔记并推送（完整流程）
 ```powershell
 cd D:\test-ob-site
 .\sync-content.ps1
 git add .
-git commit -m "sync: update notes $(Get-Date -Format 'yyyy-MM-dd')"
-git -c http.sslbackend=openssl push
+git commit -m "sync: update notes"
+git -c http.sslbackend=openssl -c http.proxy="" push
 ```
+
+### 4. 添加新插件的步骤
+如果需要添加新的 Quartz 自定义插件：
+
+1. 在 `quartz/plugins/transformers/` 下创建 `xxx.ts`
+2. 在 `quartz/plugins/transformers/index.ts` 中添加导出
+3. 在 `quartz.config.ts` 的 transformers 中添加 `Plugin.Xxx()`
+4. 注意文件编码用 UTF-8 **无 BOM**，否则 esbuild 编译会报错
 
 ---
 
@@ -179,6 +254,7 @@ npm install
 1. `public/` 目录不提交到 git（`.gitignore` 已配置）
 2. `node_modules/` 不提交到 git
 3. Git 路径: `C:\Users\it-tanglizhen\AppData\Local\Programs\Git\cmd\git.exe`（不在 PATH 时用完整路径）
-4. Node.js 路径: `C:\Users\it-tanglizhen\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe`（Bundle 版本）
+4. Node.js Bundle 路径: `C:\Users\it-tanglizhen\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe`
 5. SSL 证书问题: 国内网络可能需要 `git config --global http.sslverify false`
-6. Quartz 是 Obsidian 的静态站点生成器，不修改其源码
+6. 文件编码: 所有 TypeScript 文件必须用 UTF-8 无 BOM，否则 esbuild 构建会失败
+7. Quartz 源码原则上不直接修改，自定义功能通过插件（`quartz/plugins/transformers/`）实现
