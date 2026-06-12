@@ -1,4 +1,4 @@
-const fs = require("fs");
+﻿const fs = require("fs");
 
 function updateFlexOrder() {
   const flexPath = "Z:\\test-ob\\.obsidian\\plugins\\flexplorer\\data.json";
@@ -23,14 +23,26 @@ function updateFlexOrder() {
 
   let layout = fs.readFileSync(layoutPath, "utf-8");
   const newJson = JSON.stringify(sortMap);
-  const regex = /(?<=const FO = ).*?(?=;)/g;
+  const regex = /.*?(?=;)/gs;
   // Generate flex-order.js for browser
   const jsPath = "D:\\test-ob-site\\quartz\\static\\flex-order.js";
   const jsContent = "window.__FLEX_ORDER__ = " + newJson + ";";
   fs.writeFileSync(jsPath, jsContent, "utf-8");
   console.log("Updated FLEXPLORER sort data (" + Object.keys(sortMap).length + " folders)");
   console.log("Generated quartz/static/flex-order.js");
+
+  // Update quartz.layout.ts
+  regex.lastIndex = 0;
+  if (regex.test(layout)) {
+    regex.lastIndex = 0;
+    layout = layout.replace(regex, newJson);
+    fs.writeFileSync(layoutPath, layout, "utf-8");
+    console.log("Updated quartz.layout.ts with new sort data");
+  } else {
+    console.log("Warning: could not find FO data in quartz.layout.ts");
+  }`n`n  // Update quartz.layout.ts`n  regex.lastIndex = 0;`n  if (regex.test(layout)) {`n    regex.lastIndex = 0;`n    layout = layout.replace(regex, newJson);`n    fs.writeFileSync(layoutPath, layout, "utf-8");`n    console.log("Updated quartz.layout.ts with new sort data");`n  } else {`n    console.log("Warning: could not find FO data in quartz.layout.ts");`n  }
   return true;
 }
 
 updateFlexOrder();
+
