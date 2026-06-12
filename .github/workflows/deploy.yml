@@ -17,6 +17,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - uses: actions/checkout@v4
       
@@ -30,7 +32,7 @@ jobs:
         run: npm install
       
       - name: Build Quartz site
-        run: node ./quartz/bootstrap-cli.mjs build
+        run: node ./quartz/bootstrap-cli.mjs build --verbose
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -40,6 +42,8 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -47,3 +51,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+
