@@ -32,7 +32,11 @@ jobs:
         run: npm install
       
       - name: Build Quartz site
-        run: node ./quartz/bootstrap-cli.mjs build --verbose
+        run: |
+          node -v
+          npm -v
+          node ./quartz/bootstrap-cli.mjs build --verbose
+        shell: bash --verbose
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -51,5 +55,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
 
 
