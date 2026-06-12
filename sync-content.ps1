@@ -13,5 +13,5 @@ Write-Host "Done: $mdCount notes" -ForegroundColor Green
 # Update FLEXPLORER sort order
 Write-Host "Updating FLEXPLORER sort order..." -ForegroundColor Yellow
 $flexNode = "C:\Users\it-tanglizhen\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe"
-& $flexNode "$PSScriptRoot\update-flex-order.js"
+& $flexNode "$PSScriptRoot\update-flex-order.cjs"
 Write-Host "Done" -ForegroundColor Green

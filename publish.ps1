@@ -7,7 +7,7 @@ Write-Host "[1/4] 同步笔记..." -ForegroundColor Yellow
 
 Write-Host "[2/4] 更新排序..." -ForegroundColor Yellow
 $node = "C:\Users\it-tanglizhen\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe"
-& $node update-flex-order.js
+& $node update-flex-order.cjs
 
 Write-Host "[3/4] 提交变更..." -ForegroundColor Yellow
 git add .
