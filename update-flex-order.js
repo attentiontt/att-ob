@@ -13,7 +13,12 @@ function updateFlexOrder() {
   const sortMap = {};
   for (const [path, data] of Object.entries(flexData.items)) {
     if (data.sortOrder === "custom" && data.customOrder && data.customOrder.length > 0) {
-      sortMap[path] = data.customOrder;
+      // Strip .md extension so names match Explorer displayName
+      sortMap[path] = data.customOrder.map(function(name) {
+        if (name.endsWith(".md")) return name.slice(0, -3);
+        if (name.endsWith(".png")) return name.slice(0, -4);
+        return name;
+      });
     }
   }
   
@@ -21,7 +26,7 @@ function updateFlexOrder() {
   const newJson = JSON.stringify(sortMap);
   
   // Replace the FO data in the sortFn
-  const regex = /(?<=const FO = ).*?(?=;)/;
+  const regex = /(?<=const FO = ).*?(?=;)/g;
   if (regex.test(layout)) {
     layout = layout.replace(regex, newJson);
     fs.writeFileSync(layoutPath, layout, "utf-8");
