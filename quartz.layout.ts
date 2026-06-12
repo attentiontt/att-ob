@@ -44,7 +44,7 @@ export const defaultContentPageLayout: PageLayout = {
     let s = a.slug;
     if (s.endsWith("/index")) s = s.slice(0, -6);
     const i = s.lastIndexOf("/");
-    const p = i >= 0 ? s.slice(0, i) : "";
+    const p = i >= 0 ? s.slice(0, i) : "/";
     const o = FO[p];
     if (o) {
       const ai = o.indexOf(a.displayName);
@@ -91,7 +91,7 @@ export const defaultListPageLayout: PageLayout = {
       let s = a.slug;
       if (s.endsWith("/index")) s = s.slice(0, -6);
       const i = s.lastIndexOf("/");
-      const p = i >= 0 ? s.slice(0, i) : "";
+      const p = i >= 0 ? s.slice(0, i) : "/";
       const o = FO[p];
       if (o) {
         const ai = o.indexOf(a.displayName);
