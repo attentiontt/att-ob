@@ -47,8 +47,8 @@ export const defaultContentPageLayout: PageLayout = {
       const p = i >= 0 ? s.slice(0, i) : "/";
       const o = FO[p];
       if (o) {
-        const ai = o.indexOf(a.slugSegment);
-        const bi = o.indexOf(b.slugSegment);
+        const ai = o.indexOf(a.displayName);
+        const bi = o.indexOf(b.displayName);
         if (ai >= 0 && bi >= 0) return ai - bi;
         if (ai >= 0) return -1;
         if (bi >= 0) return 1;
@@ -90,8 +90,8 @@ export const defaultListPageLayout: PageLayout = {
         const p = i >= 0 ? s.slice(0, i) : "/";
         const o = FO[p];
         if (o) {
-          const ai = o.indexOf(a.slugSegment);
-          const bi = o.indexOf(b.slugSegment);
+          const ai = o.indexOf(a.displayName);
+          const bi = o.indexOf(b.displayName);
           if (ai >= 0 && bi >= 0) return ai - bi;
           if (ai >= 0) return -1;
           if (bi >= 0) return 1;
@@ -108,3 +108,4 @@ export const defaultListPageLayout: PageLayout = {
   ],
   right: [],
 }
+
