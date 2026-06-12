@@ -5,6 +5,9 @@ export const Tabs: QuartzTransformerPlugin = () => {
     name: "Tabs",
     textTransform: (_ctx, src) => {
       return src.replace(/\t/g, "\u3000\u3000")
-    }
+    },
+    additionalHead: () => {
+      return `<script src="/static/flex-order.js"></script>`
+    },
   }
 }
