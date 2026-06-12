@@ -24,9 +24,12 @@ function updateFlexOrder() {
   let layout = fs.readFileSync(layoutPath, "utf-8");
   const newJson = JSON.stringify(sortMap);
   const regex = /(?<=const FO = ).*?(?=;)/g;
-  layout = layout.replace(regex, newJson);
-  fs.writeFileSync(layoutPath, layout, "utf-8");
+  // Generate flex-order.js for browser
+  const jsPath = "D:\\test-ob-site\\quartz\\static\\flex-order.js";
+  const jsContent = "window.__FLEX_ORDER__ = " + newJson + ";";
+  fs.writeFileSync(jsPath, jsContent, "utf-8");
   console.log("Updated FLEXPLORER sort data (" + Object.keys(sortMap).length + " folders)");
+  console.log("Generated quartz/static/flex-order.js");
   return true;
 }
 

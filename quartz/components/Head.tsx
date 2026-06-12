@@ -82,6 +82,7 @@ export default (() => {
           </>
         )}
 
+                <script src="/static/flex-order.js"></script>
         <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
