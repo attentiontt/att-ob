@@ -14,8 +14,11 @@ if (-not $nodePath) {
 } else { Write-Host "  [OK] Node" -ForegroundColor Gray }
 
 $git = Get-Command git -ErrorAction SilentlyContinue
-if (-not $git) { Write-Host "  [ERROR] Git not found" -ForegroundColor Red; exit 1 }
-Write-Host "  [OK] Git" -ForegroundColor Gray
+if (-not $git) {
+  $gitFallback = "C:\Users\it-tanglizhen\AppData\Local\Programs\Git\cmd\git.exe"
+  if (Test-Path $gitFallback) { $env:PATH = "$(Split-Path $gitFallback -Parent);$env:PATH"; Write-Host "  [OK] Git (fallback)" -ForegroundColor Gray }
+  else { Write-Host "  [ERROR] Git not found" -ForegroundColor Red; exit 1 }
+} else { Write-Host "  [OK] Git" -ForegroundColor Gray }
 
 $z = Get-PSDrive Z -ErrorAction SilentlyContinue
 if (-not $z) {
@@ -63,3 +66,4 @@ Write-Host "  Done! Site will update in ~2 min" -ForegroundColor Cyan
 Write-Host "  Actions: https://github.com/attentiontt/att-ob/actions" -ForegroundColor Cyan
 Write-Host "  Site:    https://attentiontt.github.io/att-ob/" -ForegroundColor Cyan
 Write-Host "======================================" -ForegroundColor Cyan
+
