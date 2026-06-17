@@ -13,7 +13,8 @@ function updateFlexOrder() {
   const sortMap = {};
   for (const [path, data] of Object.entries(flexData.items)) {
     if (data.sortOrder === "custom" && data.customOrder && data.customOrder.length > 0) {
-      sortMap[path] = data.customOrder.map(function(name) {
+      const slugPath = path.replace(/ /g, '-').replace(/&/g, '-and-');
+    sortMap[slugPath] = data.customOrder.map(function(name) {
         if (name.endsWith(".md")) return name.slice(0, -3);
         if (name.endsWith(".png")) return name.slice(0, -4);
         return name;
@@ -42,3 +43,4 @@ function updateFlexOrder() {
 }
 
 updateFlexOrder();
+
