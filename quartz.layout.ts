@@ -1,4 +1,4 @@
-import { PageLayout, SharedLayout } from "./quartz/cfg"
+﻿import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
 // components shared across all pages
@@ -62,7 +62,7 @@ export const defaultContentPageLayout: PageLayout = {
     },
   }),
   ],
-  right: [],
+  right: [Component.TableOfContents()],
 }
 
 // components for pages that display lists of pages  (e.g. tags or folders)
@@ -106,6 +106,6 @@ export const defaultListPageLayout: PageLayout = {
       },
     }),
   ],
-  right: [],
+  right: [Component.TableOfContents()],
 }
 
