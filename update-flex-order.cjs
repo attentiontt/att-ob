@@ -1,9 +1,9 @@
-const fs = require("fs");
+﻿const fs = require("fs");
 
 function updateFlexOrder() {
   // ═══ CONFIG ═══
   // Change this path if Obsidian vault drive differs
-  const flexPath = "Z:\.obsidian\plugins\flexplorer\data.json";
+  const flexPath = "Z:\test-ob\.obsidian\plugins\flexplorer\data.json";
   const layoutPath = "D:\test-ob-site\quartz.layout.ts";
   // ═══════════════
 

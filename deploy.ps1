@@ -1,9 +1,9 @@
 ﻿param([string]$CommitMessage = "publish: $(Get-Date -Format 'yyyy-MM-dd HH:mm')")
 
 # ===== Configuration =====
-# To change the vault path, edit the 2 lines below:
-$vaultShare = "\\192.168.100.253\10技术部\需求文档"
-$vaultDrive = "Z:"
+# Vault path on the shared drive:
+$vaultShare = "\\192.168.100.253\10技术部\临时"
+$vaultPath = "\test-ob"   # subfolder within the mapped drive
 
 Write-Host "======================================" -ForegroundColor Cyan
 Write-Host "   test-ob One-Click Deploy" -ForegroundColor Cyan
@@ -22,15 +22,16 @@ $git = Get-Command git -ErrorAction SilentlyContinue
 if (-not $git) { Write-Host "  [ERROR] Git not found" -ForegroundColor Red; exit 1 }
 Write-Host "  [OK] Git" -ForegroundColor Gray
 
-# ---- FORCE REMAP Z: DRIVE ----
-Write-Host "  [INFO] Mapping $vaultDrive to vault..." -ForegroundColor Gray
-net use $vaultDrive /delete 2>$null
-net use $vaultDrive $vaultShare 2>$null
+# ---- MOUNT Z: DRIVE ----
+Write-Host "  [INFO] Mounting Z: to vault..." -ForegroundColor Gray
+net use Z: /delete 2>$null
+net use Z: $vaultShare 2>$null
 if ($LASTEXITCODE -ne 0) {
-  Write-Host "  [ERROR] Cannot mount $vaultDrive" -ForegroundColor Red
+  Write-Host "  [ERROR] Cannot mount Z: to $vaultShare" -ForegroundColor Red
+  Write-Host "  [ERROR] Run 'net use Z: $vaultShare' manually then retry" -ForegroundColor Red
   exit 1
 }
-Write-Host "  [OK] $vaultDrive ready" -ForegroundColor Gray
+Write-Host "  [OK] Z: mapped to vault" -ForegroundColor Gray
 
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $root
@@ -39,7 +40,7 @@ Set-Location $root
 Write-Host "Step 1/4: Syncing notes to content/..." -ForegroundColor Yellow
 $cd = Join-Path $root "content"
 if (Test-Path $cd) { Remove-Item "$cd\*" -Recurse -Force -Exclude ".trash",".obsidian","index.md" -ErrorAction SilentlyContinue }
-Copy-Item "$vaultDrive\*" "$cd\" -Recurse -Force -Exclude ".trash",".obsidian"
+Copy-Item "Z:$vaultPath\*" "$cd\" -Recurse -Force -Exclude ".trash",".obsidian"
 $mc = (Get-ChildItem $cd -Recurse -Include "*.md" -Name -Force).Count
 Write-Host "  Done: $mc notes synced" -ForegroundColor Green
 
