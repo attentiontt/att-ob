@@ -1,6 +1,6 @@
 ﻿@use "./base.scss";
 
-// Tighter line height only
+// Tighter line height
 p, li { line-height: 1.65; }
 
 // Content spacing
@@ -9,4 +9,32 @@ p, li { line-height: 1.65; }
 
 // Explorer slightly smaller
 .explorer { font-size: 0.85rem; }
-.explorer .folder-title { font-size: 0.85rem; }
+
+// === COLORS: default gray, active blue ===
+
+// Explorer links & folder titles → gray
+.folder-container div > a,
+.folder-container div > button span {
+  color: var(--darkgray);
+}
+.folder-container div > a:hover {
+  color: var(--secondary);
+}
+
+// Folder icons → gray
+.folder-icon {
+  color: var(--gray);
+}
+.folder-icon:hover {
+  color: var(--secondary);
+}
+
+// Active page in explorer → blue (was light gray)
+.explorer-content ul li > a.active {
+  color: var(--secondary);
+}
+
+// Page title → gray
+.page-title a.internal {
+  color: var(--darkgray);
+}
