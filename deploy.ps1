@@ -1,5 +1,11 @@
-﻿param([string]$CommitMessage = "publish: 2026-06-16 13:49")
-$vaultConfig = Get-Content (Join-Path $PSScriptRoot "vault-config.json") -Raw | ConvertFrom-Json
+param([string]$CommitMessage = "publish: $(Get-Date -Format 'yyyy-MM-dd HH:mm')")
+
+# ===== Configuration =====
+# To change the vault path, edit the next 2 lines:
+# vaultShare = Obsidian vault network path
+# vaultDrive = Mapped drive letter (usually Z:)
+$vaultShare = "\\192.168.100.253\10技术部\需求文档"
+$vaultDrive = "Z:"
 
 Write-Host "======================================" -ForegroundColor Cyan
 Write-Host "   test-ob One-Click Deploy" -ForegroundColor Cyan
@@ -15,16 +21,14 @@ if (-not $nodePath) {
 } else { Write-Host "  [OK] Node" -ForegroundColor Gray }
 
 $git = Get-Command git -ErrorAction SilentlyContinue
-if (-not $git) {
-  $gitFallback = "C:\Users\it-tanglizhen\AppData\Local\Programs\Git\cmd\git.exe"
-  if (Test-Path $gitFallback) { $env:PATH = "$(Split-Path $gitFallback -Parent);$env:PATH"; Write-Host "  [OK] Git (fallback)" -ForegroundColor Gray }
-  else { Write-Host "  [ERROR] Git not found" -ForegroundColor Red; exit 1 }
-} else { Write-Host "  [OK] Git" -ForegroundColor Gray }
+if (-not $git) { Write-Host "  [ERROR] Git not found" -ForegroundColor Red; exit 1 }
+Write-Host "  [OK] Git" -ForegroundColor Gray
 
+# ---- MAP Z: DRIVE ----
 $z = Get-PSDrive Z -ErrorAction SilentlyContinue
 if (-not $z) {
   Write-Host "  [WARN] Mounting Z: drive..." -ForegroundColor Yellow
-  net use $vaultConfig.vaultDrive $vaultConfig.vaultShare 2>$null
+  net use $vaultDrive $vaultShare 2>$null
   $z = Get-PSDrive Z -ErrorAction SilentlyContinue
   if (-not $z) { Write-Host "  [ERROR] Z: drive unavailable" -ForegroundColor Red; exit 1 }
 }
@@ -34,10 +38,10 @@ $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $root
 
 # ---- STEP 1: SYNC CONTENT ----
-Write-Host "Step 1/4: Syncing notes from Z:\test-ob..." -ForegroundColor Yellow
+Write-Host "Step 1/4: Syncing notes to content/..." -ForegroundColor Yellow
 $cd = Join-Path $root "content"
 if (Test-Path $cd) { Remove-Item "$cd\*" -Recurse -Force -Exclude ".trash",".obsidian","index.md" -ErrorAction SilentlyContinue }
-Copy-Item "$($vaultConfig.vaultDrive)\*" "$cd\" -Recurse -Force -Exclude ".trash",".obsidian"
+Copy-Item "$vaultDrive\*" "$cd\" -Recurse -Force -Exclude ".trash",".obsidian"
 $mc = (Get-ChildItem $cd -Recurse -Include "*.md" -Name -Force).Count
 Write-Host "  Done: $mc notes synced" -ForegroundColor Green
 
@@ -47,7 +51,7 @@ node update-flex-order.cjs 2>&1
 if ($LASTEXITCODE -eq 0) { Write-Host "  Sort data updated" -ForegroundColor Green }
 else { Write-Host "  [ERROR] Sort update failed" -ForegroundColor Red; exit 1 }
 
-# ---- STEP 3: BUILD & VERIFY ----
+# ---- STEP 3: BUILD ----
 Write-Host "Step 3/4: Building site..." -ForegroundColor Yellow
 $bo = node ./quartz/bootstrap-cli.mjs build 2>&1
 $done = $bo | Select-String -Pattern "Done processing"
@@ -65,9 +69,5 @@ Write-Host ""
 Write-Host "======================================" -ForegroundColor Cyan
 Write-Host "  Done! Site will update in ~2 min" -ForegroundColor Cyan
 Write-Host "  Actions: https://github.com/attentiontt/att-ob/actions" -ForegroundColor Cyan
-Write-Host "  Site:    https://attentiontt.github.io/att-ob/" -ForegroundColor Cyan
+Write-Host "  Site:    https://github.com/attentiontt/att-ob/" -ForegroundColor Cyan
 Write-Host "======================================" -ForegroundColor Cyan
-
-
-
-
