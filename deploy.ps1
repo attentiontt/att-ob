@@ -22,15 +22,15 @@ $git = Get-Command git -ErrorAction SilentlyContinue
 if (-not $git) { Write-Host "  [ERROR] Git not found" -ForegroundColor Red; exit 1 }
 Write-Host "  [OK] Git" -ForegroundColor Gray
 
-# ---- MAP Z: DRIVE ----
-$z = Get-PSDrive Z -ErrorAction SilentlyContinue
-if (-not $z) {
-  Write-Host "  [WARN] Mounting Z: drive..." -ForegroundColor Yellow
-  net use $vaultDrive $vaultShare 2>$null
-  $z = Get-PSDrive Z -ErrorAction SilentlyContinue
-  if (-not $z) { Write-Host "  [ERROR] Z: drive unavailable" -ForegroundColor Red; exit 1 }
+# ---- FORCE REMAP Z: DRIVE ----
+Write-Host "  [INFO] Mapping $vaultDrive to vault..." -ForegroundColor Gray
+net use $vaultDrive /delete 2>$null
+net use $vaultDrive $vaultShare 2>$null
+if ($LASTEXITCODE -ne 0) {
+  Write-Host "  [ERROR] Cannot mount $vaultDrive" -ForegroundColor Red
+  exit 1
 }
-Write-Host "  [OK] Z: drive ready" -ForegroundColor Gray
+Write-Host "  [OK] $vaultDrive ready" -ForegroundColor Gray
 
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $root
