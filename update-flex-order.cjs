@@ -1,7 +1,7 @@
 ﻿const fs = require("fs");
 
 function updateFlexOrder() {
-  const flexPath = "Z:\\test-ob\\.obsidian\\plugins\\flexplorer\\data.json";
+  const flexPath = "Z:\\\\.obsidian\\plugins\\flexplorer\\data.json";
   const layoutPath = "D:\\test-ob-site\\quartz.layout.ts";
 
   if (!fs.existsSync(flexPath)) {
@@ -43,4 +43,5 @@ function updateFlexOrder() {
 }
 
 updateFlexOrder();
+
 

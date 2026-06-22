@@ -23,7 +23,7 @@ if (-not $git) {
 $z = Get-PSDrive Z -ErrorAction SilentlyContinue
 if (-not $z) {
   Write-Host "  [WARN] Mounting Z: drive..." -ForegroundColor Yellow
-  net use Z: \\192.168.100.253\10技术部\临时 2>$null
+  net use Z: \\192.168.100.253\10技术部\需求文档 2>$null
   $z = Get-PSDrive Z -ErrorAction SilentlyContinue
   if (-not $z) { Write-Host "  [ERROR] Z: drive unavailable" -ForegroundColor Red; exit 1 }
 }
@@ -36,7 +36,7 @@ Set-Location $root
 Write-Host "Step 1/4: Syncing notes from Z:\test-ob..." -ForegroundColor Yellow
 $cd = Join-Path $root "content"
 if (Test-Path $cd) { Remove-Item "$cd\*" -Recurse -Force -Exclude ".trash",".obsidian","index.md" -ErrorAction SilentlyContinue }
-Copy-Item "Z:\test-ob\*" "$cd\" -Recurse -Force -Exclude ".trash",".obsidian"
+Copy-Item "Z:\*" "$cd\" -Recurse -Force -Exclude ".trash",".obsidian"
 $mc = (Get-ChildItem $cd -Recurse -Include "*.md" -Name -Force).Count
 Write-Host "  Done: $mc notes synced" -ForegroundColor Green
 
@@ -66,4 +66,5 @@ Write-Host "  Done! Site will update in ~2 min" -ForegroundColor Cyan
 Write-Host "  Actions: https://github.com/attentiontt/att-ob/actions" -ForegroundColor Cyan
 Write-Host "  Site:    https://attentiontt.github.io/att-ob/" -ForegroundColor Cyan
 Write-Host "======================================" -ForegroundColor Cyan
+
 

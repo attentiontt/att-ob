@@ -4,7 +4,7 @@
 - GitHub: https://github.com/attentiontt/att-ob
 - Pages 站点: https://attentiontt.github.io/att-ob（当前 404/构建失败）
 - 本地路径: D:\test-ob-site
-- Obsidian 仓库: Z:\test-ob（网络共享盘，需 net use Z: \\192.168.100.253\10技术部\临时 登录）
+- Obsidian 仓库: Z:\test-ob（网络共享盘，需 net use Z: \\192.168.100.253\10技术部\需求文档 登录）
 - Node.js: v24.14.0（Codex 绑定版）
 - Git: C:\Users\it-tanglizhen\AppData\Local\Programs\Git\cmd\git.exe
 - SSH 推送: 国内网络 git config --global http.sslverify false 或 git -c http.sslbackend=openssl -c http.proxy="" push
@@ -27,7 +27,7 @@
 - 内容页（defaultContentPageLayout）和列表页（defaultListPageLayout）各有一个 Explorer 组件
 - 两个 Explorer 都绑定了自定义 sortFn，通过 const FO = {...} 映射表实现排序
 - sortFn 原理: 从子节点 slug 推导父级路径 → 查找 FLEXPLORER 排序映射 → 按自定义顺序排序
-- 注意: FLEXPLORER 的 data.json 在 Z:\test-ob\.obsidian\plugins\flexplorer\data.json
+- 注意: FLEXPLORER 的 data.json 在 Z:\.obsidian\plugins\flexplorer\data.json
 - 更新脚本: update-flex-order.cjs（运行 
 ode update-flex-order.cjs 即可更新排序数据到 layout.ts 和 flex-order.js）
 
@@ -75,5 +75,6 @@ ode update-flex-order.cjs
 ## 关键注意事项
 - 文件编码必须用 UTF-8 无 BOM，否则 esbuild 编译报错
 - pull/push 需要 http.sslbackend=openssl
-- 同步前需先 net use Z: \\192.168.100.253\10技术部\临时
+- 同步前需先 net use Z: \\192.168.100.253\10技术部\需求文档
 - 项目 package.json 有 "type": "module"，.js 文件用 ESM，require() 需改为 .cjs
+
