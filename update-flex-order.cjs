@@ -1,7 +1,8 @@
 ﻿const fs = require("fs");
 
 function updateFlexOrder() {
-  const flexPath = "Z:\\\\.obsidian\\plugins\\flexplorer\\data.json";
+  const vaultConfig = JSON.parse(fs.readFileSync(__dirname + "/vault-config.json", "utf-8"));
+  const flexPath = require("path").join(vaultConfig.vaultDrive, ".obsidian", "plugins", "flexplorer", "data.json");
   const layoutPath = "D:\\test-ob-site\\quartz.layout.ts";
 
   if (!fs.existsSync(flexPath)) {
