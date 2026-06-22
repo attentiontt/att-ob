@@ -62,7 +62,7 @@ export const defaultContentPageLayout: PageLayout = {
     },
   }),
   ],
-  right: [Component.TableOfContents()],
+  right: [Component.TableOfContents({ layout: "legacy" })],
 }
 
 // components for pages that display lists of pages  (e.g. tags or folders)
@@ -106,6 +106,6 @@ export const defaultListPageLayout: PageLayout = {
       },
     }),
   ],
-  right: [Component.TableOfContents()],
+  right: [Component.TableOfContents({ layout: "legacy" })],
 }
 
