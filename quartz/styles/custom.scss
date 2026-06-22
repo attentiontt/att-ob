@@ -69,3 +69,20 @@ details.toc li {
 }
 details.toc li a { color: var(--darkgray); }
 details.toc li a:hover { color: var(--secondary); }
+
+// === Collapsible headings ===
+.fold-btn {
+  cursor: pointer;
+  user-select: none;
+  margin-right: 0.3rem;
+  font-size: 0.7em;
+  opacity: 0.4;
+  transition: opacity 0.15s;
+  display: inline-block;
+}
+.fold-btn:hover { opacity: 0.9; }
+h1:hover .fold-btn, h2:hover .fold-btn, 
+h3:hover .fold-btn, h4:hover .fold-btn,
+h5:hover .fold-btn, h6:hover .fold-btn {
+  opacity: 0.6;
+}

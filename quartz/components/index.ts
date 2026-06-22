@@ -1,4 +1,4 @@
-import Content from "./pages/Content"
+﻿import Content from "./pages/Content"
 import TagContent from "./pages/TagContent"
 import FolderContent from "./pages/FolderContent"
 import NotFound from "./pages/404"
@@ -19,6 +19,7 @@ import Footer from "./Footer"
 import DesktopOnly from "./DesktopOnly"
 import MobileOnly from "./MobileOnly"
 import RecentNotes from "./RecentNotes"
+import CollapsibleHeadings from "./CollapsibleHeadings"
 import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import Flex from "./Flex"
@@ -46,6 +47,7 @@ export {
   MobileOnly,
   RecentNotes,
   NotFound,
+  CollapsibleHeadings,
   Breadcrumbs,
   Comments,
   Flex,
