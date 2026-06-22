@@ -1,20 +1,12 @@
 ﻿@use "./base.scss";
 
-// Smaller base font
-:root {
-  font-size: 14px;
-}
-h1 { font-size: 1.6rem; }
-h2 { font-size: 1.35rem; }
-h3 { font-size: 1.15rem; }
+// Tighter line height only
+p, li { line-height: 1.65; }
 
-// Content readability
+// Content spacing
 .article-title { margin-bottom: 0.2rem; }
 .content-meta { margin-bottom: 1.5rem; }
 
-// Slightly tighter spacing
-p, li { line-height: 1.65; }
-
-// Explorer styling
+// Explorer slightly smaller
 .explorer { font-size: 0.85rem; }
 .explorer .folder-title { font-size: 0.85rem; }

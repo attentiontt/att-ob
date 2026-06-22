@@ -18,14 +18,14 @@ const config: QuartzConfig = {
       typography: { header: "Noto Sans SC", body: "Noto Sans SC", code: "JetBrains Mono" },
       colors: {
         lightMode: {
-          light: "#faf8f8", lightgray: "#e5e5e5", gray: "#b8b8b8",
-          darkgray: "#4e4e4e", dark: "#2b2b2b", secondary: "#284b63",
-          tertiary: "#84a59d", highlight: "rgba(143,159,169,0.15)", textHighlight: "#fff23688",
+          light: "#ffffff", lightgray: "#f3f4f6", gray: "#9ca3af",
+          darkgray: "#6b7280", dark: "#374151", secondary: "#2563eb",
+          tertiary: "#e5e7eb", highlight: "rgba(0,0,0,0.04)", textHighlight: "#fef08a88",
         },
         darkMode: {
-          light: "#161618", lightgray: "#393639", gray: "#646464",
-          darkgray: "#d4d4d4", dark: "#ebebec", secondary: "#7b97aa",
-          tertiary: "#84a59d", highlight: "rgba(143,159,169,0.15)", textHighlight: "#b3aa0288",
+          light: "#111827", lightgray: "#1f2937", gray: "#6b7280",
+          darkgray: "#d1d5db", dark: "#f3f4f6", secondary: "#60a5fa",
+          tertiary: "#374151", highlight: "rgba(255,255,255,0.04)", textHighlight: "#fef08a88",
         },
       },
     },
