@@ -1,9 +1,7 @@
-param([string]$CommitMessage = "publish: $(Get-Date -Format 'yyyy-MM-dd HH:mm')")
+﻿param([string]$CommitMessage = "publish: $(Get-Date -Format 'yyyy-MM-dd HH:mm')")
 
 # ===== Configuration =====
-# To change the vault path, edit the next 2 lines:
-# vaultShare = Obsidian vault network path
-# vaultDrive = Mapped drive letter (usually Z:)
+# To change the vault path, edit the 2 lines below:
 $vaultShare = "\\192.168.100.253\10技术部\需求文档"
 $vaultDrive = "Z:"
 
@@ -37,7 +35,7 @@ Write-Host "  [OK] Z: drive ready" -ForegroundColor Gray
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $root
 
-# ---- STEP 1: SYNC CONTENT ----
+# ---- STEP 1: SYNC ----
 Write-Host "Step 1/4: Syncing notes to content/..." -ForegroundColor Yellow
 $cd = Join-Path $root "content"
 if (Test-Path $cd) { Remove-Item "$cd\*" -Recurse -Force -Exclude ".trash",".obsidian","index.md" -ErrorAction SilentlyContinue }
@@ -45,7 +43,7 @@ Copy-Item "$vaultDrive\*" "$cd\" -Recurse -Force -Exclude ".trash",".obsidian"
 $mc = (Get-ChildItem $cd -Recurse -Include "*.md" -Name -Force).Count
 Write-Host "  Done: $mc notes synced" -ForegroundColor Green
 
-# ---- STEP 2: UPDATE SORT ----
+# ---- STEP 2: SORT ----
 Write-Host "Step 2/4: Updating sort order..." -ForegroundColor Yellow
 node update-flex-order.cjs 2>&1
 if ($LASTEXITCODE -eq 0) { Write-Host "  Sort data updated" -ForegroundColor Green }
@@ -58,7 +56,7 @@ $done = $bo | Select-String -Pattern "Done processing"
 if ($done) { Write-Host "  $($done.Line.Trim())" -ForegroundColor Gray; Write-Host "  Build OK" -ForegroundColor Green }
 else { $bo | ForEach-Object { Write-Host "  $_" }; Write-Host "  [ERROR] Build FAILED" -ForegroundColor Red; exit 1 }
 
-# ---- STEP 4: COMMIT & PUSH ----
+# ---- STEP 4: PUSH ----
 Write-Host "Step 4/4: Pushing to GitHub..." -ForegroundColor Yellow
 git add .
 git commit -m "$CommitMessage"
@@ -69,5 +67,5 @@ Write-Host ""
 Write-Host "======================================" -ForegroundColor Cyan
 Write-Host "  Done! Site will update in ~2 min" -ForegroundColor Cyan
 Write-Host "  Actions: https://github.com/attentiontt/att-ob/actions" -ForegroundColor Cyan
-Write-Host "  Site:    https://github.com/attentiontt/att-ob/" -ForegroundColor Cyan
+Write-Host "  Site:    https://attentiontt.github.io/att-ob/" -ForegroundColor Cyan
 Write-Host "======================================" -ForegroundColor Cyan
