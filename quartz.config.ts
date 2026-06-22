@@ -39,7 +39,7 @@ const config: QuartzConfig = {
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.HardLineBreaks(),
       Plugin.Tabs(),
-      Plugin.TableOfContents(),
+      Plugin.TableOfContents({ minEntries: 0 }),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
