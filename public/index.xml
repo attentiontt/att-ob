@@ -6,6 +6,18 @@
       <description>最近的10条笔记 on test-ob</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>提货</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E6%8F%90%E8%B4%A7</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E6%8F%90%E8%B4%A7</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Tue, 23 Jun 2026 09:10:07 GMT</pubDate>
+  </item><item>
+    <title>test-ob</title>
+    <link>https://attentiontt.github.io/att-ob/</link>
+    <guid>https://attentiontt.github.io/att-ob/</guid>
+    <description><![CDATA[ test-ob 技术部知识库 — 产品研发、供应链、品质管理、财务管理. ]]></description>
+    <pubDate>Tue, 23 Jun 2026 09:07:52 GMT</pubDate>
+  </item><item>
     <title>0184</title>
     <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/0184</link>
     <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/0184</guid>
@@ -53,18 +65,6 @@
     <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E8%AF%B7%E6%AC%BE%E6%B1%A0%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</guid>
     <description><![CDATA[ V1.0.1 1.新增退款按钮 1.1预付单增加退款按钮 1111 1.2采购单增加退款 2.请款池增加字段 2.1预付单增加字段 【预付余额】查询并展示该预付单关联的预付余额 【可退款金额】等于【预付余额】 【退款中金额】等于关联的状态为待审批、待退款状态的{请款单}里，该单在请款单明细内的申请退款金额之和 【已退金额】等于关联的状态为已完成状态的{请款单}里，该单在请款单明细内的申请退款金额之和 【退款单】展示关联的状态等于待审批、待退款、已完成的请款单，多个退款单则跨行展示；标蓝色支持跳转至退款单详情 查看预付单列表 2.2采购单增加字段. ]]></description>
     <pubDate>Mon, 22 Jun 2026 10:27:27 GMT</pubDate>
-  </item><item>
-    <title>查看预付单列表</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E9%A2%84%E4%BB%98%E5%8D%95/%E6%9F%A5%E7%9C%8B%E9%A2%84%E4%BB%98%E5%8D%95%E5%88%97%E8%A1%A8</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E9%A2%84%E4%BB%98%E5%8D%95/%E6%9F%A5%E7%9C%8B%E9%A2%84%E4%BB%98%E5%8D%95%E5%88%97%E8%A1%A8</guid>
-    <description><![CDATA[ 列表数据 【预付对象】 【预付单号】 【来源单号】 【预付维度】 【付款方】 【币种】 【预付金额】 【申请中金额】关联的状态为待审批、待付款状态的{请款单}里，该单在请款单明细内的申请金额之和 【未申请金额】等于【应付金额】-【申请中金额】-【实付金额】 【应付金额】等于【预付金额】 【未付金额】 【请款单】展示关联的状态等于待审批、待付款、已完成的请款单，多个请款单则跨行展示；标蓝色支持跳转至请款单详情 【预付余额】查询并展示该预付单关联的预付余额 【可退款金额】等于【预付余额】 【退款中金额】等于关联的状态为待审批、待退款状态的{请款单}里，该单在请款单明细内的申请退款金额之和 【已退金... ]]></description>
-    <pubDate>Mon, 22 Jun 2026 09:19:59 GMT</pubDate>
-  </item><item>
-    <title>头程发货单</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Mon, 22 Jun 2026 08:52:47 GMT</pubDate>
   </item>
     </channel>
   </rss>
