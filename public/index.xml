@@ -6,6 +6,54 @@
       <description>最近的10条笔记 on test-ob</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>采购退款单</title>
+    <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/%E9%87%87%E8%B4%AD%E9%80%80%E6%AC%BE%E5%8D%95</link>
+    <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/%E9%87%87%E8%B4%AD%E9%80%80%E6%AC%BE%E5%8D%95</guid>
+    <description><![CDATA[ 优化/新增点 1.请款池 Transclude of 请款池变更记录#v101 2.请款单 2.1增加请款单发起退款 基于请款单支持操作退款 1.勾选请款单后点击操作退款 校验1：是否勾选任意一条数据 未勾选：提示请至少勾选一条数据 校验2：校验3：校验勾选的应付单的付款对象和主体和币种是否满足完全一致 否：提示勾选的数据中付款对象和主体和币种需要保持一致 通过校验，则打开新建退款单页面 发起请款单退款 2.2请款单增加字段 2.退款单 Transclude of 退款单变更记录#v100. ]]></description>
+    <pubDate>Tue, 23 Jun 2026 11:36:23 GMT</pubDate>
+  </item><item>
+    <title>新建退款单</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E5%88%9B%E5%BB%BA%E9%80%80%E6%AC%BE%E5%8D%95/%E6%96%B0%E5%BB%BA%E9%80%80%E6%AC%BE%E5%8D%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E5%88%9B%E5%BB%BA%E9%80%80%E6%AC%BE%E5%8D%95/%E6%96%B0%E5%BB%BA%E9%80%80%E6%AC%BE%E5%8D%95</guid>
+    <description><![CDATA[ 发起新建退款单的来源 请款池 发起预付单退款 发起采购应付单退款 发起费用单退款 请款单 发起请款单退款 新建退款单 列表 查出应付单+请款单（已完成）并且已付金额-已退金额&gt;0的请款单明细数据 基本信息 【退款单号】自动生成 【应收对象】等于应付单的付款对象 【退款方类型】等于应付单的收款对象类型 【退款方】等于应付单的退款方 【退款方式】单选选择器，选项：直接退款、转为预付 【预计退款日期】 【申请人】 【备注】 【申请时间】 【退款完成时间】 【状态】 金额信息 【币种】等于应付单的币种 【总退款金额】 【退款中金额】 【已退款金额】 【剩余未退金额】 明细信息 【序号】从1开始，... ]]></description>
+    <pubDate>Tue, 23 Jun 2026 11:35:01 GMT</pubDate>
+  </item><item>
+    <title>发起请款单退款</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E5%8D%95/%E5%8F%91%E8%B5%B7%E8%AF%B7%E6%AC%BE%E5%8D%95%E9%80%80%E6%AC%BE</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E5%8D%95/%E5%8F%91%E8%B5%B7%E8%AF%B7%E6%AC%BE%E5%8D%95%E9%80%80%E6%AC%BE</guid>
+    <description><![CDATA[ 基于请款单支持操作退款 1.勾选请款单后点击操作退款 校验1：是否勾选任意一条数据 未勾选：提示请至少勾选一条数据 校验2：校验3：校验勾选的应付单的付款对象和主体和币种是否满足完全一致 否：提示勾选的数据中付款对象和主体和币种需要保持一致 通过校验，则打开新建退款单页面. ]]></description>
+    <pubDate>Tue, 23 Jun 2026 11:34:04 GMT</pubDate>
+  </item><item>
+    <title>发起费用单退款</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E8%B4%B9%E7%94%A8%E5%8D%95/%E5%8F%91%E8%B5%B7%E8%B4%B9%E7%94%A8%E5%8D%95%E9%80%80%E6%AC%BE</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E8%B4%B9%E7%94%A8%E5%8D%95/%E5%8F%91%E8%B5%B7%E8%B4%B9%E7%94%A8%E5%8D%95%E9%80%80%E6%AC%BE</guid>
+    <description><![CDATA[ 1.勾选发起应付单后点击操作退款 校验1：是否勾选任意一条数据 未勾选：提示请至少勾选一条数据 校验2：勾选的数据是否全部的已付都&gt;0 否：提示勾选的数据中存在{应付单的关联单号}的已付=0，请取消勾选后重试 校验3：校验勾选的应付单的付款对象和主体和币种是否完全一致 否：提示勾选的数据中付款对象和主体和币种需要保持一致 通过校验时，则打开新建退款单页面. ]]></description>
+    <pubDate>Tue, 23 Jun 2026 11:32:27 GMT</pubDate>
+  </item><item>
+    <title>发起采购应付单退款</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E9%87%87%E8%B4%AD%E5%8D%95/%E5%8F%91%E8%B5%B7%E9%87%87%E8%B4%AD%E5%BA%94%E4%BB%98%E5%8D%95%E9%80%80%E6%AC%BE</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E9%87%87%E8%B4%AD%E5%8D%95/%E5%8F%91%E8%B5%B7%E9%87%87%E8%B4%AD%E5%BA%94%E4%BB%98%E5%8D%95%E9%80%80%E6%AC%BE</guid>
+    <description><![CDATA[ 1.勾选发起应付单后点击操作退款 校验1：是否勾选任意一条数据 未勾选：提示请至少勾选一条数据 校验2：勾选的数据是否全部的已付都&gt;0 否：提示勾选的数据中存在{应付单的关联单号}的已付=0，请取消勾选后重试 校验3：校验勾选的应付单的付款对象和主体和币种是否完全一致 否：提示勾选的数据中付款对象和主体和币种需要保持一致 通过校验时，则打开新建退款单页面. ]]></description>
+    <pubDate>Tue, 23 Jun 2026 11:31:11 GMT</pubDate>
+  </item><item>
+    <title>发起预付单退款</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E9%A2%84%E4%BB%98%E5%8D%95/%E5%8F%91%E8%B5%B7%E9%A2%84%E4%BB%98%E5%8D%95%E9%80%80%E6%AC%BE</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E9%A2%84%E4%BB%98%E5%8D%95/%E5%8F%91%E8%B5%B7%E9%A2%84%E4%BB%98%E5%8D%95%E9%80%80%E6%AC%BE</guid>
+    <description><![CDATA[ 1.勾选发起应付单后点击操作退款 校验1：是否勾选任意一条数据 未勾选：提示请至少勾选一条数据 校验2：勾选的数据是否全部的已付都&gt;0 否：提示勾选的数据中存在{应付单的关联单号}的已付=0，请取消勾选后重试 校验3：校验勾选的应付单的付款对象和主体和币种是否完全一致 否：提示勾选的数据中付款对象和主体和币种需要保持一致 通过校验时，则打开新建退款单页面. ]]></description>
+    <pubDate>Tue, 23 Jun 2026 11:31:08 GMT</pubDate>
+  </item><item>
+    <title>请款池变更记录</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E8%AF%B7%E6%AC%BE%E6%B1%A0%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E8%AF%B7%E6%AC%BE%E6%B1%A0%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</guid>
+    <description><![CDATA[ V1.0.1 1.新增退款按钮 1.1预付单增加退款按钮 1.2采购单增加退款 1.3费用单增加退款 具体逻辑 发起退款 基于采购的应付单、预付单支持操作退款 1.勾选发起应付单后点击操作退款 校验1：是否勾选任意一条数据 未勾选：提示请至少勾选一条数据 校验2：勾选的数据是否全部的已付都&gt;0 否：提示勾选的数据中存在{应付单的关联单号}的已付=0，请取消勾选后重试 校验3：校验勾选的应付单的付款对象和主体和币种是否完全一致 否：提示勾选的数据中付款对象和主体和币种需要保持一致 通过校验时，则打开新建退款单页面 2.请款池增加字段 2.1预付单增加字段 【预付余额】查询并展示该预付单关联... ]]></description>
+    <pubDate>Tue, 23 Jun 2026 11:30:23 GMT</pubDate>
+  </item><item>
+    <title>退款单变更记录</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E9%80%80%E6%AC%BE%E5%8D%95%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E9%80%80%E6%AC%BE%E5%8D%95%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</guid>
+    <description><![CDATA[ V1.0.0 1.新增功能 新建退款单 查询退款单 审批&amp;撤回审批 确认退款 废弃退款单. ]]></description>
+    <pubDate>Tue, 23 Jun 2026 11:29:56 GMT</pubDate>
+  </item><item>
     <title>0181</title>
     <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/0181</link>
     <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/0181</guid>
@@ -17,54 +65,6 @@
     <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E9%87%87%E8%B4%AD%E5%8D%95/%E9%87%87%E8%B4%AD%E5%8D%95</guid>
     <description><![CDATA[ 采购单-现结 【供应商编码】采购单信息 【采购单号】采购单信息 【付款方】采购单的采购主体 【付款方式】采购单信息 【货款】采购单信息，若发生变更，则会更新 【到货金额】到货金额=质检金额+入库金额； 1.质检金额：采购单关联的质检单的质检金额（剔除废弃） 2.入库金额：采购单关联的入库单的入库金额（剔除废弃） 【退货金额】采购单信息，若发生变更，则会更新 【弃货金额】采购单信息，若发生变更，则会更新 【申请中金额】关联的生成了{请款单}里，该单在请款单明细内的申请金额之和减去实付金额 【未申请金额】采购总金额-申请中金额-实付金额-抵扣金额 【应付金额】采购单：采购总金额-退货金额-弃货金额... ]]></description>
     <pubDate>Tue, 23 Jun 2026 11:17:33 GMT</pubDate>
-  </item><item>
-    <title>创建采购应付单（待补充）</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E9%87%87%E8%B4%AD%E5%8D%95/%E5%88%9B%E5%BB%BA%E9%87%87%E8%B4%AD%E5%BA%94%E4%BB%98%E5%8D%95%EF%BC%88%E5%BE%85%E8%A1%A5%E5%85%85%EF%BC%89</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E9%87%87%E8%B4%AD%E5%8D%95/%E5%88%9B%E5%BB%BA%E9%87%87%E8%B4%AD%E5%BA%94%E4%BB%98%E5%8D%95%EF%BC%88%E5%BE%85%E8%A1%A5%E5%85%85%EF%BC%89</guid>
-    <description><![CDATA[ 1.采购现结 在”结算方式为现结的采购单在审批通过后，以采购单的维度在请款池中生成一条数据 在“结算方式为月结的采购单对应产生了已入库的入库单时，已入库单的维度在请款池中生成一条数据1. ]]></description>
-    <pubDate>Tue, 23 Jun 2026 11:12:40 GMT</pubDate>
-  </item><item>
-    <title>请款池变更记录</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E8%AF%B7%E6%AC%BE%E6%B1%A0%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E8%AF%B7%E6%AC%BE%E6%B1%A0%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</guid>
-    <description><![CDATA[ V1.0.1 1.新增退款按钮 1.1预付单增加退款按钮 1.2采购单增加退款 1.3费用单增加退款 【可退款金额】 非预付单：默认=0，当请款单付款的同时明细增加了实付，同步增加可退款金额，在提交了退预付单：默认等于0，按照预付单关联的预付余额自动同步（即消耗了预付，预付单的可退款金额会同步减少、增加了退款，预付单的可退款金额也会同步减少） 【退款中金额】关联的退款单剔除“已废弃、已驳回”的退款单明细里面本请款单明细的”退款中金额‘的汇总 【已退款金额】关联的退款单剔除“已废弃、已驳回”的退款单明细里面本请款单明细的”已退款金额‘的汇总 2.请款池增加字段 2.1预付单增加字段 【预付余额】... ]]></description>
-    <pubDate>Tue, 23 Jun 2026 11:07:40 GMT</pubDate>
-  </item><item>
-    <title>查看预付单列表</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E9%A2%84%E4%BB%98%E5%8D%95/%E6%9F%A5%E7%9C%8B%E9%A2%84%E4%BB%98%E5%8D%95%E5%88%97%E8%A1%A8</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E9%A2%84%E4%BB%98%E5%8D%95/%E6%9F%A5%E7%9C%8B%E9%A2%84%E4%BB%98%E5%8D%95%E5%88%97%E8%A1%A8</guid>
-    <description><![CDATA[ 列表数据 【预付对象】 【预付单号】 【来源单号】 【预付维度】 【付款方】 【币种】 【预付金额】 【申请中金额】关联的状态为待审批、待付款状态的{请款单}里，该单在请款单明细内的申请金额之和 【未申请金额】等于【应付金额】-【申请中金额】-【实付金额】 【应付金额】等于【预付金额】 【未付金额】 【请款单】展示关联的状态等于待审批、待付款、已完成的请款单，多个请款单则跨行展示；标蓝色支持跳转至请款单详情 【预付余额】查询并展示该预付单关联的预付余额 【可退款金额】默认等于0，按照预付单关联的预付余额自动同步（即消耗了预付，预付单的可退款金额会同步减少、增加了退款，预付单的可退款金额也会同步... ]]></description>
-    <pubDate>Tue, 23 Jun 2026 11:01:35 GMT</pubDate>
-  </item><item>
-    <title>test-ob</title>
-    <link>https://attentiontt.github.io/att-ob/</link>
-    <guid>https://attentiontt.github.io/att-ob/</guid>
-    <description><![CDATA[ test-ob 技术部知识库 — 产品研发、供应链、品质管理、财务管理. ]]></description>
-    <pubDate>Tue, 23 Jun 2026 10:27:11 GMT</pubDate>
-  </item><item>
-    <title>采购退款单</title>
-    <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/%E9%87%87%E8%B4%AD%E9%80%80%E6%AC%BE%E5%8D%95</link>
-    <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/%E9%87%87%E8%B4%AD%E9%80%80%E6%AC%BE%E5%8D%95</guid>
-    <description><![CDATA[ 优化/新增点 1.请款池 Transclude of 请款池变更记录#v101 2.请款单 2.1增加请款单发起退款 2.2请款单增加字段 2.退款单 Transclude of 退款单变更记录#v100. ]]></description>
-    <pubDate>Tue, 23 Jun 2026 10:26:57 GMT</pubDate>
-  </item><item>
-    <title>提货</title>
-    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E6%8F%90%E8%B4%A7</link>
-    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E6%8F%90%E8%B4%A7</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Tue, 23 Jun 2026 09:10:07 GMT</pubDate>
-  </item><item>
-    <title>0184</title>
-    <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/0184</link>
-    <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/0184</guid>
-    <description><![CDATA[ 系统无法出库原因提示-预警的功能 头程发货单 原有的卡控调细化调整： 关联的调度需求（1.剔除从货代仓⇒港口的数据 2.剔除目的仓类型为货代仓，并且状态等于待收货的数据）是否必须全部完结 具体校验逻辑： 第一步：校验是否所有调度需求是否创建 如果未创建：则提示存在调度需求未创建，请联系采购补充创建调度需求 第二步：校验所有调度需求的状态 如果有调度需求的状态为待提交，则提示调度需求{调度需求编号1，调度需求编号2}为待提交，请联系{调度需求里面供应商分配的采购员}提交调度需求 如果有调度需求的状态为待提货，则提示调度需求{调度需求编号1，调度需求编号2}为待提货，请联系{调度需求里面供应商分配... ]]></description>
-    <pubDate>Tue, 23 Jun 2026 09:03:41 GMT</pubDate>
-  </item><item>
-    <title>样品评估需求全局说明</title>
-    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0%E9%9C%80%E6%B1%82%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</link>
-    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0%E9%9C%80%E6%B1%82%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</guid>
-    <description><![CDATA[ 商品节点】 . ]]></description>
-    <pubDate>Tue, 23 Jun 2026 08:36:12 GMT</pubDate>
   </item>
     </channel>
   </rss>
