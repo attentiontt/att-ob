@@ -3,8 +3,8 @@
 function updateFlexOrder() {
   // ═══ CONFIG ═══
   // Change this path if Obsidian vault drive differs
-  const flexPath = "Z:\test-ob\.obsidian\plugins\flexplorer\data.json";
-  const layoutPath = "D:\test-ob-site\quartz.layout.ts";
+  const flexPath = "Z:\\test-ob\\.obsidian\\plugins\\flexplorer\\data.json";
+  const layoutPath = "D:\\test-ob-site\\quartz.layout.ts";
   // ═══════════════
 
   if (!fs.existsSync(flexPath)) {
@@ -32,7 +32,7 @@ function updateFlexOrder() {
   layout = layout.replace(regex, newJson);
   fs.writeFileSync(layoutPath, layout, "utf-8");
 
-  const jsPath = "D:\test-ob-site\quartz\static\flex-order.js";
+  const jsPath = "D:\\test-ob-site\\quartz\\static\\flex-order.js";
   const jsContent = "window.__FLEX_ORDER__ = " + newJson + ";";
   fs.writeFileSync(jsPath, jsContent, "utf-8");
 
