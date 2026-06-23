@@ -40,7 +40,9 @@ function initZoom() {
 // Click delegation: single listener on document catches all image clicks
 document.addEventListener("click", (e) => {
   const target = e.target as HTMLElement
-  if (target.tagName === "IMG" && target.dataset.zoomEnabled) {
+  if (target.tagName !== "IMG") return
+  // Only zoom images inside article (not UI images like logos)
+  if (target.closest("article, .popover-hint")) {
     openZoom(target as HTMLImageElement)
     e.stopPropagation()
     e.preventDefault()
