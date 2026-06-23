@@ -1,51 +1,72 @@
-﻿# att.OB Quartz Site
+﻿# test-ob 技术部知识库站点
 
-将 Obsidian 笔记发布为静态网站，基于 [Quartz v4](https://quartz.jzhao.xyz/)。
+公司技术部内部知识库网站，基于 [Quartz v4](https://quartz.jzhao.xyz/) 搭建，将 Obsidian 笔记发布为静态站点。
 
-**站点地址：** https://attentiontt.github.io/att-ob
+涵盖模块：**产品研发** · **产品开发** · **供应链** · **品质管理** · **财务管理** · **计划管理**
 
-## 快速开始
+**站点地址：** [https://attentiontt.github.io/att-ob](https://attentiontt.github.io/att-ob)
+
+---
+
+## 目录结构
+
+```
+D:\test-ob-site
+├── content/             # 笔记源文件（由 deploy.ps1 从共享盘同步）
+├── public/              # 构建产物（HTML 静态站点）
+├── quartz/              # Quartz 引擎源码
+├── quartz.config.ts     # 站点配置（中文、主题、插件）
+├── quartz.layout.ts     # 页面布局配置
+├── deploy.ps1           # 一键部署脚本（同步 → 排序 → 构建 → 推送）
+├── update-flex-order.cjs
+└── README.md
+```
+
+## 快速使用
+
+只需运行 `deploy.ps1`，它会自动完成全部流程。
 
 ### 前置条件
+
 - [Node.js](https://nodejs.org/) >= 22
 - Git
-- GitHub 账号
+- 有权限访问 `\\192.168.100.253\10技术部\临时`（共享盘）
 
-### 1. 复制项目到稳定位置
+### 一键部署
+
 ```powershell
-Copy-Item "C:\Users\IT-TAN~1\AppData\Local\Temp\att.OB-site" "D:\att.OB-site" -Recurse
-cd D:\att.OB-site
+cd D:\test-ob-site
+.\deploy.ps1
 ```
 
-### 2. 安装依赖并构建
+`deploy.ps1` 会依次执行：
+
+1. **挂载 Z:** — 将 `\\192.168.100.253\10技术部\临时` 映射为 Z 盘
+2. **同步笔记** — 从 `Z:\test-ob` 复制最新 `.md` 文件到 `content/`
+3. **更新排序** — 运行 `update-flex-order.cjs` 生成排序数据
+4. **构建站点** — `npx quartz build` 生成 HTML 到 `public/`
+5. **推送 GitHub** — 提交并推送，触发 GitHub Actions 自动部署
+
+### 手动构建（仅本地预览）
+
 ```powershell
+cd D:\test-ob-site
 npm install
-.\sync-content.ps1   # 从 D:\att.OB 同步最新笔记
-npx quartz build     # 构建站点 → public/
+npx quartz build --serve   # 本地预览
 ```
 
-### 3. 推送到 GitHub
-```powershell
-git init
-git add .
-git commit -m "Initial Quartz site"
-git branch -M main
-git remote add origin https://github.com/attentiontt/att-ob.git
-git push -u origin main
-```
+## 技术栈
 
-### 4. 配置 GitHub Pages
-在 `https://github.com/attentiontt/att-ob/settings/pages` 中，Source 选择 **GitHub Actions**。
+| 层 | 技术 |
+| --- | --- |
+| 笔记格式 | Markdown（Obsidian 方言） |
+| 站点框架 | [Quartz v4](https://quartz.jzhao.xyz/) |
+| 构建引擎 | esbuild |
+| 部署 | GitHub Pages（GitHub Actions） |
+| 域名 | https://attentiontt.github.io/att-ob |
 
-之后每次推送，GitHub Actions 会自动构建部署到 https://attentiontt.github.io/att-ob
+## GitHub 仓库
 
-## 项目结构
-```
-├── content/          # Obsidian 笔记（由 sync-content.ps1 同步）
-├── public/           # 构建产物（HTML 站点）
-├── quartz/           # Quartz 引擎源码
-├── quartz.config.ts  # 站点配置（已配置中文、主题）
-├── quartz.layout.ts  # 页面布局配置
-├── deploy.ps1        # 一键构建部署脚本
-└── sync-content.ps1  # 同步笔记脚本
-```
+[attentiontt/att-ob](https://github.com/attentiontt/att-ob)
+
+GitHub Actions 配置了自动部署流程，推送 `main` 分支后约 2 分钟站点自动更新。可在 [Actions 页面](https://github.com/attentiontt/att-ob/actions) 查看部署状态。

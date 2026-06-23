@@ -24,6 +24,7 @@ import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
+import ImageZoom from "./ImageZoom"
 
 export {
   ArticleTitle,
@@ -52,4 +53,5 @@ export {
   Comments,
   Flex,
   ConditionalRender,
+  ImageZoom,
 }
