@@ -10,7 +10,7 @@
     <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/0181</link>
     <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/0181</guid>
     <description><![CDATA[ FBA货件管理 1.1列表/导出/筛选增加字段 【分仓模式】每个FBA货件的入库计划编号按实际收货仓去重汇总，如果&gt;1则是分仓，如果=1则是单仓，如果编辑实际收货仓需要刷新；如果入库计划编号为空，则分仓模式为空值 添加的字段具体如下 1.调柜单 1.1列表/导出/筛选增加字段 【分仓模式】根据发货明细关联的亚马逊的shipment的分仓模式取值，如果取到分仓则优先按分仓，如果取不到亚马逊的shipment或者取到了但shipment的分仓模式本身为空值，则为空 1.2调柜单确认增加卡控 如果关联的货件的分仓模式存在多个，则不允许点击确认 具体场景： 分仓模式都为空，允许确认 分仓模式存在... ]]></description>
-    <pubDate>Wed, 24 Jun 2026 02:49:32 GMT</pubDate>
+    <pubDate>Wed, 24 Jun 2026 03:29:51 GMT</pubDate>
   </item><item>
     <title>采购退款单</title>
     <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/%E9%87%87%E8%B4%AD%E9%80%80%E6%AC%BE%E5%8D%95</link>
