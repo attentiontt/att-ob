@@ -6,6 +6,48 @@
       <description>最近的10条笔记 on test-ob</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>0194</title>
+    <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/0194</link>
+    <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/0194</guid>
+    <description><![CDATA[ 同MSKU多配送方式，支持在推广商品管理同时请购 商品推广管理 1.msku支持展示明细 展开icon只在同一item ID关联多个销售国ID，剔除已停用&amp;已删除的数据 鼠标移入展示字段 【Msku】查出所有的msku+店铺 【店铺】 【商品节点】 2.发起请购逻辑变更 按照所有的商品节点=待请购节点的msku的请购数据（剔除已停用&amp;已删除的数据）勾选并进行发起请购（之前是按照主msku数据进行勾选的）. ]]></description>
+    <pubDate>Fri, 26 Jun 2026 02:29:14 GMT</pubDate>
+  </item><item>
+    <title>供应商质量跟进</title>
+    <link>https://attentiontt.github.io/att-ob/Project/v1.11.0/%E4%BE%9B%E5%BA%94%E5%95%86%E8%B4%A8%E9%87%8F%E8%B7%9F%E8%BF%9B</link>
+    <guid>https://attentiontt.github.io/att-ob/Project/v1.11.0/%E4%BE%9B%E5%BA%94%E5%95%86%E8%B4%A8%E9%87%8F%E8%B7%9F%E8%BF%9B</guid>
+    <description><![CDATA[ 1.需求背景 “当前[现状/现象] ，导致[问题/损失] ， 因此需要[本次方案]。 案例：亚马逊新增低库存水平费标准，目前被收费产品逐渐增多，人为统计效率低并且容易出错，系统通过系统可以实现自动计算功能。 2.需求负责人 3.需求场景/故事点 描述用户具体在什么时间、什么地点、因为什么事件触发。用“作为[角色]，我想[做某事]，在此期间[遇到了某问题]，以便[达成目的]”的格式写清楚。 案例： 场景1：备货主管在每周一通过系统智能补货页面导出“预测数据”，“在库数据”，“在途数据”，“待发数据”，推算当前库存以及预测数据，计算是否会被收低库存水平费，在收集数据和反算是否被收费时，需要花费1天... ]]></description>
+    <pubDate>Thu, 25 Jun 2026 10:18:51 GMT</pubDate>
+  </item><item>
+    <title>000需求调研模板</title>
+    <link>https://attentiontt.github.io/att-ob/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/000%E9%9C%80%E6%B1%82%E8%B0%83%E7%A0%94%E6%A8%A1%E6%9D%BF</link>
+    <guid>https://attentiontt.github.io/att-ob/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/000%E9%9C%80%E6%B1%82%E8%B0%83%E7%A0%94%E6%A8%A1%E6%9D%BF</guid>
+    <description><![CDATA[ 003调研问题知识库 1.需求背景 “当前[现状/现象] ，导致[问题/损失] ， 因此需要[本次方案]。 案例：亚马逊新增低库存水平费标准，目前被收费产品逐渐增多，人为统计效率低并且容易出错，系统通过系统可以实现自动计算功能。 2.需求负责人 3.需求场景/故事点 描述用户具体在什么时间、什么地点、因为什么事件触发。用“作为[角色]，我想[做某事]，在此期间[遇到了某问题]，以便[达成目的]”的格式写清楚。 案例： 场景1：备货主管在每周一通过系统智能补货页面导出“预测数据”，“在库数据”，“在途数据”，“待发数据”，推算当前库存以及预测数据，计算是否会被收低库存水平费，在收集数据和反算是否... ]]></description>
+    <pubDate>Thu, 25 Jun 2026 07:31:11 GMT</pubDate>
+  </item><item>
+    <title>003调研问题知识库</title>
+    <link>https://attentiontt.github.io/att-ob/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/003%E8%B0%83%E7%A0%94%E9%97%AE%E9%A2%98%E7%9F%A5%E8%AF%86%E5%BA%93</link>
+    <guid>https://attentiontt.github.io/att-ob/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/003%E8%B0%83%E7%A0%94%E9%97%AE%E9%A2%98%E7%9F%A5%E8%AF%86%E5%BA%93</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Thu, 25 Jun 2026 07:29:58 GMT</pubDate>
+  </item><item>
+    <title>002需求优先级评估模版</title>
+    <link>https://attentiontt.github.io/att-ob/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/002%E9%9C%80%E6%B1%82%E4%BC%98%E5%85%88%E7%BA%A7%E8%AF%84%E4%BC%B0%E6%A8%A1%E7%89%88</link>
+    <guid>https://attentiontt.github.io/att-ob/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/002%E9%9C%80%E6%B1%82%E4%BC%98%E5%85%88%E7%BA%A7%E8%AF%84%E4%BC%B0%E6%A8%A1%E7%89%88</guid>
+    <description><![CDATA[ 1.需求价值 权重值（固定值）： 60% 评判标准（参考）： 需求带来的可量化收益，包括效率提升、成本降低、质量改善、风险规避等。 受益用户的数量、受益用户范围、使用频率、角色重要性。 5分：年收益&gt;10万元 或 人效提升&gt;50% 或 规避重大合规风险 ； 所有核心用户，每日使用 4分：年收益5-10万元 或 人效提升30%-50% ；多数核心用户，每周使用 3分：年收益1-5万元 或 人效提升10%-30% ；部分用户，每周使用 2分：年收益&lt;1万元 或 人效提升&lt;10% ；少数用户，每月使用 1分：几乎无量化收益；极个别用户，偶尔使用 评判理由： 案例： 1.备货主... ]]></description>
+    <pubDate>Thu, 25 Jun 2026 07:28:03 GMT</pubDate>
+  </item><item>
+    <title>0182三方仓库核对</title>
+    <link>https://attentiontt.github.io/att-ob/Project/v1.11.0/0182%E4%B8%89%E6%96%B9%E4%BB%93%E5%BA%93%E6%A0%B8%E5%AF%B9</link>
+    <guid>https://attentiontt.github.io/att-ob/Project/v1.11.0/0182%E4%B8%89%E6%96%B9%E4%BB%93%E5%BA%93%E6%A0%B8%E5%AF%B9</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Thu, 25 Jun 2026 06:39:21 GMT</pubDate>
+  </item><item>
+    <title>0181三方仓费用</title>
+    <link>https://attentiontt.github.io/att-ob/Project/v1.11.0/0181%E4%B8%89%E6%96%B9%E4%BB%93%E8%B4%B9%E7%94%A8</link>
+    <guid>https://attentiontt.github.io/att-ob/Project/v1.11.0/0181%E4%B8%89%E6%96%B9%E4%BB%93%E8%B4%B9%E7%94%A8</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Thu, 25 Jun 2026 06:39:17 GMT</pubDate>
+  </item><item>
     <title>0196</title>
     <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/0196</link>
     <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/0196</guid>
@@ -23,48 +65,6 @@
     <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E6%96%B0%E5%BB%BA%E9%80%80%E6%AC%BE%E5%8D%95</guid>
     <description><![CDATA[ 发起新建退款单的来源 请款池 发起预付单退款 发起采购应付单退款 发起费用单退款 请款单 发起请款单退款 新建退款单 列表 查出应付单+请款单（已完成）并且已付金额-已退金额&gt;0的请款单明细数据 基本信息 【退款单号】自动生成 【退款入账对象】等于应付单的付款对象 【退款方类型】等于应付单的收款对象类型 【退款方】等于应付单的退款方 【退款入账方式】单选选择器，选项：直接退款、转为供应商预付 【预计退款日期】单选日期选择器，只有【退款入账方式】等于直接退款才展示 【退款账户】单选选择器，查出{收款账户名称}/{收款账户}；只有【退款入账方式】等于直接退款才展示 【备注】 金额信息 【币种... ]]></description>
     <pubDate>Thu, 25 Jun 2026 05:51:11 GMT</pubDate>
-  </item><item>
-    <title>供应商质量跟进</title>
-    <link>https://attentiontt.github.io/att-ob/Project/v1.11.0/%E4%BE%9B%E5%BA%94%E5%95%86%E8%B4%A8%E9%87%8F%E8%B7%9F%E8%BF%9B</link>
-    <guid>https://attentiontt.github.io/att-ob/Project/v1.11.0/%E4%BE%9B%E5%BA%94%E5%95%86%E8%B4%A8%E9%87%8F%E8%B7%9F%E8%BF%9B</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Thu, 25 Jun 2026 02:04:22 GMT</pubDate>
-  </item><item>
-    <title>退款单变更记录</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E9%80%80%E6%AC%BE%E5%8D%95%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E9%80%80%E6%AC%BE%E5%8D%95%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</guid>
-    <description><![CDATA[ V1.0.0 1.新增功能 全局说明 新建退款单 查询退款单 审批&amp;撤回审批 确认退款 废弃退款单. ]]></description>
-    <pubDate>Thu, 25 Jun 2026 01:51:22 GMT</pubDate>
-  </item><item>
-    <title>审批&amp;撤回审批</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E5%AE%A1%E6%89%B9-and-%E6%92%A4%E5%9B%9E%E5%AE%A1%E6%89%B9</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E5%AE%A1%E6%89%B9-and-%E6%92%A4%E5%9B%9E%E5%AE%A1%E6%89%B9</guid>
-    <description><![CDATA[ 审批-业务规则 审批校验：用户操作审批点击确认时 1.校验退款单状态为待审批；不满足则提示：退款单的状态为{状态}，无法审批 2.校验退款单对应有审批单且审批单的状态为{待审批}；不满足则提示：无审批单/审批单状态为{xx}，无法审批 在点击确认基于审批结果执行不同的操作 审批驳回：状态从待审批变更为已驳回 审批通过：判断退款单的类型 1.直接退款：将状态变更为待退款 2.转为供应商预付： 执行1：将退款单的状态从待审批⇒已完成 执行2：抵扣退回，将退回抵扣的金额直接增加至对应余额的抵扣金额 执行3：增加预付，增加预付流水和预付余额的操作 预付余额： 【预付对象类型】等于退款方类型 【预付对象... ]]></description>
-    <pubDate>Thu, 25 Jun 2026 01:49:14 GMT</pubDate>
-  </item><item>
-    <title>删除退款单</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E5%88%A0%E9%99%A4%E9%80%80%E6%AC%BE%E5%8D%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E5%88%A0%E9%99%A4%E9%80%80%E6%AC%BE%E5%8D%95</guid>
-    <description><![CDATA[ 业务规则 1.校验退款单状态是否满足为已驳回；不满足则提示：退款单的状态为{状态}，无法删除 满足校验后则真删退款单. ]]></description>
-    <pubDate>Thu, 25 Jun 2026 01:46:41 GMT</pubDate>
-  </item><item>
-    <title>确认退款</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E7%A1%AE%E8%AE%A4%E9%80%80%E6%AC%BE</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E7%A1%AE%E8%AE%A4%E9%80%80%E6%AC%BE</guid>
-    <description><![CDATA[ 业务规则 基础信息 【退款单号】 【退款入账对象】 【退款方类型】 【退款方】展示编码和名称，按照编号/名称展示 【预计退款日期】 【申请人】 【备注】 【申请时间】 【退款完成时间】 【状态】 金额信息 【币种】 【总退款金额】 【退款中金额】 【已退款金额】 【剩余未退金额】 总退款金额-已退款金额-退款中金额 退款处理信息 【退款方式】直接展示（按现有流程均是直接退款) 【本次操作退款金额】 【退款账户信息】 【收款账户信息】 【实际退款时间】 【交易号/票据号】 明细信息 【序号】从1开始，升序自增1 【单据类型】 【单据编号】 【费用项】 【请款单号】 【单据金额明细】 【单据付费信... ]]></description>
-    <pubDate>Thu, 25 Jun 2026 01:46:30 GMT</pubDate>
-  </item><item>
-    <title>查询退款单</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E6%9F%A5%E8%AF%A2%E9%80%80%E6%AC%BE%E5%8D%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E6%9F%A5%E8%AF%A2%E9%80%80%E6%AC%BE%E5%8D%95</guid>
-    <description><![CDATA[ 退款单管理 列表数据 【退款单号】 【退款入账对象】 【退款方类型】 【退款方】 【币种】 【总退款金额】 【退款中金额】 【已退款金额】 【剩余未退金额】 【预计退款日期】 【申请人】 【备注】 【申请时间】 【退款完成时间】 【状态】默认为待确认、退款中、已完成 明细数据 【单据类型】 【单据编号】 【单据金额明细】 【单据付费信息】 【费用项】 【请款单号】 【退款中金额】 【已退款金额】 【可退款金额】 详情 基础信息 【退款单号】自动生成 【退款入账对象】等于应付单的付款对象 【退款方类型】等于应付单的收款对象类型 【退款方】等于应付单的退款方，展示编码和名称，按照编号/名称展示 【... ]]></description>
-    <pubDate>Wed, 24 Jun 2026 09:57:00 GMT</pubDate>
-  </item><item>
-    <title>发起费用单退款</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E8%B4%B9%E7%94%A8%E5%8D%95/%E5%8F%91%E8%B5%B7%E8%B4%B9%E7%94%A8%E5%8D%95%E9%80%80%E6%AC%BE</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E8%B4%B9%E7%94%A8%E5%8D%95/%E5%8F%91%E8%B5%B7%E8%B4%B9%E7%94%A8%E5%8D%95%E9%80%80%E6%AC%BE</guid>
-    <description><![CDATA[ 1.勾选发起应付单后点击操作退款 校验1：是否勾选任意一条数据 未勾选：提示请至少勾选一条数据 校验2：勾选的数据是否全部的可退款金额都&gt;0 否：提示勾选的数据中存在{应付单的关联单号}的已付=0，请取消勾选后重试 校验3：校验勾选的应付单的付款对象和主体和币种是否完全一致 否：提示勾选的数据中付款对象和主体和币种需要保持一致 通过校验时，则打开新建退款单页面. ]]></description>
-    <pubDate>Wed, 24 Jun 2026 09:49:01 GMT</pubDate>
   </item>
     </channel>
   </rss>

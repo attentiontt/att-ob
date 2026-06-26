@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr"><head><title>001需求规范</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans SC:wght@400;700&amp;family=Noto Sans SC:ital,wght@0,400;0,600;1,400;1,600&amp;family=JetBrains Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="test-ob"/><meta property="og:title" content="001需求规范"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="001需求规范"/><meta name="twitter:description" content="PRD 规范说明书 v2.0 一、文档目的 本规范定义产品需求文档的写作标准、文件结构、变更流程与评审约定，确保产品、业务、开发、测试在同一套文档体系下高效协作，避免信息散落和版本混乱。 二、文档层级结构 需求文档按以下四层拆解，由宏观到微观依次细化： 第一层 Epic（史诗） 描述一个大型业务目标或战略方向，通常跨越多个迭代周期，代表一个完整的业务领域。 第二层 Feature（功能模块） 将 Epic 拆解为具体的功能集合，对应产品中一个完整的功能区域，每个 Feature 包含若干相关的用户故事。 第三层 User Story（用户故事） 以用户或系统视角描述一个具体的场景，是日常需求管..."/><meta property="og:description" content="PRD 规范说明书 v2.0 一、文档目的 本规范定义产品需求文档的写作标准、文件结构、变更流程与评审约定，确保产品、业务、开发、测试在同一套文档体系下高效协作，避免信息散落和版本混乱。 二、文档层级结构 需求文档按以下四层拆解，由宏观到微观依次细化： 第一层 Epic（史诗） 描述一个大型业务目标或战略方向，通常跨越多个迭代周期，代表一个完整的业务领域。 第二层 Feature（功能模块） 将 Epic 拆解为具体的功能集合，对应产品中一个完整的功能区域，每个 Feature 包含若干相关的用户故事。 第三层 User Story（用户故事） 以用户或系统视角描述一个具体的场景，是日常需求管..."/><meta property="og:image:alt" content="PRD 规范说明书 v2.0 一、文档目的 本规范定义产品需求文档的写作标准、文件结构、变更流程与评审约定，确保产品、业务、开发、测试在同一套文档体系下高效协作，避免信息散落和版本混乱。 二、文档层级结构 需求文档按以下四层拆解，由宏观到微观依次细化： 第一层 Epic（史诗） 描述一个大型业务目标或战略方向，通常跨越多个迭代周期，代表一个完整的业务领域。 第二层 Feature（功能模块） 将 Epic 拆解为具体的功能集合，对应产品中一个完整的功能区域，每个 Feature 包含若干相关的用户故事。 第三层 User Story（用户故事） 以用户或系统视角描述一个具体的场景，是日常需求管..."/><meta property="twitter:domain" content="attentiontt.github.io/att-ob"/><meta property="og:url" content="https://attentiontt.github.io/att-ob/模板文件/001需求规范"/><meta property="twitter:url" content="https://attentiontt.github.io/att-ob/模板文件/001需求规范"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="PRD 规范说明书 v2.0 一、文档目的 本规范定义产品需求文档的写作标准、文件结构、变更流程与评审约定，确保产品、业务、开发、测试在同一套文档体系下高效协作，避免信息散落和版本混乱。 二、文档层级结构 需求文档按以下四层拆解，由宏观到微观依次细化： 第一层 Epic（史诗） 描述一个大型业务目标或战略方向，通常跨越多个迭代周期，代表一个完整的业务领域。 第二层 Feature（功能模块） 将 Epic 拆解为具体的功能集合，对应产品中一个完整的功能区域，每个 Feature 包含若干相关的用户故事。 第三层 User Story（用户故事） 以用户或系统视角描述一个具体的场景，是日常需求管..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRDpcXHRlc3Qtb2Itc2l0ZVxccXVhcnR6XFxjb21wb25lbnRzXFxzdHlsZXMiLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://attentiontt.github.io/att-ob/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://attentiontt.github.io/att-ob/模板文件/001需求规范-og-image.webp"/><meta property="og:image:url" content="https://attentiontt.github.io/att-ob/模板文件/001需求规范-og-image.webp"/><meta name="twitter:image" content="https://attentiontt.github.io/att-ob/模板文件/001需求规范-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="模板文件/001需求规范"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">test-ob</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>搜索</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="搜索些什么" placeholder="搜索些什么"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="暗色模式"><title>暗色模式</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="亮色模式"><title>亮色模式</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="阅读模式"><title>阅读模式</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{let FO={\&quot;/\&quot;:[\&quot;\\u4EA7\\u54C1\\u5F00\\u53D1\&quot;,\&quot;\\u4EA7\\u54C1\\u7814\\u53D1\&quot;,\&quot;\\u54C1\\u8D28\\u7BA1\\u7406\&quot;,\&quot;\\u4F9B\\u5E94\\u94FE\&quot;,\&quot;\\u7269\\u6D41\\u7BA1\\u7406\&quot;,\&quot;\\u8BA1\\u5212\\u7BA1\\u7406\&quot;,\&quot;\\u8D22\\u52A1\\u7BA1\\u7406\&quot;,\&quot;\\u4E09\\u65B9\\u4ED3\&quot;,\&quot;\\u8D44\\u6E90\\u6587\\u4EF6\\u5939\&quot;,\&quot;Project\&quot;,\&quot;\\u6A21\\u677F\\u6587\\u4EF6\&quot;],\\u4EA7\\u54C1\\u7814\\u53D1:[\&quot;\\u52A0\\u5DE5\\u5382\\u53D8\\u66F4\\u5355\&quot;,\&quot;\\u6A21\\u5177\\u7BA1\\u7406\&quot;],\&quot;\\u4EA7\\u54C1\\u7814\\u53D1/\\u52A0\\u5DE5\\u5382\\u53D8\\u66F4\\u5355\&quot;:[\&quot;\\u67E5\\u770B\\u52A0\\u5DE5\\u5382\\u53D8\\u66F4\\u5355\&quot;],\&quot;\\u4EA7\\u54C1\\u7814\\u53D1/\\u6A21\\u5177\\u7BA1\\u7406\&quot;:[\&quot;\\u5220\\u9664\\u6A21\\u5177\&quot;,\&quot;\\u53D8\\u66F4\\u52A0\\u5DE5\\u5382\&quot;,\&quot;\\u5BFC\\u51FA\\u5217\\u8868\&quot;,\&quot;\\u64CD\\u4F5C\\u65E5\\u5FD7\&quot;,\&quot;\\u65B0\\u5EFA\\u7F16\\u8F91\\u6A21\\u5177\&quot;,\&quot;\\u67E5\\u770B\\u6A21\\u5177\&quot;],\\u4EA7\\u54C1\\u5F00\\u53D1:[\&quot;\\u9879\\u76EE\\u7BA1\\u7406\&quot;,\&quot;\\u6837\\u54C1\\u9700\\u6C42\\u7BA1\\u7406\&quot;],\&quot;\\u4EA7\\u54C1\\u5F00\\u53D1/\\u9879\\u76EE\\u7BA1\\u7406\&quot;:[\&quot;\\u5168\\u5C40\\u8BF4\\u660E\&quot;,\&quot;\\u5220\\u9664\\u9879\\u76EE\&quot;,\&quot;\\u53D8\\u66F4\\u9879\\u76EE\&quot;,\&quot;\\u542F\\u52A8\\u9879\\u76EE\&quot;,\&quot;\\u5BFC\\u51FA\\u9879\\u76EE\&quot;,\&quot;\\u5E9F\\u5F03\\u9879\\u76EE\&quot;,\&quot;\\u65B0\\u5EFA&amp;\\u7F16\\u8F91\\u9879\\u76EE\&quot;,\&quot;\\u67E5\\u770B\\u9879\\u76EE-\\u5217\\u8868\&quot;,\&quot;\\u67E5\\u770B\\u9879\\u76EE-\\u57FA\\u7840\\u4FE1\\u606F\&quot;],\\u54C1\\u8D28\\u7BA1\\u7406:[\&quot;\\u6837\\u54C1\\u8BC4\\u4F30\\u7BA1\\u7406\&quot;,\&quot;\\u8D28\\u68C0\\u7528\\u4F8B\&quot;,\&quot;\\u8D28\\u68C0\\u6807\\u51C6\\u9700\\u6C42\&quot;],\\u8BA1\\u5212\\u7BA1\\u7406:[\&quot;\\u53D8\\u66F4\\u8BF4\\u660E\&quot;,\&quot;\\u5168\\u7403\\u8865\\u8D27\\u89C4\\u5219\&quot;,\&quot;\\u4EA7\\u80FD\\u7BA1\\u7406\&quot;,\&quot;\\u667A\\u80FD\\u8865\\u8D27\&quot;,\&quot;\\u8BA1\\u7B97\\u7ED3\\u679C\&quot;],\&quot;\\u8BA1\\u5212\\u7BA1\\u7406/\\u667A\\u80FD\\u8865\\u8D27\&quot;:[\&quot;\\u8865\\u8D27\\u9700\\u6C42\\u8BF4\\u660E1232\&quot;],\&quot;\\u8BA1\\u5212\\u7BA1\\u7406/\\u8BA1\\u7B97\\u7ED3\\u679C\&quot;:[\&quot;\\u4E09\\u65B9\\u4ED3\\u8865\\u8D27\\u7ED3\\u679C\&quot;,\&quot;\\u5E73\\u53F0\\u4ED3\\u8865\\u8D27\\u7ED3\\u679C\&quot;,\&quot;\\u8BA1\\u7B97\\u903B\\u8F91\&quot;],\\u8D22\\u52A1\\u7BA1\\u7406:[\&quot;\\u8BF7\\u6B3E\\u6C60\&quot;,\&quot;\\u8BF7\\u6B3E\\u5355\&quot;,\&quot;\\u9000\\u6B3E\\u5355\&quot;],\\u8D44\\u6E90\\u6587\\u4EF6\\u5939:[\&quot;\\u56FE\\u7247\&quot;],\&quot;\\u8D44\\u6E90\\u6587\\u4EF6\\u5939/\\u56FE\\u7247\&quot;:[\&quot;Pasted image 20260625140454\&quot;,\&quot;Pasted image 20260625140439\&quot;,\&quot;Pasted image 20260624173531\&quot;,\&quot;Pasted image 20260624173520\&quot;,\&quot;Pasted image 20260624140611\&quot;,\&quot;Pasted image 20260623175301\&quot;,\&quot;Pasted image 20260623163306\&quot;,\&quot;Pasted image 20260623145148\&quot;,\&quot;Pasted image 20260623145018\&quot;,\&quot;Pasted image 20260623144918\&quot;,\&quot;Pasted image 20260623144719\&quot;,\&quot;Pasted image 20260623144543\&quot;,\&quot;Pasted image 20260623144506\&quot;,\&quot;Pasted image 20260623144503\&quot;,\&quot;Pasted image 20260623144414\&quot;,\&quot;Pasted image 20260623144411\&quot;,\&quot;Pasted image 20260623135227\&quot;,\&quot;Pasted image 20260623134822\&quot;,\&quot;Pasted image 20260623103841\&quot;,\&quot;Pasted image 20260622210317\&quot;,\&quot;Pasted image 20260622105418\&quot;,\&quot;Pasted image 20260622105325\&quot;,\&quot;Pasted image 20260622104523\&quot;,\&quot;82205b69e21d7072bc21cb7680771d6f\&quot;,\&quot;Pasted image 20260618193651\&quot;,\&quot;Pasted image 20260618161054\&quot;,\&quot;Pasted image 20260603111300\&quot;,\&quot;Pasted image 20260605191441\&quot;,\&quot;Pasted image 20260609142439\&quot;,\&quot;Pasted image 20260609142452\&quot;,\&quot;Pasted image 20260609142456\&quot;],\&quot;\\u4EA7\\u54C1\\u5F00\\u53D1/\\u6837\\u54C1\\u9700\\u6C42\\u7BA1\\u7406\&quot;:[\&quot;\\u6837\\u54C1\\u9700\\u6C42\\u7BA1\\u7406\\u5168\\u5C40\\u8BF4\\u660E\&quot;,\&quot;\\u6837\\u54C1\\u9700\\u6C42\\u7BA1\\u7406\\u53D8\\u66F4\\u8BB0\\u5F55\&quot;,\&quot;\\u6837\\u54C1\\u9700\\u6C42 \\u2014 \\u521B\\u5EFA\&quot;,\&quot;\\u6837\\u54C1\\u9700\\u6C42 \\u2014 \\u5217\\u8868\&quot;,\&quot;\\u6837\\u54C1\\u9700\\u6C42 \\u2014 \\u64CD\\u4F5C\&quot;,\&quot;\\u6837\\u54C1\\u9700\\u6C42 \\u2014 \\u6279\\u91CF\\u64CD\\u4F5C\&quot;,\&quot;\\u6837\\u54C1\\u9700\\u6C42 \\u2014 \\u5BFC\\u51FA\&quot;],\&quot;\\u54C1\\u8D28\\u7BA1\\u7406/\\u8D28\\u68C0\\u7528\\u4F8B\&quot;:[\&quot;\\u8D28\\u68C0\\u7528\\u4F8B\\u53D8\\u66F4\\u8BB0\\u5F55\&quot;,\&quot;\\u53D8\\u66F4\\u8BB0\\u5F55\&quot;,\&quot;\\u8D28\\u68C0\\u7528\\u4F8B-\\u5217\\u8868\&quot;,\&quot;\\u8D28\\u68C0\\u7528\\u4F8B -\\u521B\\u5EFA&amp;\\u7EF4\\u62A4\&quot;],\&quot;\\u54C1\\u8D28\\u7BA1\\u7406/\\u8D28\\u68C0\\u6807\\u51C6\\u9700\\u6C42\&quot;:[\&quot;\\u8D28\\u68C0\\u7528\\u4F8B\\u5168\\u5C40\\u8BF4\\u660E\&quot;,\&quot;\\u53D8\\u66F4\\u8BB0\\u5F55\&quot;,\&quot;\\u8D28\\u68C0\\u6807\\u51C6\\u5217\\u8868 -\\u521B\\u5EFA\&quot;,\&quot;\\u8D28\\u68C0\\u6807\\u51C6\\u9700\\u6C42-\\u5217\\u8868\&quot;,\&quot;\\u8D28\\u68C0\\u6807\\u51C6\\u9700\\u6C42 -\\u6D41\\u7A0B\\u64CD\\u4F5C\&quot;,\&quot;\\u8D28\\u68C0\\u6807\\u51C6\\u9700\\u6C42 -\\u6279\\u91CF\\u64CD\\u4F5C\&quot;],\&quot;\\u54C1\\u8D28\\u7BA1\\u7406/\\u8D28\\u68C0\\u6807\\u51C6\\u9700\\u6C42/\\u8D28\\u68C0\\u6807\\u51C6\\u9700\\u6C42-\\u5217\\u8868\&quot;:[\&quot;\\u67E5\\u770B\\u8D28\\u68C0\\u6807\\u51C6\\u9700\\u6C42\\u5217\\u8868&amp;\\u7B5B\\u9009\\u9879\&quot;],\&quot;\\u54C1\\u8D28\\u7BA1\\u7406/\\u8D28\\u68C0\\u6807\\u51C6\\u9700\\u6C42/\\u8D28\\u68C0\\u6807\\u51C6\\u5217\\u8868--\\u521B\\u5EFA\&quot;:[\&quot;\\u65B0\\u54C1\\u9879\\u76EE\\u521B\\u5EFA\\u8D28\\u68C0\\u7528\\u4F8B\&quot;,\&quot;\\u53D8\\u66F4\\u9879\\u76EE\\u81EA\\u52A8\\u521B\\u5EFA\\u8D28\\u68C0\\u7528\\u4F8B\&quot;],\&quot;\\u54C1\\u8D28\\u7BA1\\u7406/\\u8D28\\u68C0\\u6807\\u51C6\\u9700\\u6C42/\\u8D28\\u68C0\\u6807\\u51C6\\u9700\\u6C42--\\u6D41\\u7A0B\\u64CD\\u4F5C\&quot;:[\&quot;\\u65B0\\u54C1\\u9879\\u76EE-\\u8D28\\u68C0\\u6807\\u51C6\\u4E8B\\u4EF6\\u5F00\\u59CB\&quot;,\&quot;\\u63D0\\u4EA4\&quot;,\&quot;\\u5B8C\\u5584\&quot;],\&quot;\\u54C1\\u8D28\\u7BA1\\u7406/\\u8D28\\u68C0\\u6807\\u51C6\\u9700\\u6C42/\\u8D28\\u68C0\\u6807\\u51C6\\u9700\\u6C42--\\u6279\\u91CF\\u64CD\\u4F5C\&quot;:[\&quot;QE\\u5206\\u914D\&quot;,\&quot;\\u6279\\u91CF\\u64CD\\u4F5C\&quot;],\&quot;\\u54C1\\u8D28\\u7BA1\\u7406/\\u8D28\\u68C0\\u6807\\u51C6\\u9700\\u6C42/\\u53D8\\u66F4\\u8BB0\\u5F55\&quot;:[\&quot;\\u8D28\\u68C0\\u6807\\u51C6\\u9700\\u6C421.0.1\&quot;],\&quot;\\u54C1\\u8D28\\u7BA1\\u7406/\\u8D28\\u68C0\\u7528\\u4F8B/\\u8D28\\u68C0\\u7528\\u4F8B-\\u5217\\u8868\&quot;:[\&quot;\\u67E5\\u770B\\u5217\\u8868\&quot;],\&quot;\\u54C1\\u8D28\\u7BA1\\u7406/\\u8D28\\u68C0\\u7528\\u4F8B/\\u8D28\\u68C0\\u7528\\u4F8B--\\u521B\\u5EFA-and-\\u7EF4\\u62A4\&quot;:[\&quot;\\u65B0\\u5EFA&amp;\\u7F16\\u8F91 \\u8D28\\u68C0\\u7528\\u4F8B\&quot;,\&quot;\\u5BFC\\u5165\\u8D28\\u68C0\\u7528\\u4F8B\&quot;,\&quot;\\u5220\\u9664\\u8D28\\u68C0\\u7528\\u4F8B\&quot;],\&quot;\\u54C1\\u8D28\\u7BA1\\u7406/\\u6837\\u54C1\\u8BC4\\u4F30\\u7BA1\\u7406\&quot;:[\&quot;\\u590D\\u6838\&quot;,\&quot;\\u6837\\u54C1\\u8BC4\\u4F30\\u9700\\u6C42\\u5168\\u5C40\\u8BF4\\u660E\&quot;,\&quot;\\u6837\\u54C1\\u8BC4\\u4F30\\u9700\\u6C42\\u53D8\\u66F4\\u8BB0\\u5F55\&quot;,\&quot;\\u6837\\u54C1\\u8BC4\\u4F30-\\u521B\\u5EFA\&quot;,\&quot;\\u6837\\u54C1\\u8BC4\\u4F30-\\u67E5\\u770B\&quot;,\&quot;\\u6837\\u54C1\\u8BC4\\u4F30-\\u6D41\\u7A0B\\u64CD\\u4F5C\&quot;,\&quot;\\u6837\\u54C1\\u8BC4\\u4F30-\\u5BFC\\u51FA\&quot;],\&quot;\\u4EA7\\u54C1\\u5F00\\u53D1/\\u6837\\u54C1\\u9700\\u6C42\\u7BA1\\u7406/\\u6837\\u54C1\\u9700\\u6C42-\\u2014-\\u521B\\u5EFA\&quot;:[\&quot;\\u624B\\u52A8\\u65B0\\u5EFA\\u6837\\u54C1\\u9700\\u6C42\&quot;,\&quot;\\u81EA\\u52A8\\u521B\\u5EFAT0\\u6837\\u54C1\\u9700\\u6C42\&quot;,\&quot;\\u81EA\\u52A8\\u521B\\u5EFA\\u624B\\u677F\\u6837\\u9700\\u6C42\&quot;,\&quot;\\u81EA\\u52A8\\u521B\\u5EFA\\u8BD5\\u6A21T0\\u6837\\u54C1\\u9700\\u6C42\&quot;,\&quot;\\u81EA\\u52A8\\u65B0\\u5EFA\\u53D8\\u66F4\\u6837\\u54C1\\u9700\\u6C42\&quot;,\&quot;\\u81EA\\u52A8\\u65B0\\u5EFAT1\\u6837\\u54C1\\u9700\\u6C42\&quot;],\&quot;\\u4EA7\\u54C1\\u5F00\\u53D1/\\u6837\\u54C1\\u9700\\u6C42\\u7BA1\\u7406/\\u6837\\u54C1\\u9700\\u6C42-\\u2014-\\u5217\\u8868\&quot;:[\&quot;\\u67E5\\u770B\\u6837\\u54C1\\u9700\\u6C42\\u5217\\u8868\&quot;],\&quot;\\u4EA7\\u54C1\\u5F00\\u53D1/\\u6837\\u54C1\\u9700\\u6C42\\u7BA1\\u7406/\\u6837\\u54C1\\u9700\\u6C42-\\u2014-\\u6279\\u91CF\\u64CD\\u4F5C\&quot;:[\&quot;\\u6253\\u6837\\u3001\\u5230\\u6837\\u3001\\u521D\\u6837\\u786E\\u8BA4\&quot;,\&quot;\\u5206\\u914D\\u6253\\u6837\\u8D1F\\u8D23\\u4EBA\&quot;],\&quot;\\u4EA7\\u54C1\\u5F00\\u53D1/\\u6837\\u54C1\\u9700\\u6C42\\u7BA1\\u7406/\\u6837\\u54C1\\u9700\\u6C42-\\u2014-\\u5BFC\\u51FA\&quot;:[\&quot;\\u5217\\u8868\\u5BFC\\u51FA\&quot;,\&quot;\\u6253\\u6837\\u9644\\u4EF6\\u4E0B\\u8F7D\&quot;],\&quot;\\u54C1\\u8D28\\u7BA1\\u7406/\\u6837\\u54C1\\u8BC4\\u4F30\\u7BA1\\u7406/\\u6837\\u54C1\\u8BC4\\u4F30-\\u6D41\\u7A0B\\u64CD\\u4F5C\&quot;:[\&quot;\\u63D0\\u4EA4\\u6837\\u54C1\\u8BC4\\u4F30\&quot;,\&quot;\\u5BA1\\u6838\&quot;,\&quot;\\u590D\\u6838\&quot;],\&quot;\\u54C1\\u8D28\\u7BA1\\u7406/\\u6837\\u54C1\\u8BC4\\u4F30\\u7BA1\\u7406/\\u6837\\u54C1\\u8BC4\\u4F30-\\u521B\\u5EFA\&quot;:[\&quot;\\u6837\\u54C1\\u8BC4\\u4F30-\\u521B\\u5EFA\&quot;],\&quot;\\u54C1\\u8D28\\u7BA1\\u7406/\\u6837\\u54C1\\u8BC4\\u4F30\\u7BA1\\u7406/\\u6837\\u54C1\\u8BC4\\u4F30-\\u5BFC\\u51FA\&quot;:[\&quot;\\u5BFC\\u51FA\\u5217\\u8868\&quot;,\&quot;\\u6253\\u5370\&quot;],\&quot;\\u54C1\\u8D28\\u7BA1\\u7406/\\u6837\\u54C1\\u8BC4\\u4F30\\u7BA1\\u7406/\\u6837\\u54C1\\u8BC4\\u4F30-\\u67E5\\u770B\&quot;:[\&quot;\\u67E5\\u770B\\u5217\\u8868\&quot;],\&quot;\\u4EA7\\u54C1\\u5F00\\u53D1/\\u6837\\u54C1\\u9700\\u6C42\\u7BA1\\u7406/\\u6837\\u54C1\\u9700\\u6C42-\\u2014-\\u64CD\\u4F5C\&quot;:[\&quot;\\u6253\\u6837\&quot;,\&quot;\\u5230\\u6837\&quot;,\&quot;\\u521D\\u6837\\u786E\\u8BA4\&quot;,\&quot;\\u7B7E\\u6837\&quot;,\&quot;\\u5E9F\\u5F03\\u6837\\u54C1\\u9700\\u6C42\&quot;],\&quot;\\u8D22\\u52A1\\u7BA1\\u7406/\\u9000\\u6B3E\\u5355\&quot;:[\&quot;\\u5168\\u5C40\\u8BF4\\u660E\&quot;,\&quot;\\u9000\\u6B3E\\u5355\\u53D8\\u66F4\\u8BB0\\u5F55\&quot;,\&quot;\\u65B0\\u5EFA\\u9000\\u6B3E\\u5355\&quot;,\&quot;\\u67E5\\u8BE2\\u9000\\u6B3E\\u5355\&quot;,\&quot;\\u5BA1\\u6279&amp;\\u64A4\\u56DE\\u5BA1\\u6279\&quot;,\&quot;\\u786E\\u8BA4\\u9000\\u6B3E\&quot;,\&quot;\\u5220\\u9664\\u9000\\u6B3E\\u5355\&quot;,\&quot;\\u5E9F\\u5F03\\u9000\\u6B3E\\u5355\&quot;],\&quot;\\u8D22\\u52A1\\u7BA1\\u7406/\\u8BF7\\u6B3E\\u6C60\&quot;:[\&quot;\\u8BF7\\u6B3E\\u6C60\\u53D8\\u66F4\\u8BB0\\u5F55\&quot;,\&quot;\\u9884\\u4ED8\\u5355\&quot;,\&quot;\\u91C7\\u8D2D\\u5355\&quot;,\&quot;\\u8D39\\u7528\\u5355\&quot;,\&quot;\\u6A21\\u5177\\u91C7\\u8D2D\\u5355\&quot;,\&quot;\\u5934\\u7A0B\\u53D1\\u8D27\\u5355\&quot;,\&quot;\\u8C03\\u5EA6\\u5355\&quot;],\&quot;\\u8D22\\u52A1\\u7BA1\\u7406/\\u8BF7\\u6B3E\\u5355\&quot;:[\&quot;\\u53D1\\u8D77\\u8BF7\\u6B3E\\u5355\\u9000\\u6B3E\&quot;],\&quot;\\u8D22\\u52A1\\u7BA1\\u7406/\\u8BF7\\u6B3E\\u6C60/\\u9884\\u4ED8\\u5355\&quot;:[\&quot;\\u53D1\\u8D77\\u9884\\u4ED8\\u5355\\u9000\\u6B3E\&quot;,\&quot;\\u67E5\\u770B\\u9884\\u4ED8\\u5355\\u5217\\u8868\&quot;],Project:[\&quot;V1.10.0\&quot;,\&quot;v1.11.0\&quot;],\&quot;Project/v1.11.0\&quot;:[\&quot;\\u8D22\\u5E74\\u76EE\\u6807\\u770B\\u677F\\u4E8C\\u6B21\\u4F18\\u5316\&quot;,\&quot;\\u4F9B\\u5E94\\u5546\\u8D28\\u91CF\\u8DDF\\u8FDB\&quot;,\&quot;0181\\u4E09\\u65B9\\u4ED3\\u8D39\\u7528\&quot;,\&quot;0182\\u4E09\\u65B9\\u4ED3\\u5E93\\u6838\\u5BF9\&quot;],\&quot;Project/V1.10.0\&quot;:[\&quot;0196\&quot;,\&quot;0184\&quot;,\&quot;0194\&quot;,\&quot;0185\&quot;,\&quot;0181\&quot;,\&quot;0186\&quot;,\&quot;\\u91C7\\u8D2D\\u9000\\u6B3E\\u5355\&quot;,\&quot;\\u624B\\u677F&amp;T0\\u6837&amp;\\u6A21\\u5177T0&amp;\\u7ADE\\u54C1\\u6837\\u54C1\\u7EBF\\u4E0A\\u5316\&quot;],\&quot;\\u8D22\\u52A1\\u7BA1\\u7406/\\u8BF7\\u6B3E\\u6C60/\\u5934\\u7A0B\\u53D1\\u8D27\\u5355\&quot;:[\&quot;\\u5934\\u7A0B\\u53D1\\u8D27\\u5355\&quot;],\&quot;\\u8D22\\u52A1\\u7BA1\\u7406/\\u8BF7\\u6B3E\\u6C60/\\u91C7\\u8D2D\\u5355\&quot;:[\&quot;\\u53D1\\u8D77\\u91C7\\u8D2D\\u5E94\\u4ED8\\u5355\\u9000\\u6B3E\&quot;,\&quot;\\u521B\\u5EFA\\u91C7\\u8D2D\\u5E94\\u4ED8\\u5355\\uFF08\\u5F85\\u8865\\u5145\\uFF09\&quot;,\&quot;\\u91C7\\u8D2D\\u5355\&quot;],\&quot;\\u8D22\\u52A1\\u7BA1\\u7406/\\u8BF7\\u6B3E\\u6C60/\\u8C03\\u5EA6\\u5355\&quot;:[\&quot;\\u8C03\\u5EA6\\u5355\&quot;],\\u7269\\u6D41\\u7BA1\\u7406:[\&quot;\\u5934\\u7A0B\\u53D1\\u8D27\\u5355\&quot;],\&quot;\\u7269\\u6D41\\u7BA1\\u7406/\\u5934\\u7A0B\\u53D1\\u8D27\\u5355\&quot;:[\&quot;\\u5934\\u7A0B\\u53D1\\u8D27\\u5355 - \\u6D41\\u7A0B\\u64CD\\u4F5C\&quot;,\&quot;\\u63D0\\u8D27\&quot;],\&quot;\\u8D22\\u52A1\\u7BA1\\u7406/\\u8BF7\\u6B3E\\u6C60/\\u8D39\\u7528\\u5355\&quot;:[\&quot;\\u53D1\\u8D77\\u8D39\\u7528\\u5355\\u9000\\u6B3E\&quot;],\\u6A21\\u677F\\u6587\\u4EF6:[\&quot;000\\u9700\\u6C42\\u8C03\\u7814\\u6A21\\u677F\&quot;,\&quot;001\\u9700\\u6C42\\u89C4\\u8303\&quot;,\&quot;002\\u9700\\u6C42\\u4F18\\u5148\\u7EA7\\u8BC4\\u4F30\\u6A21\\u7248\&quot;,\&quot;003\\u8C03\\u7814\\u95EE\\u9898\\u77E5\\u8BC6\\u5E93\&quot;]},s=a.slug;s.endsWith(\&quot;/index\&quot;)&amp;&amp;(s=s.slice(0,-6));let i=s.lastIndexOf(\&quot;/\&quot;),p=i>=0?s.slice(0,i):\&quot;/\&quot;,o=FO[p];if(o){let ai=o.indexOf(a.displayName),bi=o.indexOf(b.displayName);if(ai>=0&amp;&amp;bi>=0)return ai-bi;if(ai>=0)return-1;if(bi>=0)return 1}return!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):a.isFolder?-1:1}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-118"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>探索</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-118" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../模板文件/">模板文件</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>001需求规范</a></div></nav><h1 class="article-title">001需求规范</h1><p show-comma="true" class="content-meta"><time datetime="2026-05-15T09:49:53.143Z">2026年5月15日</time><span>13分钟阅读</span></p></div></div><article class="popover-hint"><h1 id="prd-规范说明书-v20">PRD 规范说明书 v2.0<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#prd-规范说明书-v20" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<hr/>
+<h2 id="一文档目的">一、文档目的<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#一文档目的" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>本规范定义产品需求文档的写作标准、文件结构、变更流程与评审约定，确保产品、业务、开发、测试在同一套文档体系下高效协作，避免信息散落和版本混乱。</p>
+<hr/>
+<h2 id="二文档层级结构">二、文档层级结构<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#二文档层级结构" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>需求文档按以下四层拆解，由宏观到微观依次细化：</p>
+<p><strong>第一层 Epic（史诗）</strong> 描述一个大型业务目标或战略方向，通常跨越多个迭代周期，代表一个完整的业务领域。</p>
+<p><strong>第二层 Feature（功能模块）</strong> 将 Epic 拆解为具体的功能集合，对应产品中一个完整的功能区域，每个 Feature 包含若干相关的用户故事。</p>
+<p><strong>第三层 User Story（用户故事）</strong> 以用户或系统视角描述一个具体的场景，是日常需求管理的核心颗粒度，每个 Story 对应一个独立的需求文件。</p>
+<p><strong>第四层 Acceptance Criteria（验收标准）</strong> 定义每个用户故事”完成”的边界，是开发自测和 QA 验收的直接依据。</p>
+<hr/>
+<h2 id="三文件夹结构规范">三、文件夹结构规范<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#三文件夹结构规范" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>📁 产品需求文档/
+├── 📁 00_产品概览/
+│   ├── 产品愿景与目标.md
+│   ├── 目标用户与角色定义.md
+│   └── Epic列表总览.md
+│
+├── 📁 01_[模块名称]/
+│   ├── 📁 Feature_01_[功能名称]/
+│   │   ├── Story_01_[故事名称].md
+│   │   ├── Story_02_[故事名称].md
+│   │   └── Story_03_[故事名称].md
+│   └── 📁 Feature_02_[功能名称]/
+│       └── ...
+│
+├── 📁 变更记录/
+│   ├── 变更说明_v1.0_初始版本.md
+│   └── 变更说明_v1.x_[简述].md
+│
+└── 📁 归档/
+    └── [废弃的旧方案文件]
+</code></pre>
+<p><strong>命名规则</strong></p>
+<ul>
+<li>模块文件夹以两位数字开头，便于排序，例如 <code>01_项目管理模块</code></li>
+<li>Feature 文件夹格式为 <code>Feature_序号_功能名称</code></li>
+<li>Story 文件格式为 <code>Story_序号_故事名称.md</code></li>
+<li>变更说明文件格式为 <code>变更说明_v版本号_简述.md</code></li>
+<li>在建立TB任务的时候，将文档链接填入TB任务</li>
+</ul>
+<hr/>
+<h2 id="四用户故事文件规范">四、用户故事文件规范<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#四用户故事文件规范" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>每个 Story 文件是一份独立的需求文档，内部结构统一如下。文件以分隔线将业务内容与技术细节分为两段，评审时按受众选择讲解范围。</p>
+<hr/>
+<p><strong>1. 故事标题（三段式）</strong></p>
+<p>主动操作类（用户触发）：</p>
+<pre><code>作为 [用户角色]，
+我希望 [完成某个行为或目标]，
+以便 [获得某种价值或解决某个问题]。
+</code></pre>
+<p>系统自动类（系统触发）：</p>
+<pre><code>当 [触发条件满足时]，
+系统自动 [执行某个动作]，
+以便 [减少人工操作 / 保证数据一致性]。
+</code></pre>
+<p>用户角色应与 <code>目标用户与角色定义.md</code> 保持一致，不得随意命名。</p>
+<hr/>
+<p><strong>2. 背景 / Context</strong></p>
+<p>简述该故事的业务背景，说明为什么需要做这件事。控制在 3～5 句话以内，只说清楚问题和动机，不描述解决方案。</p>
+<hr/>
+<p><strong>3. 业务规则 / Business Rules</strong></p>
+<p>以条目形式列出该功能的核心逻辑约束，每条规则描述一个独立的约束或判断条件。</p>
+<p>新增或变更的规则在行尾标注版本号，例如 <code>🆕 v1.2</code>。废弃的规则使用删除线保留并注明废弃版本，例如 <code>~~原规则内容~~（v1.2 废弃）</code>。</p>
+<hr/>
+<p><strong>4. 交互说明 / UI Notes</strong></p>
+<p>补充原型图无法表达的动态交互逻辑，例如弹窗触发条件、操作后的页面变化、加载状态、Toast 提示文案等。静态布局以设计稿为准，此处不重复描述。</p>
+<hr/>
+<p><strong>─────────── 以下为技术细节，业务评审可跳过 ───────────</strong></p>
+<hr/>
+<p><strong>5. 验收标准 / Acceptance Criteria</strong></p>
+<p>使用 Given-When-Then 格式描述每个可验证的场景：</p>
+<pre><code>Given  [前置条件，描述用户或系统所处的状态]
+When   [执行的操作或触发的事件]
+Then   [系统应有的反应，可多行列出]
+</code></pre>
+<p>每个 AC 描述一个独立场景。主流程场景必须在需求评审前写完。边界场景和异常场景在评审过程中及开发阶段持续补充，不强制一次写完。</p>
+<hr/>
+<p><strong>6. 边界与异常场景 / Edge Cases</strong></p>
+<p>列出主流程之外需要特别处理的情况，例如数据为空、操作权限不足、网络异常、并发冲突等。每条写明场景描述和期望处理方式。</p>
+<hr/>
+<p><strong>7. 不在范围内 / Out of Scope</strong></p>
+<p>明确列出本期不做的内容，防止需求蔓延。例如”本期不包含移动端适配”、“本期不涉及审批流”。</p>
+<hr/>
+<p><strong>8. 数据字段说明 / Data Fields（可选）</strong></p>
+<p>当涉及前后端接口对齐时补充，列出关键字段的名称、类型、枚举值和说明。简单的交互类需求可省略此部分。</p>
+<hr/>
+<h2 id="五系统自动类需求的归属规则">五、系统自动类需求的归属规则<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#五系统自动类需求的归属规则" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>当需求涉及系统自动触发的行为（如自动创建项目、自动变更状态、自动发送通知），按以下规则决定放在哪里：</p>
+<p><strong>逻辑简单，一句话说完</strong>：作为业务规则附在触发方的 Story 文件里，标注版本号即可。</p>
+<p><strong>逻辑复杂，涉及多个触发条件、多种结果或复杂的字段映射</strong>：在对应 Feature 下单独建一个 Story 文件，使用系统触发类三段式写法，完整描述触发条件、执行动作、异常处理和字段映射。</p>
+<hr/>
+<h2 id="六验收标准写作规范">六、验收标准写作规范<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#六验收标准写作规范" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>AC 是整份文档中最关键的部分，遵守以下规则：</p>
+<p><strong>评审前必须完成的 AC</strong> 主流程的正向场景，即用户或系统按正常路径操作的完整流程，是评审的最低准入标准。</p>
+<p><strong>可以评审后补充的 AC</strong> 边界场景、异常场景、并发场景，可在评审会讨论中发现后即时补充，在开发过程中由开发提出后由 PM 确认补充，或在提测前由 QA 补全。</p>
+<p><strong>AC 的质量标准</strong> 每条 AC 必须可被测试，即测试人员能够根据描述直接设计测试用例。模糊描述如”系统正常响应”不符合标准，应改为具体的状态变化、提示文案或数据变化。</p>
+<hr/>
+<h2 id="七需求变更规范">七、需求变更规范<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#七需求变更规范" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>当新功能或迭代修改已有功能时，按以下流程处理：</p>
+<p><strong>主文档更新</strong> 直接在对应的 Story 文件中修改，新增内容标注 <code>🆕 v版本号</code>，废弃内容使用删除线并注明废弃版本。主文档始终反映产品的最新全貌。</p>
+<p><strong>变更说明</strong> 每次迭代单独创建一份变更说明文件，放在 <code>变更记录/</code> 文件夹，包含以下内容：</p>
+<ul>
+<li>版本号与日期</li>
+<li>本次变更涉及的模块和 Story 文件路径</li>
+<li>新增的功能和对应的 AC</li>
+<li>修改的业务规则，注明变更前后的差异</li>
+<li>本次不受影响的功能范围</li>
+<li>主文档链接</li>
+</ul>
+<p><strong>开发过程中的临时修改</strong> 改动较小时，先口头或截图快速对齐，事后必须做到以下任意一件事：在群里留一句文字记录说明结论、在 Story 文件对应位置更新并标注版本、在项目管理工具的 ticket 评论里留一条记录。</p>
+<blockquote>
+<p>沟通可以随意，结论必须落文字，哪怕只是一句话。</p>
+</blockquote>
+<hr/>
+<h2 id="八评审规范">八、评审规范<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#八评审规范" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>本规范采用一份完整文档、按受众约定讲解范围的方式，不拆分文件。</p>
+<hr/>
+<p><strong>业务评审</strong></p>
+<p>目标：确认产品方向、业务逻辑和用户价值，不讨论技术实现。</p>
+<p>讲解范围：</p>
+<ul>
+<li>故事标题三段式（为什么做）</li>
+<li>背景 Context（业务动机）</li>
+<li>业务规则（做什么、怎么算对）</li>
+<li>交互说明（关键流程的操作逻辑）</li>
+<li>主流程 AC（做到什么程度算完成）</li>
+</ul>
+<p>跳过范围：边界场景、异常场景、数据字段说明。</p>
+<p>业务评审的产出：业务规则确认无误，主流程 AC 达成共识，Out of Scope 边界清晰。</p>
+<hr/>
+<p><strong>技术评审</strong></p>
+<p>目标：确认技术实现路径、对齐边界场景和字段定义，暴露文档中未覆盖的技术风险。</p>
+<p>讲解范围：</p>
+<ul>
+<li>业务规则（重点讲边界判断和约束条件）</li>
+<li>完整 AC（包括边界场景和异常场景）</li>
+<li>Out of Scope（明确哪些不做，避免过度设计）</li>
+<li>数据字段说明（前后端对齐）</li>
+</ul>
+<p>跳过范围：背景 Context、交互说明的视觉细节。</p>
+<p>技术评审的产出：开发明确每个 AC 的实现方式，边界场景处理方式确认，字段定义达成共识，文档中未覆盖的场景由 PM 当场补充 AC。</p>
+<hr/>
+<h2 id="九各角色职责">九、各角色职责<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#九各角色职责" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>角色</th><th>职责</th></tr></thead><tbody><tr><td>产品经理</td><td>创建和维护所有文档，负责 Story 文件的完整性，变更时同步更新主文档并发布变更说明，评审前完成主流程 AC</td></tr><tr><td>业务方</td><td>业务评审中确认业务规则和用户价值，提出遗漏的业务场景</td></tr><tr><td>开发</td><td>技术评审时提出边界场景和技术约束，开发过程中遇到文档未覆盖的场景及时反馈 PM 补充</td></tr><tr><td>测试</td><td>提测前对照 AC 补充测试用例，发现 AC 不完整时反馈 PM 补全后再开始测试</td></tr></tbody></table></div>
+<hr/>
+<h2 id="十评审前自查清单">十、评审前自查清单<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#十评审前自查清单" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>业务评审前，PM 自查：</strong></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> 三段式故事描述清晰，角色与价值明确</li>
+<li class="task-list-item"><input type="checkbox" disabled/> 业务规则无遗漏，逻辑自洽</li>
+<li class="task-list-item"><input type="checkbox" disabled/> 主流程 AC 已全部写完，且每条可被验证</li>
+<li class="task-list-item"><input type="checkbox" disabled/> 交互说明覆盖关键操作路径</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Out of Scope 已列出，本期范围边界清晰</li>
+</ul>
+<p><strong>技术评审前，PM 追加自查：</strong></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> 边界场景和异常场景已尽量补充</li>
+<li class="task-list-item"><input type="checkbox" disabled/> 数据字段说明已填写（涉及接口的 Story）</li>
+<li class="task-list-item"><input type="checkbox" disabled/> 若为变更需求，变更说明已创建，主文档已标注版本</li>
+<li class="task-list-item"><input type="checkbox" disabled/> 系统自动类逻辑已归入正确的 Story 或单独建文件</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><details class="toc" open><summary><h3>目录</h3></summary><ul><li class="depth-0"><a href="#prd-规范说明书-v20" data-for="prd-规范说明书-v20">PRD 规范说明书 v2.0</a></li><li class="depth-1"><a href="#一文档目的" data-for="一文档目的">一、文档目的</a></li><li class="depth-1"><a href="#二文档层级结构" data-for="二文档层级结构">二、文档层级结构</a></li><li class="depth-1"><a href="#三文件夹结构规范" data-for="三文件夹结构规范">三、文件夹结构规范</a></li><li class="depth-1"><a href="#四用户故事文件规范" data-for="四用户故事文件规范">四、用户故事文件规范</a></li><li class="depth-1"><a href="#五系统自动类需求的归属规则" data-for="五系统自动类需求的归属规则">五、系统自动类需求的归属规则</a></li><li class="depth-1"><a href="#六验收标准写作规范" data-for="六验收标准写作规范">六、验收标准写作规范</a></li><li class="depth-1"><a href="#七需求变更规范" data-for="七需求变更规范">七、需求变更规范</a></li><li class="depth-1"><a href="#八评审规范" data-for="八评审规范">八、评审规范</a></li><li class="depth-1"><a href="#九各角色职责" data-for="九各角色职责">九、各角色职责</a></li><li class="depth-1"><a href="#十评审前自查清单" data-for="十评审前自查清单">十、评审前自查清单</a></li></ul></details></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript.js" type="module" data-persist="true"></script></html>
