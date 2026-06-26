@@ -9,8 +9,8 @@
     <title>采购退款单</title>
     <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/%E9%87%87%E8%B4%AD%E9%80%80%E6%AC%BE%E5%8D%95</link>
     <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/%E9%87%87%E8%B4%AD%E9%80%80%E6%AC%BE%E5%8D%95</guid>
-    <description><![CDATA[ 优化/新增点 1.请款池 Transclude of 请款池变更记录#v101 2.请款单 2.1增加请款单发起退款 基于请款单支持操作退款 1.勾选请款单后点击操作退款 校验1：是否勾选任意一条数据 未勾选：提示请至少勾选一条数据 校验2：校验3：校验勾选的应付单的付款对象和主体和币种是否满足完全一致 否：提示勾选的数据中付款对象和主体和币种需要保持一致 通过校验，则打开新建退款单页面 发起请款单退款 2.2请款单增加字段 【可退款金额】 【退款中金额】 【已退金额】 2.退款单 Transclude of 退款单变更记录#v100 3.公司主体 收款信息 【收款类型】单选选择器，选项：公账... ]]></description>
-    <pubDate>Fri, 26 Jun 2026 07:08:15 GMT</pubDate>
+    <description><![CDATA[ 优化/新增点 1.请款池 Transclude of 请款池变更记录#v101 2.请款单 2.1增加请款单发起退款 基于请款单支持操作退款 1.勾选请款单后点击操作退款 校验1：是否勾选任意一条数据 未勾选：提示请至少勾选一条数据 校验2：校验3：校验勾选的应付单的付款对象和主体和币种是否满足完全一致 否：提示勾选的数据中付款对象和主体和币种需要保持一致 通过校验，则打开新建退款单页面 发起请款单退款 2.2请款单增加字段 【可退款金额】 【退款中金额】 【已退金额】 3.退款单 Transclude of 退款单变更记录#v100 4.公司主体 收款信息 【收款类型】单选选择器，选项：公账... ]]></description>
+    <pubDate>Fri, 26 Jun 2026 07:11:56 GMT</pubDate>
   </item><item>
     <title>新建、编辑公司主体</title>
     <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E5%85%AC%E5%8F%B8%E4%B8%BB%E4%BD%93/%E6%96%B0%E5%BB%BA%E3%80%81%E7%BC%96%E8%BE%91%E5%85%AC%E5%8F%B8%E4%B8%BB%E4%BD%93</link>
