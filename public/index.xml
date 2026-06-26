@@ -9,8 +9,8 @@
     <title>0194</title>
     <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/0194</link>
     <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/0194</guid>
-    <description><![CDATA[ 同MSKU多配送方式，支持在推广商品管理同时请购 商品推广管理 1.msku支持展示明细 展开icon只在同一item ID关联多个销售国ID，剔除已停用&amp;已删除的数据 鼠标移入展示字段 【Msku】查出所有的msku+店铺 【店铺】 【商品节点】 2.发起请购逻辑变更 按照所有的商品节点=待请购节点的msku的请购数据（剔除已停用&amp;已删除的数据）勾选并进行发起请购（之前是按照主msku数据进行勾选的）. ]]></description>
-    <pubDate>Fri, 26 Jun 2026 02:29:14 GMT</pubDate>
+    <description><![CDATA[ 同MSKU多配送方式，支持在推广商品管理同时请购 商品推广管理 1.msku支持展示明细 展开icon只在同一商品信息维护 ID关联多个销售国ID，剔除已停用&amp;已删除的销售国ID数据 展示字段 【Msku】查出所有的msku+店铺 【店铺】 【商品节点】 2.发起请购逻辑变更 按照所有的商品节点=待请购节点的msku的请购数据（剔除已停用&amp;已删除的数据）勾选并进行发起请购（之前是按照主msku数据进行勾选的）. ]]></description>
+    <pubDate>Fri, 26 Jun 2026 05:48:03 GMT</pubDate>
   </item><item>
     <title>供应商质量跟进</title>
     <link>https://attentiontt.github.io/att-ob/Project/v1.11.0/%E4%BE%9B%E5%BA%94%E5%95%86%E8%B4%A8%E9%87%8F%E8%B7%9F%E8%BF%9B</link>
