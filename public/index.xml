@@ -6,6 +6,12 @@
       <description>最近的10条笔记 on test-ob</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>0184</title>
+    <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/0184</link>
+    <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/0184</guid>
+    <description><![CDATA[ 系统无法出库原因提示-预警的功能 头程发货单 原有的卡控调细化调整： 头程发货单卡控校验： 校验该头程发货单号下剔除已完成和已废弃的调度需求， 校验1：校验是否存在调度需求状态为 待提交、待调度、调度中 存在：则提示调度需求{调度需求1，调度需求2}未生成调度单 不存在：进入校验2 校验2：存在调度需求状态为 待提货且 提货方类型为供应商仓 存在：提示{调度需求1}未提货，请联系{调度需求提货方的质检员}操作提货（多个调度需求多行展示） 不存在：进入校验3 校验3：存在调度需求状态为 待收货且 收货方类型为供应商仓 存在：提示{调度需求1}未提货，请联系{调度需求收货方的采购员}操作收货（多个... ]]></description>
+    <pubDate>Fri, 26 Jun 2026 07:42:48 GMT</pubDate>
+  </item><item>
     <title>采购退款单</title>
     <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/%E9%87%87%E8%B4%AD%E9%80%80%E6%AC%BE%E5%8D%95</link>
     <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/%E9%87%87%E8%B4%AD%E9%80%80%E6%AC%BE%E5%8D%95</guid>
@@ -59,12 +65,6 @@
     <guid>https://attentiontt.github.io/att-ob/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/002%E9%9C%80%E6%B1%82%E4%BC%98%E5%85%88%E7%BA%A7%E8%AF%84%E4%BC%B0%E6%A8%A1%E7%89%88</guid>
     <description><![CDATA[ 1.需求价值 权重值（固定值）： 60% 评判标准（参考）： 需求带来的可量化收益，包括效率提升、成本降低、质量改善、风险规避等。 受益用户的数量、受益用户范围、使用频率、角色重要性。 5分：年收益&gt;10万元 或 人效提升&gt;50% 或 规避重大合规风险 ； 所有核心用户，每日使用 4分：年收益5-10万元 或 人效提升30%-50% ；多数核心用户，每周使用 3分：年收益1-5万元 或 人效提升10%-30% ；部分用户，每周使用 2分：年收益&lt;1万元 或 人效提升&lt;10% ；少数用户，每月使用 1分：几乎无量化收益；极个别用户，偶尔使用 评判理由： 案例： 1.备货主... ]]></description>
     <pubDate>Thu, 25 Jun 2026 07:28:03 GMT</pubDate>
-  </item><item>
-    <title>0182三方仓库核对</title>
-    <link>https://attentiontt.github.io/att-ob/Project/v1.11.0/0182%E4%B8%89%E6%96%B9%E4%BB%93%E5%BA%93%E6%A0%B8%E5%AF%B9</link>
-    <guid>https://attentiontt.github.io/att-ob/Project/v1.11.0/0182%E4%B8%89%E6%96%B9%E4%BB%93%E5%BA%93%E6%A0%B8%E5%AF%B9</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Thu, 25 Jun 2026 06:39:21 GMT</pubDate>
   </item>
     </channel>
   </rss>
