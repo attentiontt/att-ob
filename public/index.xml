@@ -6,6 +6,18 @@
       <description>最近的10条笔记 on test-ob</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>ERP-10010</title>
+    <link>https://attentiontt.github.io/att-ob/Project/v1.11.0/ERP-10010</link>
+    <guid>https://attentiontt.github.io/att-ob/Project/v1.11.0/ERP-10010</guid>
+    <description><![CDATA[ Yihong 迭代管理系统 财年目标看板新增字段 【 开发分组】按照开发员对应的部门展示，展示格式需要按照一级部门⇒最低层级部门展示 【父商品名称】展示msku对应的父商品名称 【父商品编号】展示msku对应的父商品编号 【预估销售时长】基于【测款方式】计算； 不断货测款：财年最后一天-实际上架时间； 断货测款：财年最后一天-实际上架时间-30-（中国到目的国的物流时效）；物流时效：整柜海卡和散货海卡里面取最短的运输时效（如果没有则取参数值） 财年目标看板原字段逻辑优化 【标签】展示； 1.停用标签： 销售国ID在开发产品管理被停用 销售国ID对应的goods id在产品管理被停售 则展示如果... ]]></description>
+    <pubDate>Mon, 29 Jun 2026 10:59:54 GMT</pubDate>
+  </item><item>
+    <title>查看列表</title>
+    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E8%B4%A2%E5%B9%B4%E7%9B%AE%E6%A0%87%E7%9C%8B%E6%9D%BF/%E6%9F%A5%E7%9C%8B%E5%88%97%E8%A1%A8</link>
+    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E8%B4%A2%E5%B9%B4%E7%9B%AE%E6%A0%87%E7%9C%8B%E6%9D%BF/%E6%9F%A5%E7%9C%8B%E5%88%97%E8%A1%A8</guid>
+    <description><![CDATA[ 字段规则 统计财年销量、财年销售额；当用户未勾选或者未运营预测替换初始预测，则都按照列表展示的规则进行按财年的汇总（需要剔除标签） 【Msku】goods id信息 【标签】展示； 1.停用标签： 销售国ID在开发产品管理被停用 销售国ID对应的goods id在产品管理被停售 则展示如果停用的数据则在列表将预测销量显示为空值不参与计算，但是详情点击查看的逻辑无需处理； 2.跟卖标签：如果在商品维护编号/销售国的维度找到多条galas goods countryID，创建时间更晚的数据标记为跟卖，如果跟卖的数据则在列表将预测销量显示为空值不参与计算，但是详情点击查看的逻辑无需处理 3.退市标签... ]]></description>
+    <pubDate>Mon, 29 Jun 2026 10:46:53 GMT</pubDate>
+  </item><item>
     <title>仓库提货单</title>
     <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E4%BB%93%E5%BA%93%E6%8F%90%E8%B4%A7%E5%8D%95</link>
     <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E4%BB%93%E5%BA%93%E6%8F%90%E8%B4%A7%E5%8D%95</guid>
@@ -23,18 +35,6 @@
     <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/0186</guid>
     <description><![CDATA[ 1.供应商管理 1.1装柜供应商增加选项 装柜供应商提货方式增加选项：“供应商自送” 2.调柜单 2.1装柜供应商提货方式增加选项 新建/编辑/变更/导入调柜单的“装柜供应商提货方式”增加选项“供应商自送” 2.2生成调度需求逻辑新增 查出调柜单状态为“待验货” “待装柜” “待发货” 的调柜单（剔除变更中）对应的未关联调度需求（排除已废弃）的调柜单明细，需要按如下顺序生成调度需求 1.如果【出货供应商】和【装柜供应商】 不一致，则自动生成【供应商】⇒【装柜供应商】的调度需求，调度方式按照调柜单里面的【出货供应商提货方式】，如果一致则不生成调度需求 2如果【装柜供应商提货方式】为“国内调度、供... ]]></description>
     <pubDate>Mon, 29 Jun 2026 10:38:39 GMT</pubDate>
-  </item><item>
-    <title>ERP-10010</title>
-    <link>https://attentiontt.github.io/att-ob/Project/v1.11.0/ERP-10010</link>
-    <guid>https://attentiontt.github.io/att-ob/Project/v1.11.0/ERP-10010</guid>
-    <description><![CDATA[ Yihong 迭代管理系统 新增字段 【 开发分组】按照开发员对应的部门展示，展示格式需要按照一级部门⇒最低层级部门展示 【父商品名称】展示msku对应的父商品名称 【父商品编号】展示msku对应的父商品编号 【预估销售时长】按照预计上架时间-初始计算，在启动后固定不会变更 筛选： 【产品分类】 【是否关联项目】 【是否维护预测】 【人员复合筛选项】 【开发员】 【国家】 【店铺】 财年目标看板的年份动态优化： 已2025~当前绝对年份+2（动态值，不能是固定值） 逻辑/交互调整： 1.默认勾选运营替换预测和币种等于美元 2.商品分级-当前如果是停售，清货的产品&amp;开发产品管理停用、产品... ]]></description>
-    <pubDate>Mon, 29 Jun 2026 10:37:47 GMT</pubDate>
-  </item><item>
-    <title>查看列表</title>
-    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E8%B4%A2%E5%B9%B4%E7%9B%AE%E6%A0%87%E7%9C%8B%E6%9D%BF/%E6%9F%A5%E7%9C%8B%E5%88%97%E8%A1%A8</link>
-    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E8%B4%A2%E5%B9%B4%E7%9B%AE%E6%A0%87%E7%9C%8B%E6%9D%BF/%E6%9F%A5%E7%9C%8B%E5%88%97%E8%A1%A8</guid>
-    <description><![CDATA[ 字段规则 统计财年销量、财年销售额；当用户未勾选或者未运营预测替换初始预测，则都按照列表展示的规则进行按财年的汇总（需要剔除标签） 【Msku】goods id信息 【标签】展示； 1.停用标签：如果销售国ID在开发产品管理被停用则展示如果停用的数据则在列表将预测销量显示为空值不参与计算，但是详情点击查看的逻辑无需处理； 2.跟卖标签：如果在商品维护编号/销售国的维度找到多条galas goods countryID，创建时间更晚的数据标记为跟卖，如果跟卖的数据则在列表将预测销量显示为空值不参与计算，但是详情点击查看的逻辑无需处理 【销售平台】goods id信息 【目的国】goods id信... ]]></description>
-    <pubDate>Mon, 29 Jun 2026 10:36:12 GMT</pubDate>
   </item><item>
     <title>查看详情</title>
     <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E8%B4%A2%E5%B9%B4%E7%9B%AE%E6%A0%87%E7%9C%8B%E6%9D%BF/%E6%9F%A5%E7%9C%8B%E8%AF%A6%E6%83%85</link>
