@@ -6,11 +6,41 @@
       <description>最近的10条笔记 on test-ob</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>仓库提货单</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E4%BB%93%E5%BA%93%E6%8F%90%E8%B4%A7%E5%8D%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E4%BB%93%E5%BA%93%E6%8F%90%E8%B4%A7%E5%8D%95</guid>
+    <description><![CDATA[ 仓库提货单 1.确认提货的时候按照仓库提货单对应的前一个调度需求的状态增加卡控和提示 校验该明细的调度需求的前面的调度需求： 调度需求的状态为待提货，提示{调度需求1}未提货，请联系{调度需求提货方的质检员}操作提货（多个调度需求多行展示） 如果有收货仓类型为的调度需求的状态为待收货，提示{调度需求1}未收货货，请联系{调度需求收货方的采购员}操作收货（多个调度需求多行展示）. ]]></description>
+    <pubDate>Mon, 29 Jun 2026 10:39:03 GMT</pubDate>
+  </item><item>
+    <title>0184</title>
+    <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/0184</link>
+    <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/0184</guid>
+    <description><![CDATA[ 系统无法出库原因提示-预警的功能 头程发货单 原有的卡控调细化调整： 头程发货单卡控校验： 校验该头程发货单号下剔除已完成和已废弃的调度需求， 校验1：校验是否存在调度需求状态为 待提交、待调度、调度中 存在：则提示调度需求{调度需求1，调度需求2}未生成调度单 不存在：进入校验2 校验2：存在调度需求状态为 待提货且 提货方类型为供应商仓 存在：提示{调度需求1}未提货，请联系{调度需求提货方的质检员}操作提货（多个调度需求多行展示，找不到具体的QA则展示一个固定文案：QA）） 不存在：进入校验3 校验3：存在调度需求状态为 待收货且 收货方类型为供应商仓 存在：提示{调度需求1}未收货货，... ]]></description>
+    <pubDate>Mon, 29 Jun 2026 10:38:55 GMT</pubDate>
+  </item><item>
+    <title>0186</title>
+    <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/0186</link>
+    <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/0186</guid>
+    <description><![CDATA[ 1.供应商管理 1.1装柜供应商增加选项 装柜供应商提货方式增加选项：“供应商自送” 2.调柜单 2.1装柜供应商提货方式增加选项 新建/编辑/变更/导入调柜单的“装柜供应商提货方式”增加选项“供应商自送” 2.2生成调度需求逻辑新增 查出调柜单状态为“待验货” “待装柜” “待发货” 的调柜单（剔除变更中）对应的未关联调度需求（排除已废弃）的调柜单明细，需要按如下顺序生成调度需求 1.如果【出货供应商】和【装柜供应商】 不一致，则自动生成【供应商】⇒【装柜供应商】的调度需求，调度方式按照调柜单里面的【出货供应商提货方式】，如果一致则不生成调度需求 2如果【装柜供应商提货方式】为“国内调度、供... ]]></description>
+    <pubDate>Mon, 29 Jun 2026 10:38:39 GMT</pubDate>
+  </item><item>
     <title>ERP-10010</title>
     <link>https://attentiontt.github.io/att-ob/Project/v1.11.0/ERP-10010</link>
     <guid>https://attentiontt.github.io/att-ob/Project/v1.11.0/ERP-10010</guid>
-    <description><![CDATA[ 【 产品分组】 【父产品名称】 【预估销售时长】 筛选： 【产品分类】 【是否关联项目】 【是否维护预测】 【开发员】 【国家】 【店铺】 年份动态优化： 已2025~当前绝对年份+2（动态值） 逻辑/交互调整： 默认勾选运营替换预测和币种等于美元 商品分级-当前如果是停售，清货的产品&amp;开发产品管理停用、产品管理停售，计算业绩时往后算0 返单—这个字段的是否 逻辑是否正确需要审视，一些老数据可以人工处理（新逻辑：已复盘且需返单为是、已复盘且不返单为否、未复盘为空值，历史数据需要刷新） 财年目标看板的导入预测模板，不要是空表，而是现在在“财年目标看板”右上角下载的文件一样，包含ERP已经... ]]></description>
-    <pubDate>Mon, 29 Jun 2026 07:30:17 GMT</pubDate>
+    <description><![CDATA[ Yihong 迭代管理系统 新增字段 【 开发分组】按照开发员对应的部门展示，展示格式需要按照一级部门⇒最低层级部门展示 【父商品名称】展示msku对应的父商品名称 【父商品编号】展示msku对应的父商品编号 【预估销售时长】按照预计上架时间-初始计算，在启动后固定不会变更 筛选： 【产品分类】 【是否关联项目】 【是否维护预测】 【人员复合筛选项】 【开发员】 【国家】 【店铺】 财年目标看板的年份动态优化： 已2025~当前绝对年份+2（动态值，不能是固定值） 逻辑/交互调整： 1.默认勾选运营替换预测和币种等于美元 2.商品分级-当前如果是停售，清货的产品&amp;开发产品管理停用、产品... ]]></description>
+    <pubDate>Mon, 29 Jun 2026 10:37:47 GMT</pubDate>
+  </item><item>
+    <title>查看列表</title>
+    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E8%B4%A2%E5%B9%B4%E7%9B%AE%E6%A0%87%E7%9C%8B%E6%9D%BF/%E6%9F%A5%E7%9C%8B%E5%88%97%E8%A1%A8</link>
+    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E8%B4%A2%E5%B9%B4%E7%9B%AE%E6%A0%87%E7%9C%8B%E6%9D%BF/%E6%9F%A5%E7%9C%8B%E5%88%97%E8%A1%A8</guid>
+    <description><![CDATA[ 字段规则 统计财年销量、财年销售额；当用户未勾选或者未运营预测替换初始预测，则都按照列表展示的规则进行按财年的汇总（需要剔除标签） 【Msku】goods id信息 【标签】展示； 1.停用标签：如果销售国ID在开发产品管理被停用则展示如果停用的数据则在列表将预测销量显示为空值不参与计算，但是详情点击查看的逻辑无需处理； 2.跟卖标签：如果在商品维护编号/销售国的维度找到多条galas goods countryID，创建时间更晚的数据标记为跟卖，如果跟卖的数据则在列表将预测销量显示为空值不参与计算，但是详情点击查看的逻辑无需处理 【销售平台】goods id信息 【目的国】goods id信... ]]></description>
+    <pubDate>Mon, 29 Jun 2026 10:36:12 GMT</pubDate>
+  </item><item>
+    <title>查看详情</title>
+    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E8%B4%A2%E5%B9%B4%E7%9B%AE%E6%A0%87%E7%9C%8B%E6%9D%BF/%E6%9F%A5%E7%9C%8B%E8%AF%A6%E6%83%85</link>
+    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E8%B4%A2%E5%B9%B4%E7%9B%AE%E6%A0%87%E7%9C%8B%E6%9D%BF/%E6%9F%A5%E7%9C%8B%E8%AF%A6%E6%83%85</guid>
+    <description><![CDATA[ 【月份】 【初始预测销量】 【商品目标预测】基于销售国ID的维度查询出对应的商品目标的预测 【备货规划预测】基于销售国ID的维度查询出对应的备货规划的预测（转成月的维度） 【实际销量】基于销售国ID的维度查询出对应备货规划的实际销量（转成月的维度） 【初始成交价(本币)】 【目标确认成交价(本币)】基于销售国ID的维度查询出对应的商品目标的【确认成交价】 【目标确认低售价(本币)】取列表的【低售价】，展示在所有月份里面. ]]></description>
+    <pubDate>Mon, 29 Jun 2026 09:53:35 GMT</pubDate>
   </item><item>
     <title>供应商质量跟进</title>
     <link>https://attentiontt.github.io/att-ob/Project/v1.11.0/%E4%BE%9B%E5%BA%94%E5%95%86%E8%B4%A8%E9%87%8F%E8%B7%9F%E8%BF%9B</link>
@@ -24,12 +54,6 @@
     <description><![CDATA[ 职责变化：产品开发增加寻源部分的规则 主线流程更新（研寻源/开发一审会/新品会 003调研问题知识库 1.需求背景 2.需求负责人 3.需求场景/故事点 1.现在产品开发对于非拓变体/拓产品的项目需要提交寻源的信息，由采购确认，对于现状系统是采购提交，开发确认，现有的流程相反，在操作上无法区分具体的采购、开发，并且节点的负责人也需要根据项目类型区分 2.在市场调研完成后，业务实际会在线下进行开发一审会，实际在线下一审通过后，才允许提交产品画像提交（新品会），现状因为系统不存在一审会，导致市场调研后，产品画像提交节点就直接触发，可能影响开发的画像提交时效和项目经理无法记录一审会的时间 3.在研发... ]]></description>
     <pubDate>Mon, 29 Jun 2026 03:01:37 GMT</pubDate>
   </item><item>
-    <title>0184</title>
-    <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/0184</link>
-    <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/0184</guid>
-    <description><![CDATA[ 系统无法出库原因提示-预警的功能 头程发货单 原有的卡控调细化调整： 头程发货单卡控校验： 校验该头程发货单号下剔除已完成和已废弃的调度需求， 校验1：校验是否存在调度需求状态为 待提交、待调度、调度中 存在：则提示调度需求{调度需求1，调度需求2}未生成调度单 不存在：进入校验2 校验2：存在调度需求状态为 待提货且 提货方类型为供应商仓 存在：提示{调度需求1}未提货，请联系{调度需求提货方的质检员}操作提货（多个调度需求多行展示，找不到具体的QA则展示一个固定文案：QA）） 不存在：进入校验3 校验3：存在调度需求状态为 待收货且 收货方类型为供应商仓 存在：提示{调度需求1}未收货货，... ]]></description>
-    <pubDate>Fri, 26 Jun 2026 10:54:17 GMT</pubDate>
-  </item><item>
     <title>000需求调研模板</title>
     <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/000%E9%9C%80%E6%B1%82%E8%B0%83%E7%A0%94%E6%A8%A1%E6%9D%BF</link>
     <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/000%E9%9C%80%E6%B1%82%E8%B0%83%E7%A0%94%E6%A8%A1%E6%9D%BF</guid>
@@ -41,30 +65,6 @@
     <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E5%8F%91%E8%B4%A7%E5%8D%95%E5%8F%91%E5%B7%B4%E8%A5%BF%E7%9A%84%E4%BB%98%E6%AC%BE</guid>
     <description><![CDATA[ 1.现状巴西的业务模式属于 供应商⇒毅弘⇒香港公司（自有）⇒香港公司（货代方）⇒巴西本土公司（货代方）⇒巴西本土公司（自有） 香港公司需要支付海运费+ 清关公司：巴西本土公司（货代方） 现状： 香港公司（自有）预计支付给起运港-海外仓运费拆分出来的500给到货代的收款账户（物流商管理维护，未体现在上面的主体） 因香港公司（货代）支付货款（未在系统费用存在）+起运港-海外仓运费其中拆分出来的500块给香港公司（自有） 巴西公司（自有）需要支付货款（未在系统费用存在）+费用项=起运港-海外仓运费全额给巴西本土公司（货代） 存在货代的香港公司和巴西的内部交易忽略不管 现状期望知道要怎么请款 报关费：... ]]></description>
     <pubDate>Fri, 26 Jun 2026 08:46:20 GMT</pubDate>
-  </item><item>
-    <title>采购退款单</title>
-    <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/%E9%87%87%E8%B4%AD%E9%80%80%E6%AC%BE%E5%8D%95</link>
-    <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/%E9%87%87%E8%B4%AD%E9%80%80%E6%AC%BE%E5%8D%95</guid>
-    <description><![CDATA[ 优化/新增点 1.请款池 Transclude of 请款池变更记录#v101 2.请款单 2.1增加请款单发起退款 基于请款单支持操作退款 1.勾选请款单后点击操作退款 校验1：是否勾选任意一条数据 未勾选：提示请至少勾选一条数据 校验2：校验3：校验勾选的应付单的付款对象和主体和币种是否满足完全一致 否：提示勾选的数据中付款对象和主体和币种需要保持一致 通过校验，则打开新建退款单页面 发起请款单退款 2.2请款单增加字段 【可退款金额】 【退款中金额】 【已退金额】 3.退款单 Transclude of 退款单变更记录#v100 4.公司主体 收款信息 【收款类型】单选选择器，选项：公账... ]]></description>
-    <pubDate>Fri, 26 Jun 2026 07:11:56 GMT</pubDate>
-  </item><item>
-    <title>新建、编辑公司主体</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E5%85%AC%E5%8F%B8%E4%B8%BB%E4%BD%93/%E6%96%B0%E5%BB%BA%E3%80%81%E7%BC%96%E8%BE%91%E5%85%AC%E5%8F%B8%E4%B8%BB%E4%BD%93</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E5%85%AC%E5%8F%B8%E4%B8%BB%E4%BD%93/%E6%96%B0%E5%BB%BA%E3%80%81%E7%BC%96%E8%BE%91%E5%85%AC%E5%8F%B8%E4%B8%BB%E4%BD%93</guid>
-    <description><![CDATA[ 【公司名称】不限制字符类型，字符限制50位字符 【公司英文名称】不限制字符类型，字符限制50位字符 【简称】不限制字符类型，字符限制20位字符 【统一社会信用代码】不限制字符类型，字符限制20位字符 【法人】不限制字符类型，字符限制20位字符 【区域范围】选项：境内、境外 【省/市/区】【区域范围】选项如果是境内则必填；【区域范围】选项如果是境外则非必填 【详细地址】不限制字符类型，字符限制500位字符 【详细地址(英文)】不限制字符类型，字符限制500位字符 【联系人】不限制字符类型，字符限制20位字符 【联系方式】不限制字符类型，字符限制20位字符 【传真】不限制字符类型，字符限制50位字... ]]></description>
-    <pubDate>Fri, 26 Jun 2026 06:54:07 GMT</pubDate>
-  </item><item>
-    <title>查看公司主体列表</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E5%85%AC%E5%8F%B8%E4%B8%BB%E4%BD%93/%E6%9F%A5%E7%9C%8B%E5%85%AC%E5%8F%B8%E4%B8%BB%E4%BD%93%E5%88%97%E8%A1%A8</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E5%85%AC%E5%8F%B8%E4%B8%BB%E4%BD%93/%E6%9F%A5%E7%9C%8B%E5%85%AC%E5%8F%B8%E4%B8%BB%E4%BD%93%E5%88%97%E8%A1%A8</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Fri, 26 Jun 2026 06:43:04 GMT</pubDate>
-  </item><item>
-    <title>0181</title>
-    <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/0181</link>
-    <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/0181</guid>
-    <description><![CDATA[ FBA货件管理 1.1列表/导出/筛选增加字段 【分仓模式】每个FBA货件的入库计划编号按实际收货仓去重汇总，如果&gt;1则是分仓，如果=1则是单仓，如果编辑实际收货仓需要刷新；如果入库计划编号为空，则分仓模式为空值 添加的字段具体如下 1.调柜单 1.1列表/导出/筛选增加字段 【分仓模式】根据发货明细关联的亚马逊的shipment的分仓模式取值，如果取到分仓则优先按分仓，如果取不到亚马逊的shipment或者取到了但shipment的分仓模式本身为空值，则为空 即优先级为：分仓、单仓、空值 1.2调柜单确认增加卡控 如果关联的货件的分仓模式存在多个，则不允许点击确认 具体场景： 分仓模式... ]]></description>
-    <pubDate>Fri, 26 Jun 2026 06:13:27 GMT</pubDate>
   </item>
     </channel>
   </rss>
