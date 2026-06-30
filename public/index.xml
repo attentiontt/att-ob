@@ -6,11 +6,23 @@
       <description>最近的10条笔记 on test-ob</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>确认退款</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E7%A1%AE%E8%AE%A4%E9%80%80%E6%AC%BE</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E7%A1%AE%E8%AE%A4%E9%80%80%E6%AC%BE</guid>
+    <description><![CDATA[ 业务规则 列表只展示退款入账金额&gt;0的明细 基础信息 【退款单号】 【退款入账对象】 【退款方类型】 【退款方】展示编码和名称，按照编号/名称展示 【预计退款日期】 【申请人】 【备注】 【申请时间】 【退款完成时间】 【状态】 金额信息 【币种】 【总退款金额】 【退款中金额】 【已退款金额】 【剩余未退金额】 总退款金额-已退款金额-退款中金额 退款处理信息 【退款方式】直接展示（按现有流程均是直接退款) 【本次操作退款金额】 【退款账户信息】 【收款账户信息】 【实际退款时间】 【交易号/票据号】 明细信息 【序号】从1开始，升序自增1 【单据类型】 【单据编号】 【费用项】 【请... ]]></description>
+    <pubDate>Tue, 30 Jun 2026 10:24:54 GMT</pubDate>
+  </item><item>
     <title>新建退款单</title>
     <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E6%96%B0%E5%BB%BA%E9%80%80%E6%AC%BE%E5%8D%95</link>
     <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E6%96%B0%E5%BB%BA%E9%80%80%E6%AC%BE%E5%8D%95</guid>
     <description><![CDATA[ 发起新建退款单的来源 请款池 发起预付单退款 发起采购应付单退款 发起费用单退款 请款单 发起请款单退款 新建退款单 列表 查出应付单+请款单（已完成）并且已付金额-已退金额&gt;0的请款单明细数据 基本信息 【退款单号】自动生成 【退款入账对象】等于应付单的付款对象 【退款方类型】等于应付单的收款对象类型 【退款方】等于应付单的退款方 【退款入账方式】单选选择器，选项：直接退款、转为供应商预付 【预计退款日期】单选日期选择器，只有【退款入账方式】等于直接退款才展示 【退款账户】单选选择器，查出{收款账户名称}/{收款账户}；只有【退款入账方式】等于直接退款才展示 【备注】 金额信息 【币种... ]]></description>
-    <pubDate>Tue, 30 Jun 2026 09:21:43 GMT</pubDate>
+    <pubDate>Tue, 30 Jun 2026 09:59:26 GMT</pubDate>
+  </item><item>
+    <title>发起请款单退款</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E5%8D%95/%E5%8F%91%E8%B5%B7%E8%AF%B7%E6%AC%BE%E5%8D%95%E9%80%80%E6%AC%BE</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E5%8D%95/%E5%8F%91%E8%B5%B7%E8%AF%B7%E6%AC%BE%E5%8D%95%E9%80%80%E6%AC%BE</guid>
+    <description><![CDATA[ 基于请款单支持操作退款 1.勾选请款单后点击操作退款 校验1：是否勾选任意一条数据 未勾选：提示请至少勾选一条数据 校验2：校验勾选的应付单的付款对象和主体和币种是否满足完全一致 否：提示勾选的数据中付款对象和主体和币种需要保持一致 校验3：校验请款单的费用明细是否仅包含预付单、费用单、采购应付单、采购入库应付单的明细 否：提示请款单不支持退款 通过校验，则打开新建退款单页面. ]]></description>
+    <pubDate>Tue, 30 Jun 2026 09:43:58 GMT</pubDate>
   </item><item>
     <title>质检标准需求1.0.1</title>
     <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%821.0.1</link>
@@ -53,18 +65,6 @@
     <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82-%E2%80%94-%E5%88%9B%E5%BB%BA/%E6%89%8B%E5%8A%A8%E6%96%B0%E5%BB%BA%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82</guid>
     <description><![CDATA[ 业务规则 点击新建样品需求弹出弹窗，界面展示如下字段： 【样品需求编号】置灰输入框，文案固定为自动生成 【样品用途】单选框，选项：更换供应商、T0样品、竞品样品 【Sku】单选异步选择器，选项格式为“产品名称/Sku”，根据选项的不同查询逻辑不一致，切换选项时清空本选项框 更换供应商：查出启用的产品管理数据 T0样品：查出项目类型为通货、改款、拓变体、拓产品并且项目状态≠已废弃/已完成的项目对应绑定的Sku 竞品样品：启用的产品管理数据和开发产品管理剔除“已废弃”的数据 在点击确定后生成样品需求，取值逻辑： 填写字段见上方与填写一致 非填写字段取值逻辑 【项目编号】按照不同样品用途的取值不一致... ]]></description>
     <pubDate>Tue, 30 Jun 2026 07:17:23 GMT</pubDate>
-  </item><item>
-    <title>新品项目创建质检用例</title>
-    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E6%96%B0%E5%93%81%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B</link>
-    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E6%96%B0%E5%93%81%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B</guid>
-    <description><![CDATA[ 项目管理自动触发质检标准需求 触发节点： 1.项目类型=自研，当手板认证存在实际开始时间时，生成质检标准需求 2.项目类型=通货/改款/拓产品/拓变体，当采购寻源存在实际开始时间时，生成质检标准需求 生成规则 取开发产品管理的数据 【图片】sku信息 【产品名称】 【Sku】 【项目名称】项目信息 【项目编号】产生质检标准的项目编号 【项目类型】项目信息 【产品分类】sku的信息 【产品类型】sku的信息 【产品材质】sku的信息 【产品尺寸】sku的信息 【产品状态】 【产品尺寸】sku的信息 【需求创建时间】创建时间 【预计提交时间】- 【实际提交时间】- 【预计完善时间】- 【QE】在生... ]]></description>
-    <pubDate>Tue, 30 Jun 2026 07:03:40 GMT</pubDate>
-  </item><item>
-    <title>新建&amp;编辑 质检用例</title>
-    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B/%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B--%E5%88%9B%E5%BB%BA-and-%E7%BB%B4%E6%8A%A4/%E6%96%B0%E5%BB%BA-and-%E7%BC%96%E8%BE%91-%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B</link>
-    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B/%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B--%E5%88%9B%E5%BB%BA-and-%E7%BB%B4%E6%8A%A4/%E6%96%B0%E5%BB%BA-and-%E7%BC%96%E8%BE%91-%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B</guid>
-    <description><![CDATA[ 【质检类型】单选选择器;接入字典管理 【测试内容】文本输入框，不限制字符类型，字符限制100位字符 【检验用途】复选框，选项：手板样、T0、T1样、大货质检 【检验工具】文本输入框，不限制字符类型，字符限制100位字符 【缺陷等级】单选选择器选项：MAJ、CRI、MIN 【测试方法】文本输入框，不限制字符类型，字符限制500位字符 【判断准则】文本输入框，不限制字符类型，字符限制500位字符 【产品分类】多选树状选择器，查询产品分类，可以选择任意节点 【用例状态】单选框，启用、停用，默认选中启用. ]]></description>
-    <pubDate>Tue, 30 Jun 2026 07:02:46 GMT</pubDate>
   </item>
     </channel>
   </rss>
