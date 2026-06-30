@@ -6,6 +6,12 @@
       <description>最近的10条笔记 on test-ob</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>质检标准需求1.0.1</title>
+    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%821.0.1</link>
+    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%821.0.1</guid>
+    <description><![CDATA[ V1.0.1 1.质检标准生成触发节点调整 1.项目类型=自研，当手板认证存在实际开始时间时，生成质检标准需求 2.项目类型=通货/改款/拓产品/拓变体，当采购寻源存在实际开始时间时，生成质检标准需求 【需求状态】草稿 相关文件：新品项目创建质检用例 2.新品项目-质检标签事件开始时，将同项目同sku的质检用例需求的状态从草稿⇒待提交 3.质检标准用例新增草稿状态 . ]]></description>
+    <pubDate>Tue, 30 Jun 2026 07:33:54 GMT</pubDate>
+  </item><item>
     <title>提交样品评估</title>
     <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0-%E6%B5%81%E7%A8%8B%E6%93%8D%E4%BD%9C/%E6%8F%90%E4%BA%A4%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0</link>
     <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0-%E6%B5%81%E7%A8%8B%E6%93%8D%E4%BD%9C/%E6%8F%90%E4%BA%A4%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0</guid>
@@ -29,12 +35,6 @@
     <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82-%E2%80%94-%E5%88%9B%E5%BB%BA/%E6%89%8B%E5%8A%A8%E6%96%B0%E5%BB%BA%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82</guid>
     <description><![CDATA[ 业务规则 点击新建样品需求弹出弹窗，界面展示如下字段： 【样品需求编号】置灰输入框，文案固定为自动生成 【样品用途】单选框，选项：更换供应商、T0样品、竞品样品 【Sku】单选异步选择器，选项格式为“产品名称/Sku”，根据选项的不同查询逻辑不一致，切换选项时清空本选项框 更换供应商：查出启用的产品管理数据 T0样品：查出项目类型为通货、改款、拓变体、拓产品并且项目状态≠已废弃/已完成的项目对应绑定的Sku 竞品样品：启用的产品管理数据和开发产品管理剔除“已废弃”的数据 在点击确定后生成样品需求，取值逻辑： 填写字段见上方与填写一致 非填写字段取值逻辑 【项目编号】按照不同样品用途的取值不一致... ]]></description>
     <pubDate>Tue, 30 Jun 2026 07:17:23 GMT</pubDate>
-  </item><item>
-    <title>质检标准需求1.0.1</title>
-    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%821.0.1</link>
-    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%821.0.1</guid>
-    <description><![CDATA[ V1.0.1 1.质检标准生成触发节点调整 1.项目类型=自研，当手板认证存在实际开始时间时，生成质检标准需求 2.项目类型=通货/改款/拓产品/拓变体，当采购寻源存在实际开始时间时，生成质检标准需求 【需求状态】草稿 相关文件：新品项目创建质检用例 类型描述相关文件优化优化质检标准用例新增草稿状态查看质检标准需求列表&amp;筛选项 2.新品项目-质检标签事件开始时，将同项目同sku的质检用例需求的状态从草稿⇒待提交 3.质检标准用例新增草稿状态 . ]]></description>
-    <pubDate>Tue, 30 Jun 2026 07:04:56 GMT</pubDate>
   </item><item>
     <title>新品项目创建质检用例</title>
     <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E5%88%97%E8%A1%A8--%E5%88%9B%E5%BB%BA/%E6%96%B0%E5%93%81%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B</link>
