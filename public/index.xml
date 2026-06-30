@@ -6,6 +6,12 @@
       <description>最近的10条笔记 on test-ob</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>新建退款单</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E6%96%B0%E5%BB%BA%E9%80%80%E6%AC%BE%E5%8D%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E6%96%B0%E5%BB%BA%E9%80%80%E6%AC%BE%E5%8D%95</guid>
+    <description><![CDATA[ 发起新建退款单的来源 请款池 发起预付单退款 发起采购应付单退款 发起费用单退款 请款单 发起请款单退款 新建退款单 列表 查出应付单+请款单（已完成）并且已付金额-已退金额&gt;0的请款单明细数据 基本信息 【退款单号】自动生成 【退款入账对象】等于应付单的付款对象 【退款方类型】等于应付单的收款对象类型 【退款方】等于应付单的退款方 【退款入账方式】单选选择器，选项：直接退款、转为供应商预付 【预计退款日期】单选日期选择器，只有【退款入账方式】等于直接退款才展示 【退款账户】单选选择器，查出{收款账户名称}/{收款账户}；只有【退款入账方式】等于直接退款才展示 【备注】 金额信息 【币种... ]]></description>
+    <pubDate>Tue, 30 Jun 2026 09:21:43 GMT</pubDate>
+  </item><item>
     <title>质检标准需求1.0.1</title>
     <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%821.0.1</link>
     <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%821.0.1</guid>
@@ -59,12 +65,6 @@
     <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B/%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B--%E5%88%9B%E5%BB%BA-and-%E7%BB%B4%E6%8A%A4/%E6%96%B0%E5%BB%BA-and-%E7%BC%96%E8%BE%91-%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B</guid>
     <description><![CDATA[ 【质检类型】单选选择器;接入字典管理 【测试内容】文本输入框，不限制字符类型，字符限制100位字符 【检验用途】复选框，选项：手板样、T0、T1样、大货质检 【检验工具】文本输入框，不限制字符类型，字符限制100位字符 【缺陷等级】单选选择器选项：MAJ、CRI、MIN 【测试方法】文本输入框，不限制字符类型，字符限制500位字符 【判断准则】文本输入框，不限制字符类型，字符限制500位字符 【产品分类】多选树状选择器，查询产品分类，可以选择任意节点 【用例状态】单选框，启用、停用，默认选中启用. ]]></description>
     <pubDate>Tue, 30 Jun 2026 07:02:46 GMT</pubDate>
-  </item><item>
-    <title>质检用例变更记录</title>
-    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B/%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B/%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</guid>
-    <description><![CDATA[ V1.0.1 1.新建/编辑/查看质检用例的【检验用途】调整 【检验用途】复选框，选项：手板样、T0、T1样、大货质检 原始文件：新建&amp;编辑 质检用例. ]]></description>
-    <pubDate>Tue, 30 Jun 2026 07:02:30 GMT</pubDate>
   </item>
     </channel>
   </rss>
