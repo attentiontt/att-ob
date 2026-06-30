@@ -6,65 +6,65 @@
       <description>最近的10条笔记 on test-ob</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>提交样品评估</title>
+    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0-%E6%B5%81%E7%A8%8B%E6%93%8D%E4%BD%9C/%E6%8F%90%E4%BA%A4%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0</link>
+    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0-%E6%B5%81%E7%A8%8B%E6%93%8D%E4%BD%9C/%E6%8F%90%E4%BA%A4%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0</guid>
+    <description><![CDATA[ 业务规则： 点击提交样品评估的时候，进行校验 1.该sku是否满足存在任意一条质检用例 不满足：提示{sku/产品名称}未维护质检用例，请维护后刷新页面重试 满足：打开提交页面 基础信息 【图片】 【评估报告编号】 【产品名称】 【预计评估时间】 【评估报告编号] 产品信息检查 【产品参数】 【产品配件】 【产品清单】 【产品包装】 【使用场景】 【产品卖点】 【竞品链接】 【竞品FBA费】 【合规标签】查出该sku关联的合规管理里面的标签，展示全部在合规标签里面的msku+店铺，合规标签有值则展示，无值则为 - 【合规报告】查出该sku关联的合规管理里面的标签，展示全部在合规标签里面的msk... ]]></description>
+    <pubDate>Tue, 30 Jun 2026 07:24:26 GMT</pubDate>
+  </item><item>
+    <title>样品需求管理变更记录</title>
+    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</guid>
+    <description><![CDATA[ V1.0.1 增加自动触发样品需求管理 1.新增自研项目在手板认证开始时自动触发手板样 自动创建手板样需求 2.新增自研项目在试模开始时自动触发试模T0样 自动创建试模T0样品需求 3.新增通货/改款/拓产品在采购寻源开始时自动创建 T0样品 需求 自动创建T0样品需求 手动创建样品增加竞品样品&amp;T0样查询逻辑变更 直接查看最新逻辑手动新建样品需求 优化打样逻辑 1.打样逻辑从明细打样，优化成主表打样 2.原有生成样品需求时则生成样品明细，改成了只生成样品需求，不生成样品明细 3.涉及到的主表&amp;子表的状态变更，样品需求的实际时间逻辑变更调整 打样 到样 初样确认 签样 类型描述... ]]></description>
+    <pubDate>Tue, 30 Jun 2026 07:23:27 GMT</pubDate>
+  </item><item>
+    <title>手板&amp;T0样&amp;模具T0&amp;竞品样品线上化</title>
+    <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/%E6%89%8B%E6%9D%BF-and-T0%E6%A0%B7-and-%E6%A8%A1%E5%85%B7T0-and-%E7%AB%9E%E5%93%81%E6%A0%B7%E5%93%81%E7%BA%BF%E4%B8%8A%E5%8C%96</link>
+    <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/%E6%89%8B%E6%9D%BF-and-T0%E6%A0%B7-and-%E6%A8%A1%E5%85%B7T0-and-%E7%AB%9E%E5%93%81%E6%A0%B7%E5%93%81%E7%BA%BF%E4%B8%8A%E5%8C%96</guid>
+    <description><![CDATA[ 优化/新增点 1.质检用例增加质检用途 Transclude of 质检用例变更记录#v101 2.质检标准需求列表提前创建草稿状态 Transclude of 质检标准需求1.0.1#v101 3.自动触发T0/试模T0/手板样 样品需求管理变更记录#v101 4.样品评估生成评估项逻辑调整 Transclude of 样品评估需求变更记录#样品评估需求v101. ]]></description>
+    <pubDate>Tue, 30 Jun 2026 07:23:11 GMT</pubDate>
+  </item><item>
+    <title>手动新建样品需求</title>
+    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82-%E2%80%94-%E5%88%9B%E5%BB%BA/%E6%89%8B%E5%8A%A8%E6%96%B0%E5%BB%BA%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82</link>
+    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82-%E2%80%94-%E5%88%9B%E5%BB%BA/%E6%89%8B%E5%8A%A8%E6%96%B0%E5%BB%BA%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82</guid>
+    <description><![CDATA[ 业务规则 点击新建样品需求弹出弹窗，界面展示如下字段： 【样品需求编号】置灰输入框，文案固定为自动生成 【样品用途】单选框，选项：更换供应商、T0样品、竞品样品 【Sku】单选异步选择器，选项格式为“产品名称/Sku”，根据选项的不同查询逻辑不一致，切换选项时清空本选项框 更换供应商：查出启用的产品管理数据 T0样品：查出项目类型为通货、改款、拓变体、拓产品并且项目状态≠已废弃/已完成的项目对应绑定的Sku 竞品样品：启用的产品管理数据和开发产品管理剔除“已废弃”的数据 在点击确定后生成样品需求，取值逻辑： 填写字段见上方与填写一致 非填写字段取值逻辑 【项目编号】按照不同样品用途的取值不一致... ]]></description>
+    <pubDate>Tue, 30 Jun 2026 07:17:23 GMT</pubDate>
+  </item><item>
+    <title>质检标准需求1.0.1</title>
+    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%821.0.1</link>
+    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%821.0.1</guid>
+    <description><![CDATA[ V1.0.1 1.质检标准生成触发节点调整 1.项目类型=自研，当手板认证存在实际开始时间时，生成质检标准需求 2.项目类型=通货/改款/拓产品/拓变体，当采购寻源存在实际开始时间时，生成质检标准需求 【需求状态】草稿 相关文件：新品项目创建质检用例 类型描述相关文件优化优化质检标准用例新增草稿状态查看质检标准需求列表&amp;筛选项 2.新品项目-质检标签事件开始时，将同项目同sku的质检用例需求的状态从草稿⇒待提交 3.质检标准用例新增草稿状态 . ]]></description>
+    <pubDate>Tue, 30 Jun 2026 07:04:56 GMT</pubDate>
+  </item><item>
+    <title>新品项目创建质检用例</title>
+    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E5%88%97%E8%A1%A8--%E5%88%9B%E5%BB%BA/%E6%96%B0%E5%93%81%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B</link>
+    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E5%88%97%E8%A1%A8--%E5%88%9B%E5%BB%BA/%E6%96%B0%E5%93%81%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B</guid>
+    <description><![CDATA[ 项目管理自动触发质检标准需求 触发节点： 1.项目类型=自研，当手板认证存在实际开始时间时，生成质检标准需求 2.项目类型=通货/改款/拓产品/拓变体，当采购寻源存在实际开始时间时，生成质检标准需求 生成规则 取开发产品管理的数据 【图片】sku信息 【产品名称】 【Sku】 【项目名称】项目信息 【项目编号】产生质检标准的项目编号 【项目类型】项目信息 【产品分类】sku的信息 【产品类型】sku的信息 【产品材质】sku的信息 【产品尺寸】sku的信息 【产品状态】 【产品尺寸】sku的信息 【需求创建时间】创建时间 【预计提交时间】- 【实际提交时间】- 【预计完善时间】- 【QE】在生... ]]></description>
+    <pubDate>Tue, 30 Jun 2026 07:03:40 GMT</pubDate>
+  </item><item>
+    <title>新建&amp;编辑 质检用例</title>
+    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B/%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B--%E5%88%9B%E5%BB%BA-and-%E7%BB%B4%E6%8A%A4/%E6%96%B0%E5%BB%BA-and-%E7%BC%96%E8%BE%91-%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B</link>
+    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B/%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B--%E5%88%9B%E5%BB%BA-and-%E7%BB%B4%E6%8A%A4/%E6%96%B0%E5%BB%BA-and-%E7%BC%96%E8%BE%91-%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B</guid>
+    <description><![CDATA[ 【质检类型】单选选择器;接入字典管理 【测试内容】文本输入框，不限制字符类型，字符限制100位字符 【检验用途】复选框，选项：手板样、T0、T1样、大货质检 【检验工具】文本输入框，不限制字符类型，字符限制100位字符 【缺陷等级】单选选择器选项：MAJ、CRI、MIN 【测试方法】文本输入框，不限制字符类型，字符限制500位字符 【判断准则】文本输入框，不限制字符类型，字符限制500位字符 【产品分类】多选树状选择器，查询产品分类，可以选择任意节点 【用例状态】单选框，启用、停用，默认选中启用. ]]></description>
+    <pubDate>Tue, 30 Jun 2026 07:02:46 GMT</pubDate>
+  </item><item>
+    <title>质检用例变更记录</title>
+    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B/%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B/%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</guid>
+    <description><![CDATA[ V1.0.1 1.新建/编辑/查看质检用例的【检验用途】调整 【检验用途】复选框，选项：手板样、T0、T1样、大货质检 原始文件：新建&amp;编辑 质检用例. ]]></description>
+    <pubDate>Tue, 30 Jun 2026 07:02:30 GMT</pubDate>
+  </item><item>
+    <title>导入更新</title>
+    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E8%B4%A2%E5%B9%B4%E7%9B%AE%E6%A0%87%E7%9C%8B%E6%9D%BF/%E5%AF%BC%E5%85%A5%E6%9B%B4%E6%96%B0</link>
+    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E8%B4%A2%E5%B9%B4%E7%9B%AE%E6%A0%87%E7%9C%8B%E6%9D%BF/%E5%AF%BC%E5%85%A5%E6%9B%B4%E6%96%B0</guid>
+    <description><![CDATA[ 【Msku】 【销售平台】 【店铺】 【目的国】 【销售国】 【定价模式】 【规划新品】 【物流成本(本币)】 【配送费(本币) 【财年】 【4月销量】 【4月成交价(本币)】 【5月销量】 【5月成交价(本币)】 【6月销量】 【6月成交价(本币)】 【7月销量】 【7月成交价(本币)】 【8月销量】 【8月成交价(本币)】 【9月销量】 【9月成交价(本币)】 【10月销量】 【10月成交价(本币)】 【11月销量】 【11月成交价(本币)】 【12月销量】 【12月成交价(本币)】 【1月销量】 【1月成交价(本币)】 【2月销量】 【2月成交价(本币)】 【3月销量】 【3月成交价(本... ]]></description>
+    <pubDate>Tue, 30 Jun 2026 05:48:03 GMT</pubDate>
+  </item><item>
     <title>ERP-10010</title>
     <link>https://attentiontt.github.io/att-ob/Project/v1.11.0/ERP-10010</link>
     <guid>https://attentiontt.github.io/att-ob/Project/v1.11.0/ERP-10010</guid>
-    <description><![CDATA[ 财年目标看板新增字段 【 开发分组】按照开发员对应的部门展示，展示格式需要按照一级部门⇒最低层级部门展示 【父商品名称】展示msku对应的父商品名称 【父商品编号】展示msku对应的父商品编号 【预估销售时长】基于【测款方式】计算； 不断货测款：财年最后一天-实际上架时间； 断货测款：财年最后一天-实际上架时间-30-（中国到目的国的物流时效）；物流时效：整柜海卡和散货海卡里面取最短的运输时效（如果没有则取参数值） 财年目标看板原字段逻辑优化 【标签】展示； 1.停用标签： 销售国ID在开发产品管理被停用 销售国ID对应的goods id在产品管理被停售 则展示如果停用的数据则在列表将预测销量... ]]></description>
-    <pubDate>Mon, 29 Jun 2026 11:08:35 GMT</pubDate>
-  </item><item>
-    <title>查看列表</title>
-    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E8%B4%A2%E5%B9%B4%E7%9B%AE%E6%A0%87%E7%9C%8B%E6%9D%BF/%E6%9F%A5%E7%9C%8B%E5%88%97%E8%A1%A8</link>
-    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E8%B4%A2%E5%B9%B4%E7%9B%AE%E6%A0%87%E7%9C%8B%E6%9D%BF/%E6%9F%A5%E7%9C%8B%E5%88%97%E8%A1%A8</guid>
-    <description><![CDATA[ 字段规则 统计财年销量、财年销售额；当用户未勾选或者未运营预测替换初始预测，则都按照列表展示的规则进行按财年的汇总（需要剔除标签） 【Msku】goods id信息 【标签】展示； 1.停用标签： 销售国ID在开发产品管理被停用 销售国ID对应的goods id在产品管理被停售 则展示如果停用的数据则在列表将预测销量显示为空值不参与计算，但是详情点击查看的逻辑无需处理； 2.跟卖标签：如果在商品维护编号/销售国的维度找到多条galas goods countryID，创建时间更晚的数据标记为跟卖，如果跟卖的数据则在列表将预测销量显示为空值不参与计算，但是详情点击查看的逻辑无需处理 3.退市标签... ]]></description>
-    <pubDate>Mon, 29 Jun 2026 10:46:53 GMT</pubDate>
-  </item><item>
-    <title>仓库提货单</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E4%BB%93%E5%BA%93%E6%8F%90%E8%B4%A7%E5%8D%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E4%BB%93%E5%BA%93%E6%8F%90%E8%B4%A7%E5%8D%95</guid>
-    <description><![CDATA[ 仓库提货单 1.确认提货的时候按照仓库提货单对应的前一个调度需求的状态增加卡控和提示 校验该明细的调度需求的前面的调度需求： 调度需求的状态为待提货，提示{调度需求1}未提货，请联系{调度需求提货方的质检员}操作提货（多个调度需求多行展示） 如果有收货仓类型为的调度需求的状态为待收货，提示{调度需求1}未收货货，请联系{调度需求收货方的采购员}操作收货（多个调度需求多行展示）. ]]></description>
-    <pubDate>Mon, 29 Jun 2026 10:39:03 GMT</pubDate>
-  </item><item>
-    <title>0184</title>
-    <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/0184</link>
-    <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/0184</guid>
-    <description><![CDATA[ 系统无法出库原因提示-预警的功能 头程发货单 原有的卡控调细化调整： 头程发货单卡控校验： 校验该头程发货单号下剔除已完成和已废弃的调度需求， 校验1：校验是否存在调度需求状态为 待提交、待调度、调度中 存在：则提示调度需求{调度需求1，调度需求2}未生成调度单 不存在：进入校验2 校验2：存在调度需求状态为 待提货且 提货方类型为供应商仓 存在：提示{调度需求1}未提货，请联系{调度需求提货方的质检员}操作提货（多个调度需求多行展示，找不到具体的QA则展示一个固定文案：QA）） 不存在：进入校验3 校验3：存在调度需求状态为 待收货且 收货方类型为供应商仓 存在：提示{调度需求1}未收货货，... ]]></description>
-    <pubDate>Mon, 29 Jun 2026 10:38:55 GMT</pubDate>
-  </item><item>
-    <title>0186</title>
-    <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/0186</link>
-    <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/0186</guid>
-    <description><![CDATA[ 1.供应商管理 1.1装柜供应商增加选项 装柜供应商提货方式增加选项：“供应商自送” 2.调柜单 2.1装柜供应商提货方式增加选项 新建/编辑/变更/导入调柜单的“装柜供应商提货方式”增加选项“供应商自送” 2.2生成调度需求逻辑新增 查出调柜单状态为“待验货” “待装柜” “待发货” 的调柜单（剔除变更中）对应的未关联调度需求（排除已废弃）的调柜单明细，需要按如下顺序生成调度需求 1.如果【出货供应商】和【装柜供应商】 不一致，则自动生成【供应商】⇒【装柜供应商】的调度需求，调度方式按照调柜单里面的【出货供应商提货方式】，如果一致则不生成调度需求 2如果【装柜供应商提货方式】为“国内调度、供... ]]></description>
-    <pubDate>Mon, 29 Jun 2026 10:38:39 GMT</pubDate>
-  </item><item>
-    <title>查看详情</title>
-    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E8%B4%A2%E5%B9%B4%E7%9B%AE%E6%A0%87%E7%9C%8B%E6%9D%BF/%E6%9F%A5%E7%9C%8B%E8%AF%A6%E6%83%85</link>
-    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E8%B4%A2%E5%B9%B4%E7%9B%AE%E6%A0%87%E7%9C%8B%E6%9D%BF/%E6%9F%A5%E7%9C%8B%E8%AF%A6%E6%83%85</guid>
-    <description><![CDATA[ 【月份】 【初始预测销量】 【商品目标预测】基于销售国ID的维度查询出对应的商品目标的预测 【备货规划预测】基于销售国ID的维度查询出对应的备货规划的预测（转成月的维度） 【实际销量】基于销售国ID的维度查询出对应备货规划的实际销量（转成月的维度） 【初始成交价(本币)】 【目标确认成交价(本币)】基于销售国ID的维度查询出对应的商品目标的【确认成交价】 【目标确认低售价(本币)】取列表的【低售价】，展示在所有月份里面. ]]></description>
-    <pubDate>Mon, 29 Jun 2026 09:53:35 GMT</pubDate>
-  </item><item>
-    <title>供应商质量跟进</title>
-    <link>https://attentiontt.github.io/att-ob/Project/v1.11.0/%E4%BE%9B%E5%BA%94%E5%95%86%E8%B4%A8%E9%87%8F%E8%B7%9F%E8%BF%9B</link>
-    <guid>https://attentiontt.github.io/att-ob/Project/v1.11.0/%E4%BE%9B%E5%BA%94%E5%95%86%E8%B4%A8%E9%87%8F%E8%B7%9F%E8%BF%9B</guid>
-    <description><![CDATA[ 1.需求背景 “当前[现状/现象] ，导致[问题/损失] ， 因此需要[本次方案]。 案例：亚马逊新增低库存水平费标准，目前被收费产品逐渐增多，人为统计效率低并且容易出错，系统通过系统可以实现自动计算功能。 2.需求负责人 3.需求场景/故事点 1.5个QE，每人不定期抄录样品评估（一个月10条），质检单问题（1个月的10个）点整理成表格 2.频率不等，可能随时或者定期，最迟不能定期分别发给供应商，供应商填表后回复 3.基于回复定期按月进行汇总成内部表格 4.再qa去问题点确认，在质检过程中就需要检验（反馈未闭环） 4.需求目标&amp;范围 评判标准示例 效率提升：低库存水平费数据整理，由1... ]]></description>
-    <pubDate>Mon, 29 Jun 2026 07:22:35 GMT</pubDate>
-  </item><item>
-    <title>ERP-10012</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/ERP-10012</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/ERP-10012</guid>
-    <description><![CDATA[ 职责变化：产品开发增加寻源部分的规则 主线流程更新（研寻源/开发一审会/新品会 003调研问题知识库 1.需求背景 2.需求负责人 3.需求场景/故事点 1.现在产品开发对于非拓变体/拓产品的项目需要提交寻源的信息，由采购确认，对于现状系统是采购提交，开发确认，现有的流程相反，在操作上无法区分具体的采购、开发，并且节点的负责人也需要根据项目类型区分 2.在市场调研完成后，业务实际会在线下进行开发一审会，实际在线下一审通过后，才允许提交产品画像提交（新品会），现状因为系统不存在一审会，导致市场调研后，产品画像提交节点就直接触发，可能影响开发的画像提交时效和项目经理无法记录一审会的时间 3.在研发... ]]></description>
-    <pubDate>Mon, 29 Jun 2026 03:01:37 GMT</pubDate>
-  </item><item>
-    <title>000需求调研模板</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/000%E9%9C%80%E6%B1%82%E8%B0%83%E7%A0%94%E6%A8%A1%E6%9D%BF</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/000%E9%9C%80%E6%B1%82%E8%B0%83%E7%A0%94%E6%A8%A1%E6%9D%BF</guid>
-    <description><![CDATA[ 003调研问题知识库 1.需求背景 “当前[现状/现象] ，导致[问题/损失] ， 因此需要[本次方案]。 案例：亚马逊新增低库存水平费标准，目前被收费产品逐渐增多，人为统计效率低并且容易出错，系统通过系统可以实现自动计算功能。 2.需求负责人 3.需求场景/故事点 描述用户具体在什么时间、什么地点、因为什么事件触发。用“作为[角色]，我想[做某事]，在此期间[遇到了某问题]，以便[达成目的]”的格式写清楚。 案例： 场景1：备货主管在每周一通过系统智能补货页面导出“预测数据”，“在库数据”，“在途数据”，“待发数据”，推算当前库存以及预测数据，计算是否会被收低库存水平费，在收集数据和反算是否... ]]></description>
-    <pubDate>Fri, 26 Jun 2026 10:32:00 GMT</pubDate>
-  </item><item>
-    <title>发货单发巴西的付款</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E5%8F%91%E8%B4%A7%E5%8D%95%E5%8F%91%E5%B7%B4%E8%A5%BF%E7%9A%84%E4%BB%98%E6%AC%BE</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E5%8F%91%E8%B4%A7%E5%8D%95%E5%8F%91%E5%B7%B4%E8%A5%BF%E7%9A%84%E4%BB%98%E6%AC%BE</guid>
-    <description><![CDATA[ 1.现状巴西的业务模式属于 供应商⇒毅弘⇒香港公司（自有）⇒香港公司（货代方）⇒巴西本土公司（货代方）⇒巴西本土公司（自有） 香港公司需要支付海运费+ 清关公司：巴西本土公司（货代方） 现状： 香港公司（自有）预计支付给起运港-海外仓运费拆分出来的500给到货代的收款账户（物流商管理维护，未体现在上面的主体） 因香港公司（货代）支付货款（未在系统费用存在）+起运港-海外仓运费其中拆分出来的500块给香港公司（自有） 巴西公司（自有）需要支付货款（未在系统费用存在）+费用项=起运港-海外仓运费全额给巴西本土公司（货代） 存在货代的香港公司和巴西的内部交易忽略不管 现状期望知道要怎么请款 报关费：... ]]></description>
-    <pubDate>Fri, 26 Jun 2026 08:46:20 GMT</pubDate>
+    <description><![CDATA[ 财年目标看板新增字段 【开发分组】按照开发员对应的部门展示，展示格式只展示最子层级部门 【预估销售时长】基于【测款方式】计算； 不断货测款：财年最后一天-实际上架时间； 断货测款：财年最后一天-实际上架时间-30-（中国到目的国的物流时效）；物流时效：整柜海卡和散货海卡里面取最短的运输时效（如果没有则取参数值） 财年目标看板原字段逻辑优化 【标签】展示； 1.停用标签： 销售国ID在开发产品管理被停用 销售国ID对应的goods id在产品管理被停售 满足以上任意一个条件：则展示如果停用的数据则在列表将预测销量显示为空值不参与计算，但是详情点击查看的逻辑无需处理； 2.跟卖标签：如果在商品维护... ]]></description>
+    <pubDate>Tue, 30 Jun 2026 03:49:53 GMT</pubDate>
   </item>
     </channel>
   </rss>
