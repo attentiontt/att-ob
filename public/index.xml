@@ -9,8 +9,20 @@
     <title>质检标准需求1.0.1</title>
     <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%821.0.1</link>
     <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%821.0.1</guid>
-    <description><![CDATA[ V1.0.1 1.质检标准生成触发节点调整 1.项目类型=自研，当手板认证存在实际开始时间时，生成质检标准需求 2.项目类型=通货/改款/拓产品/拓变体，当采购寻源存在实际开始时间时，生成质检标准需求 【需求状态】草稿 相关文件：新品项目创建质检用例 2.新品项目-质检标签事件开始时，将同项目同sku的质检用例需求的状态从草稿⇒待提交 3.质检标准用例新增草稿状态 . ]]></description>
-    <pubDate>Tue, 30 Jun 2026 07:33:54 GMT</pubDate>
+    <description><![CDATA[ V1.0.1 1.质检标准生成触发节点调整 1.项目类型=自研，当手板认证存在实际开始时间时，生成质检标准需求 2.项目类型=通货/改款/拓产品/拓变体，当采购寻源存在实际开始时间时，生成质检标准需求 【需求状态】草稿 相关文件：新品项目创建质检用例 2.新品项目-质检标签事件开始时，将同项目同sku的质检用例需求的状态从草稿⇒待提交 3.质检标准用例新增草稿状态，草稿状态的质检标准的提交弹窗内只有“保存”提交质检标准需求 . ]]></description>
+    <pubDate>Tue, 30 Jun 2026 08:51:18 GMT</pubDate>
+  </item><item>
+    <title>ERP-10010</title>
+    <link>https://attentiontt.github.io/att-ob/Project/v1.11.0/ERP-10010</link>
+    <guid>https://attentiontt.github.io/att-ob/Project/v1.11.0/ERP-10010</guid>
+    <description><![CDATA[ 财年目标看板新增字段 【开发分组】按照开发员对应的部门展示，展示格式只展示最子层级部门 【预估销售时长】基于【测款方式】计算； 不断货测款：财年最后一天-实际上架时间； 断货测款：财年最后一天-实际上架时间-30-（中国到目的国的物流时效）；物流时效：整柜海卡和散货海卡里面取最短的运输时效（如果没有则取参数值） 财年目标看板原字段逻辑优化 【标签】展示； 1.停用标签： 销售国ID在开发产品管理被停用 销售国ID对应的goods id在产品管理被停售 满足以上任意一个条件：则展示如果停用的数据则在列表将预测销量显示为空值不参与计算，但是详情点击查看的逻辑无需处理； 2.跟卖标签：如果在商品维护... ]]></description>
+    <pubDate>Tue, 30 Jun 2026 08:49:29 GMT</pubDate>
+  </item><item>
+    <title>供应商质量跟进</title>
+    <link>https://attentiontt.github.io/att-ob/Project/v1.11.0/%E4%BE%9B%E5%BA%94%E5%95%86%E8%B4%A8%E9%87%8F%E8%B7%9F%E8%BF%9B</link>
+    <guid>https://attentiontt.github.io/att-ob/Project/v1.11.0/%E4%BE%9B%E5%BA%94%E5%95%86%E8%B4%A8%E9%87%8F%E8%B7%9F%E8%BF%9B</guid>
+    <description><![CDATA[ 1.需求背景 “当前[现状/现象] ，导致[问题/损失] ， 因此需要[本次方案]。 案例：亚马逊新增低库存水平费标准，目前被收费产品逐渐增多，人为统计效率低并且容易出错，系统通过系统可以实现自动计算功能。 2.需求负责人 3.需求场景/故事点 1.5个QE，每人不定期抄录样品评估（一个月10条），质检单问题（1个月的10个）点整理成表格,遇到了填写表格繁琐的问题，耗时1小时1个月 2.频率不等，可能随时或者定期，最迟不能定期分别发给供应商，供应商填表后回复， 3.基于回复定期按月进行汇总成内部表格 4.再qa去问题点确认，在质检过程中就需要检验（反馈未闭环） 4.需求目标&amp;范围 评判... ]]></description>
+    <pubDate>Tue, 30 Jun 2026 08:16:54 GMT</pubDate>
   </item><item>
     <title>提交样品评估</title>
     <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0-%E6%B5%81%E7%A8%8B%E6%93%8D%E4%BD%9C/%E6%8F%90%E4%BA%A4%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0</link>
@@ -37,8 +49,8 @@
     <pubDate>Tue, 30 Jun 2026 07:17:23 GMT</pubDate>
   </item><item>
     <title>新品项目创建质检用例</title>
-    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E5%88%97%E8%A1%A8--%E5%88%9B%E5%BB%BA/%E6%96%B0%E5%93%81%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B</link>
-    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E5%88%97%E8%A1%A8--%E5%88%9B%E5%BB%BA/%E6%96%B0%E5%93%81%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B</guid>
+    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E6%96%B0%E5%93%81%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B</link>
+    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E6%96%B0%E5%93%81%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B</guid>
     <description><![CDATA[ 项目管理自动触发质检标准需求 触发节点： 1.项目类型=自研，当手板认证存在实际开始时间时，生成质检标准需求 2.项目类型=通货/改款/拓产品/拓变体，当采购寻源存在实际开始时间时，生成质检标准需求 生成规则 取开发产品管理的数据 【图片】sku信息 【产品名称】 【Sku】 【项目名称】项目信息 【项目编号】产生质检标准的项目编号 【项目类型】项目信息 【产品分类】sku的信息 【产品类型】sku的信息 【产品材质】sku的信息 【产品尺寸】sku的信息 【产品状态】 【产品尺寸】sku的信息 【需求创建时间】创建时间 【预计提交时间】- 【实际提交时间】- 【预计完善时间】- 【QE】在生... ]]></description>
     <pubDate>Tue, 30 Jun 2026 07:03:40 GMT</pubDate>
   </item><item>
@@ -53,18 +65,6 @@
     <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B/%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</guid>
     <description><![CDATA[ V1.0.1 1.新建/编辑/查看质检用例的【检验用途】调整 【检验用途】复选框，选项：手板样、T0、T1样、大货质检 原始文件：新建&amp;编辑 质检用例. ]]></description>
     <pubDate>Tue, 30 Jun 2026 07:02:30 GMT</pubDate>
-  </item><item>
-    <title>导入更新</title>
-    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E8%B4%A2%E5%B9%B4%E7%9B%AE%E6%A0%87%E7%9C%8B%E6%9D%BF/%E5%AF%BC%E5%85%A5%E6%9B%B4%E6%96%B0</link>
-    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E8%B4%A2%E5%B9%B4%E7%9B%AE%E6%A0%87%E7%9C%8B%E6%9D%BF/%E5%AF%BC%E5%85%A5%E6%9B%B4%E6%96%B0</guid>
-    <description><![CDATA[ 【Msku】 【销售平台】 【店铺】 【目的国】 【销售国】 【定价模式】 【规划新品】 【物流成本(本币)】 【配送费(本币) 【财年】 【4月销量】 【4月成交价(本币)】 【5月销量】 【5月成交价(本币)】 【6月销量】 【6月成交价(本币)】 【7月销量】 【7月成交价(本币)】 【8月销量】 【8月成交价(本币)】 【9月销量】 【9月成交价(本币)】 【10月销量】 【10月成交价(本币)】 【11月销量】 【11月成交价(本币)】 【12月销量】 【12月成交价(本币)】 【1月销量】 【1月成交价(本币)】 【2月销量】 【2月成交价(本币)】 【3月销量】 【3月成交价(本... ]]></description>
-    <pubDate>Tue, 30 Jun 2026 05:48:03 GMT</pubDate>
-  </item><item>
-    <title>ERP-10010</title>
-    <link>https://attentiontt.github.io/att-ob/Project/v1.11.0/ERP-10010</link>
-    <guid>https://attentiontt.github.io/att-ob/Project/v1.11.0/ERP-10010</guid>
-    <description><![CDATA[ 财年目标看板新增字段 【开发分组】按照开发员对应的部门展示，展示格式只展示最子层级部门 【预估销售时长】基于【测款方式】计算； 不断货测款：财年最后一天-实际上架时间； 断货测款：财年最后一天-实际上架时间-30-（中国到目的国的物流时效）；物流时效：整柜海卡和散货海卡里面取最短的运输时效（如果没有则取参数值） 财年目标看板原字段逻辑优化 【标签】展示； 1.停用标签： 销售国ID在开发产品管理被停用 销售国ID对应的goods id在产品管理被停售 满足以上任意一个条件：则展示如果停用的数据则在列表将预测销量显示为空值不参与计算，但是详情点击查看的逻辑无需处理； 2.跟卖标签：如果在商品维护... ]]></description>
-    <pubDate>Tue, 30 Jun 2026 03:49:53 GMT</pubDate>
   </item>
     </channel>
   </rss>
