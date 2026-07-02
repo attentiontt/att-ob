@@ -6,6 +6,24 @@
       <description>最近的10条笔记 on test-ob</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>质检标准需求1.0.1</title>
+    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%821.0.1</link>
+    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%821.0.1</guid>
+    <description><![CDATA[ V1.0.1 1.质检标准生成触发节点调整 1.项目类型=自研，当手板认证存在实际开始时间时，生成质检标准需求 2.项目类型=通货/改款/拓产品/拓变体，当采购寻源存在实际开始时间时，生成质检标准需求 【需求状态】草稿 相关文件：新品项目创建质检用例 2.新品项目-质检标签事件开始时，将同项目同sku的质检用例需求的状态从草稿⇒待提交 3.质检标准用例新增草稿状态，草稿状态的质检标准的提交弹窗内只有“保存”提交质检标准需求 4.新增了质检用例数和质检用例筛选 . ]]></description>
+    <pubDate>Thu, 02 Jul 2026 02:54:43 GMT</pubDate>
+  </item><item>
+    <title>样品需求管理变更记录</title>
+    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</guid>
+    <description><![CDATA[ V1.0.1 1.增加自动触发样品需求管理 1.新增自研项目在手板认证开始时自动触发手板样 自动创建手板样需求 2.新增自研项目在试模开始时自动触发试模T0样 自动创建试模T0样品需求 3.新增通货/改款/拓产品在采购寻源开始时自动创建 T0样品 需求 自动创建T0样品需求 2.手动创建样品增加竞品样品&amp;T0样查询逻辑变更 直接查看最新逻辑手动新建样品需求 3.优化打样逻辑 1.打样逻辑从明细打样，优化成主表打样 2.原有生成样品需求时则生成样品明细，改成了只生成样品需求，不生成样品明细 3.涉及到的主表&amp;子表的状态变更，样品需求的实际时间逻辑变更调整 打样 到样 初样确认 签... ]]></description>
+    <pubDate>Thu, 02 Jul 2026 02:53:15 GMT</pubDate>
+  </item><item>
+    <title>系统标签体系搭建</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E7%B3%BB%E7%BB%9F%E6%A0%87%E7%AD%BE%E4%BD%93%E7%B3%BB%E6%90%AD%E5%BB%BA</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E7%B3%BB%E7%BB%9F%E6%A0%87%E7%AD%BE%E4%BD%93%E7%B3%BB%E6%90%AD%E5%BB%BA</guid>
+    <description><![CDATA[ 产品分类需要增加一个分类的标签 自定义维护产品分类的标签 前提： 1.产品分类均是已不同的维度的不同值（可能多个维度组合），如何判断产品应该挂哪个分类实质上需要对这些维度进行确定，最终得到具体的产品分类，所以维度需要体现在系统上（如果系统未体现维度，若不体现后续随着时间推移可能未必清晰分类的逻辑 2.后续产品分类随着开品的数量增加，产品分类需要一直拓展，新的品可能会发现现有维度归类不到，需要进行调整 对于不同的分类，需要填写不同的维度信息 例如衣服的属性有：颜色、尺码、等等 例如iPhone的属性有：颜色、存储空间、等等 支持在不同的产品分类上自定义配置需要填写标签值 支持在创建sku的时候，... ]]></description>
+    <pubDate>Wed, 01 Jul 2026 07:55:38 GMT</pubDate>
+  </item><item>
     <title>确认退款</title>
     <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E7%A1%AE%E8%AE%A4%E9%80%80%E6%AC%BE</link>
     <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E9%80%80%E6%AC%BE%E5%8D%95/%E7%A1%AE%E8%AE%A4%E9%80%80%E6%AC%BE</guid>
@@ -23,12 +41,6 @@
     <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E5%8D%95/%E5%8F%91%E8%B5%B7%E8%AF%B7%E6%AC%BE%E5%8D%95%E9%80%80%E6%AC%BE</guid>
     <description><![CDATA[ 基于请款单支持操作退款 1.勾选请款单后点击操作退款 校验1：是否勾选任意一条数据 未勾选：提示请至少勾选一条数据 校验2：校验勾选的应付单的付款对象和主体和币种是否满足完全一致 否：提示勾选的数据中付款对象和主体和币种需要保持一致 校验3：校验请款单的费用明细是否仅包含预付单、费用单、采购应付单、采购入库应付单的明细 否：提示请款单不支持退款 通过校验，则打开新建退款单页面. ]]></description>
     <pubDate>Tue, 30 Jun 2026 09:43:58 GMT</pubDate>
-  </item><item>
-    <title>质检标准需求1.0.1</title>
-    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%821.0.1</link>
-    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%821.0.1</guid>
-    <description><![CDATA[ V1.0.1 1.质检标准生成触发节点调整 1.项目类型=自研，当手板认证存在实际开始时间时，生成质检标准需求 2.项目类型=通货/改款/拓产品/拓变体，当采购寻源存在实际开始时间时，生成质检标准需求 【需求状态】草稿 相关文件：新品项目创建质检用例 2.新品项目-质检标签事件开始时，将同项目同sku的质检用例需求的状态从草稿⇒待提交 3.质检标准用例新增草稿状态，草稿状态的质检标准的提交弹窗内只有“保存”提交质检标准需求 . ]]></description>
-    <pubDate>Tue, 30 Jun 2026 08:51:18 GMT</pubDate>
   </item><item>
     <title>ERP-10010</title>
     <link>https://attentiontt.github.io/att-ob/Project/v1.11.0/ERP-10010</link>
@@ -48,23 +60,11 @@
     <description><![CDATA[ 业务规则： 点击提交样品评估的时候，进行校验 1.该sku是否满足存在任意一条质检用例 不满足：提示{sku/产品名称}未维护质检用例，请维护后刷新页面重试 满足：打开提交页面 基础信息 【图片】 【评估报告编号】 【产品名称】 【预计评估时间】 【评估报告编号] 产品信息检查 【产品参数】 【产品配件】 【产品清单】 【产品包装】 【使用场景】 【产品卖点】 【竞品链接】 【竞品FBA费】 【合规标签】查出该sku关联的合规管理里面的标签，展示全部在合规标签里面的msku+店铺，合规标签有值则展示，无值则为 - 【合规报告】查出该sku关联的合规管理里面的标签，展示全部在合规标签里面的msk... ]]></description>
     <pubDate>Tue, 30 Jun 2026 07:24:26 GMT</pubDate>
   </item><item>
-    <title>样品需求管理变更记录</title>
-    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</guid>
-    <description><![CDATA[ V1.0.1 增加自动触发样品需求管理 1.新增自研项目在手板认证开始时自动触发手板样 自动创建手板样需求 2.新增自研项目在试模开始时自动触发试模T0样 自动创建试模T0样品需求 3.新增通货/改款/拓产品在采购寻源开始时自动创建 T0样品 需求 自动创建T0样品需求 手动创建样品增加竞品样品&amp;T0样查询逻辑变更 直接查看最新逻辑手动新建样品需求 优化打样逻辑 1.打样逻辑从明细打样，优化成主表打样 2.原有生成样品需求时则生成样品明细，改成了只生成样品需求，不生成样品明细 3.涉及到的主表&amp;子表的状态变更，样品需求的实际时间逻辑变更调整 打样 到样 初样确认 签样 类型描述... ]]></description>
-    <pubDate>Tue, 30 Jun 2026 07:23:27 GMT</pubDate>
-  </item><item>
     <title>手板&amp;T0样&amp;模具T0&amp;竞品样品线上化</title>
     <link>https://attentiontt.github.io/att-ob/Project/V1.10.0/%E6%89%8B%E6%9D%BF-and-T0%E6%A0%B7-and-%E6%A8%A1%E5%85%B7T0-and-%E7%AB%9E%E5%93%81%E6%A0%B7%E5%93%81%E7%BA%BF%E4%B8%8A%E5%8C%96</link>
     <guid>https://attentiontt.github.io/att-ob/Project/V1.10.0/%E6%89%8B%E6%9D%BF-and-T0%E6%A0%B7-and-%E6%A8%A1%E5%85%B7T0-and-%E7%AB%9E%E5%93%81%E6%A0%B7%E5%93%81%E7%BA%BF%E4%B8%8A%E5%8C%96</guid>
     <description><![CDATA[ 优化/新增点 1.质检用例增加质检用途 Transclude of 质检用例变更记录#v101 2.质检标准需求列表提前创建草稿状态 Transclude of 质检标准需求1.0.1#v101 3.自动触发T0/试模T0/手板样 样品需求管理变更记录#v101 4.样品评估生成评估项逻辑调整 Transclude of 样品评估需求变更记录#样品评估需求v101. ]]></description>
     <pubDate>Tue, 30 Jun 2026 07:23:11 GMT</pubDate>
-  </item><item>
-    <title>手动新建样品需求</title>
-    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82-%E2%80%94-%E5%88%9B%E5%BB%BA/%E6%89%8B%E5%8A%A8%E6%96%B0%E5%BB%BA%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82</link>
-    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82-%E2%80%94-%E5%88%9B%E5%BB%BA/%E6%89%8B%E5%8A%A8%E6%96%B0%E5%BB%BA%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82</guid>
-    <description><![CDATA[ 业务规则 点击新建样品需求弹出弹窗，界面展示如下字段： 【样品需求编号】置灰输入框，文案固定为自动生成 【样品用途】单选框，选项：更换供应商、T0样品、竞品样品 【Sku】单选异步选择器，选项格式为“产品名称/Sku”，根据选项的不同查询逻辑不一致，切换选项时清空本选项框 更换供应商：查出启用的产品管理数据 T0样品：查出项目类型为通货、改款、拓变体、拓产品并且项目状态≠已废弃/已完成的项目对应绑定的Sku 竞品样品：启用的产品管理数据和开发产品管理剔除“已废弃”的数据 在点击确定后生成样品需求，取值逻辑： 填写字段见上方与填写一致 非填写字段取值逻辑 【项目编号】按照不同样品用途的取值不一致... ]]></description>
-    <pubDate>Tue, 30 Jun 2026 07:17:23 GMT</pubDate>
   </item>
     </channel>
   </rss>
