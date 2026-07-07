@@ -6,65 +6,65 @@
       <description>最近的10条笔记 on test-ob</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>ERP-10010</title>
-    <link>https://attentiontt.github.io/att-ob/Project/v1.11.0/ERP-10010</link>
-    <guid>https://attentiontt.github.io/att-ob/Project/v1.11.0/ERP-10010</guid>
-    <description><![CDATA[ 财年目标看板新增字段 【开发分组】按照开发员对应的部门展示，展示格式只展示最子层级部门 【预估销售时长】基于【测款方式】计算； 不断货测款：财年最后一天-实际上架时间； 断货测款：财年最后一天-实际上架时间-30-（中国到目的国的物流时效）；物流时效：整柜海卡和散货海卡里面取最短的运输时效（如果没有则取参数值） 财年目标看板原字段逻辑优化 【标签】展示； 1.删除标签： ： 销售国ID在开发产品管理被删除 ： 销售国ID对应的goods id在产品管理被删除 1.停用标签： 销售国ID在开发产品管理被停用 销售国ID对应的goods id在产品管理被停售 满足以上任意一个条件：则展示如果停用的... ]]></description>
-    <pubDate>Mon, 06 Jul 2026 09:25:10 GMT</pubDate>
+    <title>1507</title>
+    <link>https://attentiontt.github.io/att-ob/Project/V1.12.0/1507</link>
+    <guid>https://attentiontt.github.io/att-ob/Project/V1.12.0/1507</guid>
+    <description><![CDATA[ 调柜单导出优化 1.导出送货单优化 在原有的基础模版调整 1.新增供应商编码变量 2.新增流程单号变量 3.增加固定区域导出，固定文字 装货车牌： 柜号（整柜填写）： 封号（整柜填写）： 确认签字 （已核实装柜数量与车辆信息ok）： 2.导出来货标识卡优化 1.导出来货标识卡去除了“发货方式”，只剩下【供应商】 2.导出模版调整，见下图 . ]]></description>
+    <pubDate>Tue, 07 Jul 2026 02:00:22 GMT</pubDate>
   </item><item>
-    <title>提交样品评估</title>
-    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0%E7%AE%A1%E7%90%86/%E6%8F%90%E4%BA%A4%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0</link>
-    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0%E7%AE%A1%E7%90%86/%E6%8F%90%E4%BA%A4%E6%A0%B7%E5%93%81%E8%AF%84%E4%BC%B0</guid>
-    <description><![CDATA[ 业务规则： 点击提交样品评估的时候，进行校验 1.该sku是否满足存在任意一条质检用例 不满足：提示{sku/产品名称}未维护质检用例，请维护后刷新页面重试 满足：打开提交页面 基础信息 【图片】 【评估报告编号】 【产品名称】 【预计评估时间】 【评估报告编号] 产品信息检查 【产品参数】 【产品配件】 【产品清单】 【产品包装】 【使用场景】 【产品卖点】 【竞品链接】 【竞品FBA费】 【合规标签】查出该sku关联的合规管理里面的标签，展示全部在合规标签里面的msku+店铺，合规标签有值则展示，无值则为 - 【合规报告】查出该sku关联的合规管理里面的标签，展示全部在合规标签里面的msk... ]]></description>
-    <pubDate>Mon, 06 Jul 2026 09:00:06 GMT</pubDate>
+    <title>导出-FBA标签</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-FBA%E6%A0%87%E7%AD%BE</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-FBA%E6%A0%87%E7%AD%BE</guid>
+    <description><![CDATA[ 操作：导出FBA标签 业务规则 入口：从「调柜单列表」或调柜单详情点击「导出FBA标签」。 展示逻辑：如果调柜单明细匹配有 FBA 货件，则展示按钮；当货件明细中任意 Msku 未关联时，不允许下载 FBA 标签且不展示外箱序列号；若原本关联了单据但因减货变更为不关联，判断为满足关联单据条件，允许下载 FBA 标签并展示外箱序号。 操作信息 【标签类型】单选选择器，默认空，必填，选项「每张纸打印6个标签（A4）」「每张纸打印1个标签（A4）」「每张纸打印1个热敏标签（10×10cm）」 【shipment】展示，按 shipment + 供应商编号维度聚合 【供应商编号】筛选项，支持按供应商编... ]]></description>
+    <pubDate>Mon, 06 Jul 2026 11:41:36 GMT</pubDate>
   </item><item>
-    <title>001需求文档结构规范</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/001%E9%9C%80%E6%B1%82%E6%96%87%E6%A1%A3%E7%BB%93%E6%9E%84%E8%A7%84%E8%8C%83</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/001%E9%9C%80%E6%B1%82%E6%96%87%E6%A1%A3%E7%BB%93%E6%9E%84%E8%A7%84%E8%8C%83</guid>
-    <description><![CDATA[  适用范围：产品 / 项目需求文档体系管理 层级原则：由宏观到微观，四层拆解 —— Epic → Feature → Function Point（功能点）→ 变更记录 一、目录结构规范 📁 产品需求文档 │ ├── 📁 01_[史诗名称，如&quot;产品开发&quot;]/ 【史诗目录】 │ ├── 史诗说明.md （本史诗的目标、范围、关联业务价值） │ │ │ ├── 📁 功能模块_01_[名称，如&quot;项目管理&quot;]/ 【功能模块目录】 │ │ ├── 功能模块说明.md （本模块的边界、涉及角色、整体流程图） │ │ ├── 功能点_01_[名称].md 【功能... ]]></description>
-    <pubDate>Mon, 06 Jul 2026 06:29:35 GMT</pubDate>
+    <title>00-全局说明</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/00-%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/00-%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</guid>
+    <description><![CDATA[ 全局说明 来源页面：调柜单.html 状态变更 stateDiagram-v2 [*] --&gt; 待确认 : 新建/导入 待确认 --&gt; 待验货 : 确认 待验货 --&gt; 待装柜 : 全部验货完成 待装柜 --&gt; 待发货 : 确认装柜/装柜减货审批通过 待发货 --&gt; 已发货 : 头程发货单确认提货 待确认 --&gt; 已废弃 : 废弃/废弃调柜单审批通过 待验货 --&gt; 待确认 : 回退 待装柜 --&gt; 待确认 : 回退 待发货 --&gt; 待确认 : 回退 回退目标状态原型说明区写为「待确认」，弹窗文案写为「待确定」，目标状态标记为「待确定」。 ... ]]></description>
+    <pubDate>Mon, 06 Jul 2026 11:35:38 GMT</pubDate>
   </item><item>
-    <title>02-PRD模板-查询说明-v1.1</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/%E5%8A%9F%E8%83%BD%E7%82%B9%E6%A8%A1%E6%9D%BF/02-PRD%E6%A8%A1%E6%9D%BF-%E6%9F%A5%E8%AF%A2%E8%AF%B4%E6%98%8E-v1.1</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/%E5%8A%9F%E8%83%BD%E7%82%B9%E6%A8%A1%E6%9D%BF/02-PRD%E6%A8%A1%E6%9D%BF-%E6%9F%A5%E8%AF%A2%E8%AF%B4%E6%98%8E-v1.1</guid>
-    <description><![CDATA[ PRD模板-查询说明-v1.1 列表数据 【单据编号】xxxxxxx 【状态】 【申请人】 【申请时间】 【备注】 明细数据 【明细字段1】 【明细字段2】 筛选项 【字段1】文本输入框，默认空 【字段2】数值输入框，默认空 【字段3】单选选择器，默认xxx 【字段4】多选选择器，默认xxx 【字段5】单选级联选择器，默认xxx 【字段6】多选级联选择器，默认xxx 【字段7】日期选择器，默认xxx 【字段8】日期范围选择器，默认xxx 详情 基础信息 【单据编号】 【状态】 【申请人】 【申请时间】 明细信息 【明细字段1】 【明细字段2】. ]]></description>
-    <pubDate>Mon, 06 Jul 2026 06:22:31 GMT</pubDate>
+    <title>变更记录</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</guid>
+    <description><![CDATA[ 变更记录 V1.0.0 新增调柜单全局说明、查询说明、新建/编辑、导入、确认、确认装柜、回退、废弃、质检、入库、调度、费用、导出相关文档。. ]]></description>
+    <pubDate>Mon, 06 Jul 2026 11:35:38 GMT</pubDate>
   </item><item>
-    <title>03-PRD模板-操作-v1.1</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/%E5%8A%9F%E8%83%BD%E7%82%B9%E6%A8%A1%E6%9D%BF/03-PRD%E6%A8%A1%E6%9D%BF-%E6%93%8D%E4%BD%9C-v1.1</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/%E5%8A%9F%E8%83%BD%E7%82%B9%E6%A8%A1%E6%9D%BF/03-PRD%E6%A8%A1%E6%9D%BF-%E6%93%8D%E4%BD%9C-v1.1</guid>
-    <description><![CDATA[ 业务规则 入口：从xxx页面点击「xxx」 展示逻辑：xxx 当用户点击「xxx」时，xxx。 基础信息 【单据编号】自动生成/展示 【状态】展示 操作信息 【字段1】文本输入框，默认空 【字段2】数值输入框，默认0，必填 【字段3】单选选择器，默认xxx，必填 【字段4】多选选择器，默认xxx，非必填 【操作时间】日期选择器，默认当天，必填 【附件】附件上传，非必填 【备注】文本输入框，非必填 明细信息 【序号】从1开始，升序自增1 【明细字段1】单选选择器，默认xxx，必填 【明细字段2】多选选择器，默认xxx，非必填 点击提交/确定时校验 校验1：前端校验xxx；不满足提示：xxx 校验... ]]></description>
-    <pubDate>Mon, 06 Jul 2026 06:21:10 GMT</pubDate>
+    <title>00-全局说明</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8F%98%E6%9B%B4%E5%8D%95/00-%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8F%98%E6%9B%B4%E5%8D%95/00-%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</guid>
+    <description><![CDATA[ 全局说明 来源页面：调柜变更单.html、审批调柜变更单.html 状态变更 stateDiagram-v2 [*] --&gt; 待提交 : 保存 待提交 --&gt; 待审批 : 提交 待审批 --&gt; 已完成 : 审批通过 待审批 --&gt; 已驳回 : 审批不通过 待审批 --&gt; 待提交 : 撤回-编辑调柜单 待审批 --&gt; 已撤回 : 撤回审批单 已驳回 --&gt; [*] 已完成 --&gt; [*] 【变更类型】为「废弃调柜单」或「确认装柜减货」时，撤回会真删调柜变更单数据；是否仍保留业务状态记录待确定。 状态与操作对照 状态可执行的操作所有状态详情待提交编辑... ]]></description>
+    <pubDate>Mon, 06 Jul 2026 11:35:38 GMT</pubDate>
   </item><item>
-    <title>请款池变更记录</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E8%AF%B7%E6%AC%BE%E6%B1%A0%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E8%AF%B7%E6%AC%BE%E6%B1%A0%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</guid>
-    <description><![CDATA[ V1.0.1 1.新增退款按钮 1.1预付单增加退款按钮 1.2采购单增加退款 1.3费用单增加退款 发起预付单退款 发起采购应付单退款 发起费用单退款 2.请款池增加字段 2.1预付单增加字段 【预付余额】查询并展示该预付单关联的预付余额 【可退款金额】默认等于0，按照预付单关联的预付余额自动同步（即消耗了预付，预付单的可退款金额会同步减少、增加了退款，预付单的可退款金额也会同步减少） 【退款中金额】关联的退款单剔除“已废弃、已驳回”的退款单明细里面本请款单明细的”退款中金额‘的汇总 【已退款金额】关联的退款单剔除“已废弃、已驳回”的退款单明细里面本请款单明细的”已退款金额‘的汇总 【退款单... ]]></description>
-    <pubDate>Mon, 06 Jul 2026 06:16:05 GMT</pubDate>
+    <title>07-变更记录</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8F%98%E6%9B%B4%E5%8D%95/07-%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8F%98%E6%9B%B4%E5%8D%95/07-%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</guid>
+    <description><![CDATA[ 变更记录 V1.0.0 新增调柜变更单全局说明、查询说明、新建调柜变更单、编辑备注、删除、审批、撤回审批相关文档。. ]]></description>
+    <pubDate>Mon, 06 Jul 2026 11:35:38 GMT</pubDate>
   </item><item>
-    <title>样品需求管理变更记录</title>
-    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</guid>
-    <description><![CDATA[ V1 1.增加自动触发样品需求管理 1.新增自研项目在手板认证开始时自动触发手板样 自动创建手板样需求 2.新增自研项目在试模开始时自动触发试模T0样 自动创建试模T0样品需求 3.新增通货/改款/拓产品在采购寻源开始时自动创建 T0样品 需求 自动创建T0样品需求 2.手动创建样品增加竞品样品&amp;T0样查询逻辑变更 直接查看最新逻辑手动新建样品需求 3.优化打样逻辑 1.打样逻辑从明细打样，优化成主表打样 2.原有生成样品需求时则生成样品明细，改成了只生成样品需求，不生成样品明细 3.涉及到的主表&amp;子表的状态变更，样品需求的实际时间逻辑变更调整 打样 到样 初样确认 签样 4.... ]]></description>
-    <pubDate>Mon, 06 Jul 2026 06:11:37 GMT</pubDate>
+    <title>导出-三方仓外箱标签</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E4%B8%89%E6%96%B9%E4%BB%93%E5%A4%96%E7%AE%B1%E6%A0%87%E7%AD%BE</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E4%B8%89%E6%96%B9%E4%BB%93%E5%A4%96%E7%AE%B1%E6%A0%87%E7%AD%BE</guid>
+    <description><![CDATA[ 操作：导出三方仓外箱标签 业务规则 入口：从「调柜单列表」或调柜单详情点击「导出三方仓外箱标签」。 展示逻辑：发货标识为「是」时展示按钮；点击后打开头程发货单详情中的「查看」弹窗；头程发货单已核对时展示对应文件，未核对时展示内容为空。 点击提交/确定时校验 校验1：原型未展开额外校验，待确定 通过校验后执行 执行1：导出三方仓外箱标签文件，文件格式和命名规则待确定. ]]></description>
+    <pubDate>Mon, 06 Jul 2026 11:21:08 GMT</pubDate>
   </item><item>
-    <title>全局说明</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/%E8%AF%B7%E6%AC%BE%E6%B1%A0/%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</guid>
-    <description><![CDATA[ .需求背景 “当前[现状/现象] ，导致[问题/损失] ， 因此需要[本次方案]。 案例：亚马逊新增低库存水平费标准，目前被收费产品逐渐增多，人为统计效率低并且容易出错，系统通过系统可以实现自动计算功能。 2.需求负责人 3.需求场景/故事点 描述用户具体在什么时间、什么地点、因为什么事件触发。用“作为[角色]，我想[做某事]，在此期间[遇到了某问题]，以便[达成目的]”的格式写清楚。 案例： 场景1：备货主管在每周一通过系统智能补货页面导出“预测数据”，“在库数据”，“在途数据”，“待发数据”，推算当前库存以及预测数据，计算是否会被收低库存水平费，在收集数据和反算是否被收费时，需要花费1天时... ]]></description>
-    <pubDate>Mon, 06 Jul 2026 06:08:43 GMT</pubDate>
+    <title>导出-来货标识卡</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E6%9D%A5%E8%B4%A7%E6%A0%87%E8%AF%86%E5%8D%A1</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E6%9D%A5%E8%B4%A7%E6%A0%87%E8%AF%86%E5%8D%A1</guid>
+    <description><![CDATA[ 操作：下载来货标识卡 业务规则 入口：从「调柜单列表」或调柜单详情点击「下载来货标识卡」。 展示逻辑：发货标识为「是」时展示按钮；点击后打开头程发货单详情中的「查看」弹窗；头程发货单已核对时展示对应文件，未核对时展示内容为空。 点击提交/确定时校验 校验1：原型未展开额外校验，待确定 通过校验后执行 执行1：导出来货标识卡 xlsx 文件 执行2：文件名称为「{发货单号}-来货标识卡-yyyymmddhhmmss」 执行3：按调柜单 Msku 拆分多个 sheet，同 Msku 多供应商也拆分为多条 执行4：每页导出 6 张. ]]></description>
+    <pubDate>Mon, 06 Jul 2026 11:21:08 GMT</pubDate>
   </item><item>
-    <title>05-PRD模板-变更记录-v1.1</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/%E9%9C%80%E6%B1%82%E6%A8%A1%E6%9D%BF/05-PRD%E6%A8%A1%E6%9D%BF-%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95-v1.1</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/%E9%9C%80%E6%B1%82%E6%A8%A1%E6%9D%BF/05-PRD%E6%A8%A1%E6%9D%BF-%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95-v1.1</guid>
-    <description><![CDATA[ PRD模板-变更记录-v1.1 V1.0.0 新增功能 全局说明 查询列表 操作xxx 系统自动触发xxx V1.0.1 调整xxx 修复xxx . ]]></description>
-    <pubDate>Mon, 06 Jul 2026 06:08:42 GMT</pubDate>
+    <title>导出-调柜单</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E8%B0%83%E6%9F%9C%E5%8D%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E8%B0%83%E6%9F%9C%E5%8D%95</guid>
+    <description><![CDATA[ 操作：导出调柜单 业务规则 入口：从「调柜单列表」或调柜单详情点击「导出调柜单」。 展示逻辑：导出前校验调柜单质检单是否已建立齐全，即验货状态为「待验货」或「已完成」。 点击提交/确定时校验 校验1：若质检单未齐全，提示：质检单未齐全，无法导出发货单 通过校验后执行 执行1：导出 xlsx 文件 执行2：文件名称为「{发货单号}-送货单-yyyymmddhhmmss」 执行3：按调柜单关联供应商拆分多个 sheet 执行4：sheet 名称为「{供应商编号}」. ]]></description>
+    <pubDate>Mon, 06 Jul 2026 11:21:08 GMT</pubDate>
   </item><item>
-    <title>查询列表</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E8%B4%A8%E6%A3%80%E5%8D%95/%E6%9F%A5%E8%AF%A2%E5%88%97%E8%A1%A8</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E8%B4%A8%E6%A3%80%E5%8D%95/%E6%9F%A5%E8%AF%A2%E5%88%97%E8%A1%A8</guid>
-    <description><![CDATA[ 质检单-查询列表 列表数据 通用列表规则 【排序】列表默认按【创建时间】倒序排列。 【分页】页面展示「10条/页」和总条数，分页规格是否可调整待确定。 大货质检列表 【图片】展示 SKU 图片。 【质检单号】 【产品名称SKU】展示产品名称和 SKU 信息。 【Msku】展示 Msku 信息。 【销售平台】取 Msku 信息。 【发货国】取 Msku 信息。 【店铺】取 Msku 信息。 【质检方式】基于品质配置获取，按供应商维度预填。 【供应商】从调柜单创建时取调柜单的生产供应商；从采购单创建时取采购单供应商。 【采购员】展示关联采购单信息，多个采购员用逗号展示，待确定。 【仓库】从调柜单创... ]]></description>
-    <pubDate>Mon, 06 Jul 2026 06:08:41 GMT</pubDate>
+    <title>操作-回退调柜单</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E6%93%8D%E4%BD%9C-%E5%9B%9E%E9%80%80%E8%B0%83%E6%9F%9C%E5%8D%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E6%93%8D%E4%BD%9C-%E5%9B%9E%E9%80%80%E8%B0%83%E6%9F%9C%E5%8D%95</guid>
+    <description><![CDATA[ 操作：回退调柜单 业务规则 入口：从「调柜单列表」点击「回退」 操作信息 【原因】文本输入框，默认空，必填 点击提交/确定时校验 校验1：校验调柜单是否存在状态为「待提交」或「待审批」的调柜变更单；存在则提示：调柜单存在未完成的调柜变更单，无法回退 通过校验后执行 执行1：回退后调柜单目标状态待确定 执行2：记录回退原因 执行3：记录操作日志. ]]></description>
+    <pubDate>Mon, 06 Jul 2026 11:21:08 GMT</pubDate>
   </item>
     </channel>
   </rss>
