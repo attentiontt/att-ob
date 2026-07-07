@@ -6,6 +6,18 @@
       <description>最近的10条笔记 on test-ob</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>查看列表</title>
+    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E8%B4%A2%E5%B9%B4%E7%9B%AE%E6%A0%87%E7%9C%8B%E6%9D%BF/%E6%9F%A5%E7%9C%8B%E5%88%97%E8%A1%A8</link>
+    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E8%B4%A2%E5%B9%B4%E7%9B%AE%E6%A0%87%E7%9C%8B%E6%9D%BF/%E6%9F%A5%E7%9C%8B%E5%88%97%E8%A1%A8</guid>
+    <description><![CDATA[ 字段规则 统计财年销量、财年销售额；当用户未勾选或者未运营预测替换初始预测，则都按照列表展示的规则进行按财年的汇总（需要剔除标签） 【Msku】goods id信息 【标签】展示； 1.停用标签： 销售国ID在开发产品管理被停用 销售国ID对应的goods id在产品管理被停售 则展示如果停用的数据则在列表将预测销量显示为空值不参与计算，但是详情点击查看的逻辑无需处理； 2.跟卖标签：如果在商品维护编号/销售国的维度找到多条galas goods countryID，创建时间更晚的数据标记为跟卖，如果跟卖的数据则在列表将预测销量显示为空值不参与计算，但是详情点击查看的逻辑无需处理 3.退市标签... ]]></description>
+    <pubDate>Tue, 07 Jul 2026 03:18:36 GMT</pubDate>
+  </item><item>
+    <title>ERP-10010</title>
+    <link>https://attentiontt.github.io/att-ob/Project/v1.11.0/ERP-10010</link>
+    <guid>https://attentiontt.github.io/att-ob/Project/v1.11.0/ERP-10010</guid>
+    <description><![CDATA[ 财年目标看板新增字段 【平台售价(本币)】goods id查询商品开发进度表 【开发分组】按照开发员对应的部门展示，展示格式只展示最子层级部门 【预估销售时长】基于【测款方式】计算； 不断货测款：财年最后一天-预计上架时间-初始 断货测款：财年最后一天-预计上架时间-初始-30-（中国到目的国的物流时效）；物流时效：整柜海卡和散货海卡里面取最短的运输时效（如果没有则取参数值） 财年目标看板原字段逻辑优化 【标签】展示； 1.删除标签： ： 销售国ID在开发产品管理被删除 ： 销售国ID对应的goods id在产品管理被删除 1.停用标签： 销售国ID在开发产品管理被停用 销售国ID对应的goo... ]]></description>
+    <pubDate>Tue, 07 Jul 2026 03:18:18 GMT</pubDate>
+  </item><item>
     <title>1507</title>
     <link>https://attentiontt.github.io/att-ob/Project/V1.12.0/1507</link>
     <guid>https://attentiontt.github.io/att-ob/Project/V1.12.0/1507</guid>
@@ -52,18 +64,6 @@
     <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E6%9D%A5%E8%B4%A7%E6%A0%87%E8%AF%86%E5%8D%A1</link>
     <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E6%9D%A5%E8%B4%A7%E6%A0%87%E8%AF%86%E5%8D%A1</guid>
     <description><![CDATA[ 操作：下载来货标识卡 业务规则 入口：从「调柜单列表」或调柜单详情点击「下载来货标识卡」。 展示逻辑：发货标识为「是」时展示按钮；点击后打开头程发货单详情中的「查看」弹窗；头程发货单已核对时展示对应文件，未核对时展示内容为空。 点击提交/确定时校验 校验1：原型未展开额外校验，待确定 通过校验后执行 执行1：导出来货标识卡 xlsx 文件 执行2：文件名称为「{发货单号}-来货标识卡-yyyymmddhhmmss」 执行3：按调柜单 Msku 拆分多个 sheet，同 Msku 多供应商也拆分为多条 执行4：每页导出 6 张. ]]></description>
-    <pubDate>Mon, 06 Jul 2026 11:21:08 GMT</pubDate>
-  </item><item>
-    <title>导出-调柜单</title>
-    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E8%B0%83%E6%9F%9C%E5%8D%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E8%B0%83%E6%9F%9C%E5%8D%95</guid>
-    <description><![CDATA[ 操作：导出调柜单 业务规则 入口：从「调柜单列表」或调柜单详情点击「导出调柜单」。 展示逻辑：导出前校验调柜单质检单是否已建立齐全，即验货状态为「待验货」或「已完成」。 点击提交/确定时校验 校验1：若质检单未齐全，提示：质检单未齐全，无法导出发货单 通过校验后执行 执行1：导出 xlsx 文件 执行2：文件名称为「{发货单号}-送货单-yyyymmddhhmmss」 执行3：按调柜单关联供应商拆分多个 sheet 执行4：sheet 名称为「{供应商编号}」. ]]></description>
-    <pubDate>Mon, 06 Jul 2026 11:21:08 GMT</pubDate>
-  </item><item>
-    <title>操作-回退调柜单</title>
-    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E6%93%8D%E4%BD%9C-%E5%9B%9E%E9%80%80%E8%B0%83%E6%9F%9C%E5%8D%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E6%93%8D%E4%BD%9C-%E5%9B%9E%E9%80%80%E8%B0%83%E6%9F%9C%E5%8D%95</guid>
-    <description><![CDATA[ 操作：回退调柜单 业务规则 入口：从「调柜单列表」点击「回退」 操作信息 【原因】文本输入框，默认空，必填 点击提交/确定时校验 校验1：校验调柜单是否存在状态为「待提交」或「待审批」的调柜变更单；存在则提示：调柜单存在未完成的调柜变更单，无法回退 通过校验后执行 执行1：回退后调柜单目标状态待确定 执行2：记录回退原因 执行3：记录操作日志. ]]></description>
     <pubDate>Mon, 06 Jul 2026 11:21:08 GMT</pubDate>
   </item>
     </channel>
