@@ -6,17 +6,17 @@
       <description>最近的10条笔记 on test-ob</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>市场分析-查询-市场分析列表</title>
+    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90-%E6%9F%A5%E8%AF%A2-%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90%E5%88%97%E8%A1%A8</link>
+    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90-%E6%9F%A5%E8%AF%A2-%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90%E5%88%97%E8%A1%A8</guid>
+    <description><![CDATA[ 查询-市场分析列表 列表数据 【主图】图片，字段数值取最新月数据，列表默认固定，原型列表区未展开取值字段 【Asin】文本链接，字段映射为 asin，支持点击跳转链接，字段数值取最新月数据，列表默认固定；原型说明中对应「子Asin」 【父Asin】文本链接，字段映射为 parent，支持点击跳转链接，字段数值取最新月数据，列表默认固定 【Asin类型】字段数值取最新月数据 【品牌】字段映射为 brand，字段数值取最新月数据 【标题】字段映射为 title，字段数值取最新月数据 【属性动态字段】根据「Asin拓展属性配置」维护的属性项和属性值排序展示，当属性配置保存后自动更新属性数据，排序需要... ]]></description>
+    <pubDate>Tue, 07 Jul 2026 11:52:12 GMT</pubDate>
+  </item><item>
     <title>市场分析-操作-拉取Asin</title>
     <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90-%E6%93%8D%E4%BD%9C-%E6%8B%89%E5%8F%96Asin</link>
     <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90-%E6%93%8D%E4%BD%9C-%E6%8B%89%E5%8F%96Asin</guid>
     <description><![CDATA[ 操作-拉取Asin 点击拉取Asin时执行 按照Asin+国家去重结果登记数据拉取清单，过滤掉已经成功的数据 请求数据 当前日期若⇐20.则从2020年拉取上上月 当前日期若&gt;21，则从2020年拉取至上个月 按Asin+月份去查询卖家精灵数据并存入数据库 异常场景 拉取失败：该 Asin+国家不存在任意一条月份数据时，定义为拉取失败 重复点击：在上一任务未执行完成前，重复点击不生效 待确定 「拉取Asin」作用范围是当前筛选结果、当前分页数据、选中数据还是全部当前市场分类 Asin，原型未说明。 拉取失败后的重试入口、提示文案和状态展示位置待确定。. ]]></description>
     <pubDate>Tue, 07 Jul 2026 11:38:02 GMT</pubDate>
-  </item><item>
-    <title>市场分析-查询-市场分析列表</title>
-    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90-%E6%9F%A5%E8%AF%A2-%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90%E5%88%97%E8%A1%A8</link>
-    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90-%E6%9F%A5%E8%AF%A2-%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90%E5%88%97%E8%A1%A8</guid>
-    <description><![CDATA[ 查询-市场分析列表 列表数据 【主图】图片，字段数值取最新月数据，列表默认固定，原型列表区未展开取值字段 【Asin】文本链接，字段映射为 asin，支持点击跳转链接，字段数值取最新月数据，列表默认固定；原型说明中对应「子Asin」 【父Asin】文本链接，字段映射为 parent，支持点击跳转链接，字段数值取最新月数据，列表默认固定 【Asin类型】字段数值取最新月数据 【品牌】字段映射为 brand，字段数值取最新月数据 【标题】字段映射为 title，字段数值取最新月数据 【属性动态字段】根据「Asin拓展属性配置」维护的属性项和属性值排序展示，当属性配置保存后自动更新属性数据，排序需要... ]]></description>
-    <pubDate>Tue, 07 Jul 2026 11:35:28 GMT</pubDate>
   </item><item>
     <title>市场分析-操作-添加Asin</title>
     <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90-%E6%93%8D%E4%BD%9C-%E6%B7%BB%E5%8A%A0Asin</link>
