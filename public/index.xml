@@ -6,65 +6,65 @@
       <description>最近的10条笔记 on test-ob</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>市场分析-查询-市场分析列表</title>
-    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90-%E6%9F%A5%E8%AF%A2-%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90%E5%88%97%E8%A1%A8</link>
-    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90-%E6%9F%A5%E8%AF%A2-%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90%E5%88%97%E8%A1%A8</guid>
-    <description><![CDATA[ 查询-市场分析列表 列表数据 【主图】图片，字段数值取最新月数据，列表默认固定，原型列表区未展开取值字段 【Asin】文本链接，字段映射为 asin，支持点击跳转链接，字段数值取最新月数据，列表默认固定；原型说明中对应「子Asin」 【父Asin】文本链接，字段映射为 parent，支持点击跳转链接，字段数值取最新月数据，列表默认固定 【Asin类型】字段数值取最新月数据 【品牌】字段映射为 brand，字段数值取最新月数据 【标题】字段映射为 title，字段数值取最新月数据 【属性动态字段】根据「Asin拓展属性配置」维护的属性项和属性值排序展示，当属性配置保存后自动更新属性数据，排序需要... ]]></description>
-    <pubDate>Tue, 07 Jul 2026 11:52:12 GMT</pubDate>
+    <title>自动创建T0样品需求</title>
+    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82-%E2%80%94-%E5%88%9B%E5%BB%BA/%E8%87%AA%E5%8A%A8%E5%88%9B%E5%BB%BAT0%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82</link>
+    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82-%E2%80%94-%E5%88%9B%E5%BB%BA/%E8%87%AA%E5%8A%A8%E5%88%9B%E5%BB%BAT0%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82</guid>
+    <description><![CDATA[ 业务规则 触发条件： 当 新品项目的非自研项目的「采购寻源」节点录入实际开始时间时， 系统自动 创建一条T0样品需求并关联至该项目， 取值逻辑： 【样品需求编号】置灰输入框，文案固定为自动生成 【样品用途】T0样品 【Sku】项目绑定的sku 【项目编号】项目编号 【打样负责人】 项目有值：项目管理的项目人员里的【打样负责人】处预填，允许为空、可以二次修改 【创建时间】样品需求的创建时间 【预计到样时间】项目进度里面寻源预计结束时间-更新减去3天 【实际到样时间】为空 【预计初样确认】为空 【实际初样确认】为空 【预计评估时间】等于预计到样时间+样品评估的参数值 【实际评估时间】为空 【预计签... ]]></description>
+    <pubDate>Wed, 08 Jul 2026 08:41:31 GMT</pubDate>
   </item><item>
-    <title>市场分析-操作-拉取Asin</title>
-    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90-%E6%93%8D%E4%BD%9C-%E6%8B%89%E5%8F%96Asin</link>
-    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90-%E6%93%8D%E4%BD%9C-%E6%8B%89%E5%8F%96Asin</guid>
-    <description><![CDATA[ 操作-拉取Asin 点击拉取Asin时执行 按照Asin+国家去重结果登记数据拉取清单，过滤掉已经成功的数据 请求数据 当前日期若⇐20.则从2020年拉取上上月 当前日期若&gt;21，则从2020年拉取至上个月 按Asin+月份去查询卖家精灵数据并存入数据库 异常场景 拉取失败：该 Asin+国家不存在任意一条月份数据时，定义为拉取失败 重复点击：在上一任务未执行完成前，重复点击不生效 待确定 「拉取Asin」作用范围是当前筛选结果、当前分页数据、选中数据还是全部当前市场分类 Asin，原型未说明。 拉取失败后的重试入口、提示文案和状态展示位置待确定。. ]]></description>
-    <pubDate>Tue, 07 Jul 2026 11:38:02 GMT</pubDate>
+    <title>全局说明</title>
+    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</link>
+    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</guid>
+    <description><![CDATA[ 全局说明 状态变更 stateDiagram-v2 [*] --&gt; 待处理 : 系统生成 [*] --&gt; 已完成 : 明细均无需回复对策 待处理 --&gt; 待审核 : 处理并提交 待审核 --&gt; 待处理 : 审批驳回 待审核 --&gt; 已完成 : 审批通过 已完成 --&gt; [*] 状态与操作对照 状态可执行的操作所有状态详情、日志、导出待处理处理待审核日志已完成日志 通用规则 状态枚举以「待处理」「待审核」「已完成」为准；原型字段说明中出现「待审批」，与列表展示的「待审核」命名不一致，后续需统一。 「质检异常跟进单」由上游「样品评估报告详情」「质检单（大货-详情... ]]></description>
+    <pubDate>Wed, 08 Jul 2026 07:49:15 GMT</pubDate>
   </item><item>
-    <title>市场分析-操作-添加Asin</title>
-    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90-%E6%93%8D%E4%BD%9C-%E6%B7%BB%E5%8A%A0Asin</link>
-    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90-%E6%93%8D%E4%BD%9C-%E6%B7%BB%E5%8A%A0Asin</guid>
-    <description><![CDATA[ 操作-添加Asin 业务规则 入口：从「市场调研列表」二级市场分类行点击「添加Asin」 入口：从「市场分析列表」点击「添加Asin」 展示逻辑：打开「新增细化市场分析竞品」弹窗。 操作信息 【国家/站点】系统取当前市场分类对应国家/站点，不在弹窗展示 【市场分类名称】系统取当前市场分类，不在弹窗展示 【Asin】多行文本输入框，默认空，必填，输入提示「请输入Asin,多个Asin请跨行输入」 点击确定时校验 校验1：前端校验【Asin】是否为空；不满足提示文案待确定 通过校验后执行 执行1：建立 Asin 与当前市场分类的关联关系；一个 Asin 可以存在于多个市场分类；若Asin已在当前市... ]]></description>
-    <pubDate>Tue, 07 Jul 2026 10:22:59 GMT</pubDate>
+    <title>变更记录</title>
+    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</guid>
+    <description><![CDATA[ 变更记录 V1.0.0 新增「质检异常跟进单」PRD 初版 全局说明 查询-质检异常跟进单列表 操作-处理质检异常跟进单 导出-质检异常跟进单列表 系统-自动触发-生成质检异常跟进单 . ]]></description>
+    <pubDate>Wed, 08 Jul 2026 07:49:15 GMT</pubDate>
   </item><item>
-    <title>系统操作-卖家精灵按Asin拉取</title>
-    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C-%E5%8D%96%E5%AE%B6%E7%B2%BE%E7%81%B5%E6%8C%89Asin%E6%8B%89%E5%8F%96</link>
-    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C-%E5%8D%96%E5%AE%B6%E7%B2%BE%E7%81%B5%E6%8C%89Asin%E6%8B%89%E5%8F%96</guid>
-    <description><![CDATA[ 触发条件 1.新增拉取清单触发：用户添加 Asin 后，系统基于用户添加的【国家/站点】+【Asin】去重结果登记数据拉取清单，新清单状态为「待拉取」。 2.用户点击界面的拉取Asin 执行规则 按照Asin（用户添加 Asin 后，系统基于用户添加的【国家/站点】+【Asin】去重结果登记数据拉取清单） 请求数据 当前日期若⇐20.则从2020年拉取上上月 当前日期若&gt;21，则从2020年拉取至上个月 按Asin+月份去查询卖家精灵数据并存入数据库. ]]></description>
-    <pubDate>Tue, 07 Jul 2026 10:13:05 GMT</pubDate>
+    <title>导出-质检异常跟进单列表</title>
+    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E5%AF%BC%E5%87%BA-%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95%E5%88%97%E8%A1%A8</link>
+    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E5%AF%BC%E5%87%BA-%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95%E5%88%97%E8%A1%A8</guid>
+    <description><![CDATA[ 导出-质检异常跟进单列表 业务规则 入口：从「质检异常跟进单列表」点击「导出」。 导出范围：按当前筛选条件导出。 导出文件：质检异常跟进单导出.xlsx。 导出内容：导出列表数据和明细数据。 导出字段 基础信息 【图片】关联 SKU 图片 【跟进单号】跟进单编号 【状态】当前状态 【产品名称】Msku 关联产品名称 【产品SKU】Msku 关联产品 SKU 【Msku(库存SKU)】关联来源单据的 Msku 【销售平台】Msku 关联销售平台 【目的国】Msku 关联目的国 【店铺】Msku 关联店铺 【关联单据】来源单据 【质检类型】来源质检类型 【供应商】关联来源单据的供应商 【责任方】关... ]]></description>
+    <pubDate>Wed, 08 Jul 2026 07:49:15 GMT</pubDate>
   </item><item>
-    <title>系统操作-卖家精灵数据按月拉取</title>
-    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C-%E5%8D%96%E5%AE%B6%E7%B2%BE%E7%81%B5%E6%95%B0%E6%8D%AE%E6%8C%89%E6%9C%88%E6%8B%89%E5%8F%96</link>
-    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C-%E5%8D%96%E5%AE%B6%E7%B2%BE%E7%81%B5%E6%95%B0%E6%8D%AE%E6%8C%89%E6%9C%88%E6%8B%89%E5%8F%96</guid>
-    <description><![CDATA[ 触发条件 新增拉取清单触发：用户添加 Asin 后，系统基于用户添加的【国家/站点】+【Asin】去重结果登记数据拉取清单，新清单状态为「待拉取」。 月度定时触发：每个月21号凌晨0点5分 执行规则 按照Asin进行全量拉取 （用户添加 Asin 后，系统基于用户添加的【国家/站点】+【Asin】去重结果登记数据拉取清单） 请求上一个月的数据 按Asin+月份去查询卖家精灵数据并存入数据库 只要有任意一条数据抓取成功则登记【数据最新月份】. ]]></description>
-    <pubDate>Tue, 07 Jul 2026 10:11:14 GMT</pubDate>
+    <title>操作-处理质检异常跟进单</title>
+    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E6%93%8D%E4%BD%9C-%E5%A4%84%E7%90%86%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E6%93%8D%E4%BD%9C-%E5%A4%84%E7%90%86%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95</guid>
+    <description><![CDATA[ 操作-处理质检异常跟进单 业务规则 入口：从「质检异常跟进单列表」点击「处理」。 展示逻辑：展示「处理弹窗」，弹窗内展示跟进单基础信息、来源明细和需补充的处理信息。 当用户点击「确定」时，系统校验并保存处理信息。 基础信息 【跟进单号】展示 【状态】展示 【是否逾期处理】展示 【质检类型】展示 【QE】展示 操作信息 【原因分析】文本输入框，默认空，当明细【是否需要回复对策】=「是」时必填，最多输入 500 个字符 【临时改善对策】文本输入框，默认空，当明细【是否需要回复对策】=「是」时必填，最多输入 500 个字符 【长期改善对策】文本输入框，默认空，当明细【是否需要回复对策】=「是」时必填... ]]></description>
+    <pubDate>Wed, 08 Jul 2026 07:49:15 GMT</pubDate>
   </item><item>
-    <title>市场分析-操作-导入更新属性</title>
-    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90-%E6%93%8D%E4%BD%9C-%E5%AF%BC%E5%85%A5%E6%9B%B4%E6%96%B0%E5%B1%9E%E6%80%A7</link>
-    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90-%E6%93%8D%E4%BD%9C-%E5%AF%BC%E5%85%A5%E6%9B%B4%E6%96%B0%E5%B1%9E%E6%80%A7</guid>
-    <description><![CDATA[ 操作-导入更新属性 业务规则 入口：从「市场分析列表」点击「导入更新属性」 展示逻辑：打开「导入」弹窗，提示「支持导入格式为xlsx的文件(手动修改文件后缀无效)」和「模板的表头不可更改，不可删除」。 操作信息 【下载列表属性信息】按钮，点击后列表属性信息 表格名称：{调研市场名}属性信息 表格内容：【Asin】【{属性项}】 【导入文件】附件上传，默认空，必填，仅支持 xlsx 文件，手动修改文件后缀无效 导入字段 【Asin】导入模板字段，必填，校验是否属于本页面对应的市场分析分类存在关联关系；不满足则提示该Asin在{市场分类名称}中不存在，不允许导入 【{属性项}】 输入框：字段值只允... ]]></description>
-    <pubDate>Tue, 07 Jul 2026 09:53:20 GMT</pubDate>
+    <title>查询-质检异常跟进单列表</title>
+    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E6%9F%A5%E8%AF%A2-%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95%E5%88%97%E8%A1%A8</link>
+    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E6%9F%A5%E8%AF%A2-%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95%E5%88%97%E8%A1%A8</guid>
+    <description><![CDATA[ 查询-质检异常跟进单列表 列表数据 【图片】展示关联 SKU 图片 【跟进单号】按 FU+年月日+供应商编号+两位自增序列号 生成 【状态】展示「待处理」「待审核」「已完成」 【产品名称】取 Msku 关联信息 【产品SKU】取 Msku 关联信息 【Msku(库存SKU)】取关联来源单据的 Msku 【销售平台】取 Msku 关联信息 【目的国】取 Msku 关联信息 【店铺】取 Msku 关联信息 【关联单据】展示来源单据 【质检类型】展示「样品质检」「新品质检」「大货质检」 【供应商】取关联来源单据的供应商 【责任方】取关联来源单据的责任方 【QE】取业务配置-品质配置-供应商质检配置中... ]]></description>
+    <pubDate>Wed, 08 Jul 2026 07:49:15 GMT</pubDate>
   </item><item>
-    <title>市场分析-操作-修改属性</title>
-    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90-%E6%93%8D%E4%BD%9C-%E4%BF%AE%E6%94%B9%E5%B1%9E%E6%80%A7</link>
-    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90-%E6%93%8D%E4%BD%9C-%E4%BF%AE%E6%94%B9%E5%B1%9E%E6%80%A7</guid>
-    <description><![CDATA[ 操作-修改属性 业务规则 入口：从「市场分析列表」选中任意一条或多条数据后点击「修改属性」 展示逻辑：打开「批量编辑属性」弹窗，属性选择为当前属性配置中的属性。 点击修改按钮时校验 校验1：前端校验是否已选中至少一条数据；不满足提示请至少选择一条信息 通过校验后展示弹窗 操作信息 【选中项数量】展示字段，显示「更新{x}个选中项的属性」 【属性名称】单选选择器，默认空，必填，选项取当前市场分析分类的属性配置 【更新后的属性值】选择器或文本输入框，默认空，必填； 当【属性名称】对应【输入类型】为「选择器」时，查出对应属性值作为选择器选项 当【属性名称】对应【输入类型】为「输入框」时，展示文本输入... ]]></description>
-    <pubDate>Tue, 07 Jul 2026 07:57:13 GMT</pubDate>
+    <title>系统-自动触发-生成质检异常跟进单</title>
+    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E7%B3%BB%E7%BB%9F-%E8%87%AA%E5%8A%A8%E8%A7%A6%E5%8F%91-%E7%94%9F%E6%88%90%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E7%B3%BB%E7%BB%9F-%E8%87%AA%E5%8A%A8%E8%A7%A6%E5%8F%91-%E7%94%9F%E6%88%90%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95</guid>
+    <description><![CDATA[ 系统-自动触发-生成质检异常跟进单 业务规则 当上游单据提交评估意见后，系统自动生成或更新「质检异常跟进单」。 触发条件： 从「样品评估报告详情」执行「提交评估意见」后进入数据 从「质检单（大货-详情）」执行「提交评估意见」后进入数据 从「质检单（新品-详情）」执行「提交评估意见」后进入数据 分组规则： 按【Msku(库存SKU)】、【供应商】、【责任方】分组展示数据；同一分组生成一张「质检异常跟进单」。 取值逻辑： 【跟进单号】按 FU+年月日+供应商编号+两位自增序列号 自动生成 【状态】默认「待处理」；当明细【是否需要回复对策】均为「否」时，默认「已完成」 【产品名称】取 Msku 关联... ]]></description>
+    <pubDate>Wed, 08 Jul 2026 07:49:15 GMT</pubDate>
   </item><item>
-    <title>市场分析-操作-配置属性</title>
-    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90-%E6%93%8D%E4%BD%9C-%E9%85%8D%E7%BD%AE%E5%B1%9E%E6%80%A7</link>
-    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90-%E6%93%8D%E4%BD%9C-%E9%85%8D%E7%BD%AE%E5%B1%9E%E6%80%A7</guid>
-    <description><![CDATA[ 操作-配置属性 业务规则 入口：从「市场分析列表」点击「属性配置」 展示逻辑：打开「Asin拓展属性配置」弹窗，列表展示当前市场分析分类下的属性配置。 操作信息 【排序】拖拽排序，默认当前排序，支持拖拽排序 【属性名称】文本输入框，默认当前值或空，必填，最多输入10个字符 【输入类型】单选选择器，默认「选择器」，必填，可选「选择器」「输入框」 【属性值】文本输入框或标签，默认当前维护值，输入类型为「选择器」时维护属性值，每个属性值最多输入20个字符，标签支持鼠标移入展示编辑 icon，支持拖拽属性值的移动排序 【属性值】文本输入框，默认空，输入类型为「输入框」时最多输入20个字符 【操作】操作... ]]></description>
-    <pubDate>Tue, 07 Jul 2026 07:54:38 GMT</pubDate>
+    <title>系统-自动触发-生成问题跟进清单</title>
+    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8/%E8%B4%A8%E6%A3%80%E9%97%AE%E9%A2%98%E8%B7%9F%E8%BF%9B%E6%B8%85%E5%8D%95/%E7%B3%BB%E7%BB%9F-%E8%87%AA%E5%8A%A8%E8%A7%A6%E5%8F%91-%E7%94%9F%E6%88%90%E9%97%AE%E9%A2%98%E8%B7%9F%E8%BF%9B%E6%B8%85%E5%8D%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8/%E8%B4%A8%E6%A3%80%E9%97%AE%E9%A2%98%E8%B7%9F%E8%BF%9B%E6%B8%85%E5%8D%95/%E7%B3%BB%E7%BB%9F-%E8%87%AA%E5%8A%A8%E8%A7%A6%E5%8F%91-%E7%94%9F%E6%88%90%E9%97%AE%E9%A2%98%E8%B7%9F%E8%BF%9B%E6%B8%85%E5%8D%95</guid>
+    <description><![CDATA[ 业务规则 当「QE」评审报告并完成「NG项」归类后，系统生成问题跟进清单；触发方式是系统自动生成还是用户点击生成，待确定。 触发条件： 上游报告存在「NG项」。 「QE」已评审报告。 「QE」已将「NG项」归类为「内部问题」或「供应商问题」。 取值逻辑： 【NG项】取自评估报告或大货质检报告，具体来源字段待确定 【问题分类】取自「QE」对「NG项」的归类，可选值包含「内部问题」「供应商问题」 【临时方案】由供应商在「供应商SRM」处理问题清单时提供，字段结构待确定 【解决方案】由供应商在「供应商SRM」处理问题清单时提供，字段结构待确定 【问题图片】需要针对问题项上传，是否继承报告图片或重新上... ]]></description>
+    <pubDate>Wed, 08 Jul 2026 03:35:10 GMT</pubDate>
   </item><item>
-    <title>市场分类-查询-市场分类列表</title>
-    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E7%B1%BB-%E6%9F%A5%E8%AF%A2-%E5%B8%82%E5%9C%BA%E5%88%86%E7%B1%BB%E5%88%97%E8%A1%A8</link>
-    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E7%B1%BB-%E6%9F%A5%E8%AF%A2-%E5%B8%82%E5%9C%BA%E5%88%86%E7%B1%BB%E5%88%97%E8%A1%A8</guid>
-    <description><![CDATA[ 查询-市场分类列表 列表数据 【国家/站点】表格内容，示例「德国」 【市场分类名称】市场分类名称，按分类层级展示，示例「抽屉收纳/抽屉收纳盒」 【Amazon市场分类】关联的 Amazon 市场最子级分类，示例「Cosmeitc Display Cases」 【Asin数量】查出本分类和子分类名下的 Asin 数量并去重 【品牌数量】查出本分类和子分类名下的品牌去重后数量 【近12月销售额(万)】查出本分类和子分类名下 Asin 去重后的最近12月销售额，按数据最新月份计算 【负责人】市场分类负责人 【创建时间】市场分类创建时间，示例「2023-09-01 10:12」 【数据最新月份】每次月... ]]></description>
-    <pubDate>Tue, 07 Jul 2026 07:30:34 GMT</pubDate>
+    <title>设计需求管理-操作-新建编辑设计需求</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%AE%BE%E8%AE%A1%E7%AE%A1%E7%90%86/%E8%AE%BE%E8%AE%A1%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E8%AE%BE%E8%AE%A1%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86-%E6%93%8D%E4%BD%9C-%E6%96%B0%E5%BB%BA%E7%BC%96%E8%BE%91%E8%AE%BE%E8%AE%A1%E9%9C%80%E6%B1%82</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%AE%BE%E8%AE%A1%E7%AE%A1%E7%90%86/%E8%AE%BE%E8%AE%A1%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E8%AE%BE%E8%AE%A1%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86-%E6%93%8D%E4%BD%9C-%E6%96%B0%E5%BB%BA%E7%BC%96%E8%BE%91%E8%AE%BE%E8%AE%A1%E9%9C%80%E6%B1%82</guid>
+    <description><![CDATA[ 设计需求管理-操作-新建编辑设计需求 业务规则 入口：从「设计需求管理-需求视图」点击「新建设计需求」打开「新建设计需求」弹窗。 入口：从「设计需求管理-需求视图」列表点击「编辑」打开「编辑设计需求」弹窗。 展示逻辑：弹窗包含「列表」和「商品」区域，可添加商品，也可手动填写 MSKU。 展示逻辑：任务排期后编辑不允许修改【设计需求名】。 展示逻辑：导入后的设计需求状态为已排期，导入后是否允许编辑【设计需求名】待确定。 基础信息 【设计需求编号】自动生成，字段说明格式为「SJ」+ yymmdd + 三位天序列号，序列号跨日清零，从1开始，例如「SJ240101001」；确认弹窗样例使用「DPJ2... ]]></description>
+    <pubDate>Wed, 08 Jul 2026 01:20:07 GMT</pubDate>
   </item><item>
-    <title>市场分类-操作-编辑市场分类</title>
-    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E7%B1%BB-%E6%93%8D%E4%BD%9C-%E7%BC%96%E8%BE%91%E5%B8%82%E5%9C%BA%E5%88%86%E7%B1%BB</link>
-    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E7%B1%BB%E7%9B%AE%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E7%B1%BB-%E6%93%8D%E4%BD%9C-%E7%BC%96%E8%BE%91%E5%B8%82%E5%9C%BA%E5%88%86%E7%B1%BB</guid>
-    <description><![CDATA[ 操作-编辑市场分类 业务规则 入口：从「市场调研列表」行操作点击「编辑」 展示逻辑：打开「新增细化市场分析」弹窗，弹窗按当前记录回填字段；一级分类进入「编辑-一级分类」状态，二级分类进入「编辑-二级分类」状态。 操作信息同新建市场分类-操作-新建市场分类 预填数据 点击确定时校验 同新建 通过校验后执行 执行1：更新并刷新「市场调研列表」 执行2：编辑可能变更分类之间的关系，需重算【Asin数量】【品牌数量】【近12月销售额(万)】 异常场景 不在范围内. ]]></description>
-    <pubDate>Tue, 07 Jul 2026 07:28:13 GMT</pubDate>
+    <title>设计需求管理-全局说明</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%AE%BE%E8%AE%A1%E7%AE%A1%E7%90%86/%E8%AE%BE%E8%AE%A1%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E8%AE%BE%E8%AE%A1%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86-%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%AE%BE%E8%AE%A1%E7%AE%A1%E7%90%86/%E8%AE%BE%E8%AE%A1%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E8%AE%BE%E8%AE%A1%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86-%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</guid>
+    <description><![CDATA[ 设计需求管理-全局说明 需求状态变更 stateDiagram-v2 [*] --&gt; 待排期 : 新建/导入新增 待排期 --&gt; 待开始 : 提交任务排期且当前时间小于最早任务预计开始时间 待排期 --&gt; 进行中 : 提交任务排期且当前时间大于最早任务预计开始时间 待开始 --&gt; 进行中 : 当前时间到达任务预计开始时间 进行中 --&gt; 待上架 : 未废弃任务全部完成 待开始 --&gt; 待上架 : 未废弃任务全部完成 待上架 --&gt; 已上架 : 完成上架 待排期 --&gt; 已暂停 : 暂停 待开始 --&gt; 已暂停 : 暂停 进行中 --&gt;... ]]></description>
+    <pubDate>Wed, 08 Jul 2026 01:19:59 GMT</pubDate>
   </item>
     </channel>
   </rss>
