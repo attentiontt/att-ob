@@ -6,65 +6,65 @@
       <description>最近的10条笔记 on test-ob</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>自动创建T0样品需求</title>
-    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82-%E2%80%94-%E5%88%9B%E5%BB%BA/%E8%87%AA%E5%8A%A8%E5%88%9B%E5%BB%BAT0%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82</link>
-    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82-%E2%80%94-%E5%88%9B%E5%BB%BA/%E8%87%AA%E5%8A%A8%E5%88%9B%E5%BB%BAT0%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82</guid>
-    <description><![CDATA[ 业务规则 触发条件： 当 新品项目的非自研项目的「采购寻源」节点录入实际开始时间时， 系统自动 创建一条T0样品需求并关联至该项目， 取值逻辑： 【样品需求编号】置灰输入框，文案固定为自动生成 【样品用途】T0样品 【Sku】项目绑定的sku 【项目编号】项目编号 【打样负责人】 项目有值：项目管理的项目人员里的【打样负责人】处预填，允许为空、可以二次修改 【创建时间】样品需求的创建时间 【预计到样时间】项目进度里面寻源预计结束时间-更新减去3天 【实际到样时间】为空 【预计初样确认】为空 【实际初样确认】为空 【预计评估时间】等于预计到样时间+样品评估的参数值 【实际评估时间】为空 【预计签... ]]></description>
-    <pubDate>Wed, 08 Jul 2026 08:41:31 GMT</pubDate>
+    <title>手动新建样品需求</title>
+    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82-%E2%80%94-%E5%88%9B%E5%BB%BA/%E6%89%8B%E5%8A%A8%E6%96%B0%E5%BB%BA%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82</link>
+    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82-%E2%80%94-%E5%88%9B%E5%BB%BA/%E6%89%8B%E5%8A%A8%E6%96%B0%E5%BB%BA%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82</guid>
+    <description><![CDATA[ 业务规则 点击新建样品需求弹出弹窗，界面展示如下字段： 【样品需求编号】置灰输入框，文案固定为自动生成 【样品用途】单选框，选项：更换供应商、T0样品、竞品样品 【Sku】单选异步选择器，选项格式为“产品名称/Sku”，根据选项的不同查询逻辑不一致，切换选项时清空本选项框 更换供应商：查出启用的产品管理数据 T0样品：查出项目类型为通货、改款、拓变体、拓产品并且项目状态≠已废弃/已完成的项目对应绑定的Sku 竞品样品：启用的产品管理数据和开发产品管理剔除“已废弃”的数据 在点击确定后生成样品需求，取值逻辑： 填写字段见上方与填写一致 非填写字段取值逻辑 【项目编号】按照不同样品用途的取值不一致... ]]></description>
+    <pubDate>Thu, 09 Jul 2026 08:00:50 GMT</pubDate>
   </item><item>
-    <title>全局说明</title>
-    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</link>
-    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</guid>
-    <description><![CDATA[ 全局说明 状态变更 stateDiagram-v2 [*] --&gt; 待处理 : 系统生成 [*] --&gt; 已完成 : 明细均无需回复对策 待处理 --&gt; 待审核 : 处理并提交 待审核 --&gt; 待处理 : 审批驳回 待审核 --&gt; 已完成 : 审批通过 已完成 --&gt; [*] 状态与操作对照 状态可执行的操作所有状态详情、日志、导出待处理处理待审核日志已完成日志 通用规则 状态枚举以「待处理」「待审核」「已完成」为准；原型字段说明中出现「待审批」，与列表展示的「待审核」命名不一致，后续需统一。 「质检异常跟进单」由上游「样品评估报告详情」「质检单（大货-详情... ]]></description>
-    <pubDate>Wed, 08 Jul 2026 07:49:15 GMT</pubDate>
+    <title>退市流程</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%B0%83%E7%A0%94%E6%96%87%E6%A1%A3/%E9%80%80%E5%B8%82%E6%B5%81%E7%A8%8B</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%B0%83%E7%A0%94%E6%96%87%E6%A1%A3/%E9%80%80%E5%B8%82%E6%B5%81%E7%A8%8B</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Thu, 09 Jul 2026 02:57:59 GMT</pubDate>
   </item><item>
-    <title>变更记录</title>
-    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</guid>
-    <description><![CDATA[ 变更记录 V1.0.0 新增「质检异常跟进单」PRD 初版 全局说明 查询-质检异常跟进单列表 操作-处理质检异常跟进单 导出-质检异常跟进单列表 系统-自动触发-生成质检异常跟进单 . ]]></description>
-    <pubDate>Wed, 08 Jul 2026 07:49:15 GMT</pubDate>
+    <title>调整单-全局说明</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</guid>
+    <description><![CDATA[ 调整单-全局说明 业务范围 调整单用于在库存管理中对仓库内已有商品库存执行数量调整或换标调整。数量调整用于直接增减指定商品 Msku 的可用库存；换标调整用于在同一仓库、同一商品 SKU 下，将原 Msku/标签库存转换为新 Msku/标签库存。 本模块包含「调整单列表」「调整单详情」「新建数量调整单」「编辑数量调整单」「新建换标调整单」「编辑换标调整单」「库存调整自动触发」「调整单列表导出」。 原型未展示独立「提交」「作废」「删除」入口；列表中存在「更多」操作但未展开具体菜单项，是否包含编辑、作废或其他操作待确认，本版本不单独定义作废调整单操作。 原型未展示【批次】字段；若库存按批次管理，【... ]]></description>
+    <pubDate>Wed, 08 Jul 2026 14:51:59 GMT</pubDate>
   </item><item>
-    <title>导出-质检异常跟进单列表</title>
-    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E5%AF%BC%E5%87%BA-%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95%E5%88%97%E8%A1%A8</link>
-    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E5%AF%BC%E5%87%BA-%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95%E5%88%97%E8%A1%A8</guid>
-    <description><![CDATA[ 导出-质检异常跟进单列表 业务规则 入口：从「质检异常跟进单列表」点击「导出」。 导出范围：按当前筛选条件导出。 导出文件：质检异常跟进单导出.xlsx。 导出内容：导出列表数据和明细数据。 导出字段 基础信息 【图片】关联 SKU 图片 【跟进单号】跟进单编号 【状态】当前状态 【产品名称】Msku 关联产品名称 【产品SKU】Msku 关联产品 SKU 【Msku(库存SKU)】关联来源单据的 Msku 【销售平台】Msku 关联销售平台 【目的国】Msku 关联目的国 【店铺】Msku 关联店铺 【关联单据】来源单据 【质检类型】来源质检类型 【供应商】关联来源单据的供应商 【责任方】关... ]]></description>
-    <pubDate>Wed, 08 Jul 2026 07:49:15 GMT</pubDate>
+    <title>调整单-变更记录</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</guid>
+    <description><![CDATA[ 调整单-变更记录 V1.0.0 新增《调整单-全局说明》，定义调整单业务范围、调整类型、状态、通用规则和待确认项。 新增《调整单-查询-调整单列表》，定义列表筛选项、列表字段、展开明细、行操作和分页。 新增《调整单-查询-调整单详情》，定义详情页基础信息、明细字段和详情页待确认字段。 新增《调整单-操作-新建编辑数量调整单》，定义数量调整单新建/编辑字段、添加商品弹窗、校验和执行结果。 新增《调整单-操作-新建编辑换标调整单》，定义换标调整单新建/编辑字段、添加商品弹窗、校验和执行结果。 新增《调整单-系统-自动触发-库存调整》，定义确认调整后库存自动调整规则、库存流水、幂等和事务要求。 新增... ]]></description>
+    <pubDate>Wed, 08 Jul 2026 14:51:59 GMT</pubDate>
   </item><item>
-    <title>操作-处理质检异常跟进单</title>
-    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E6%93%8D%E4%BD%9C-%E5%A4%84%E7%90%86%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E6%93%8D%E4%BD%9C-%E5%A4%84%E7%90%86%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95</guid>
-    <description><![CDATA[ 操作-处理质检异常跟进单 业务规则 入口：从「质检异常跟进单列表」点击「处理」。 展示逻辑：展示「处理弹窗」，弹窗内展示跟进单基础信息、来源明细和需补充的处理信息。 当用户点击「确定」时，系统校验并保存处理信息。 基础信息 【跟进单号】展示 【状态】展示 【是否逾期处理】展示 【质检类型】展示 【QE】展示 操作信息 【原因分析】文本输入框，默认空，当明细【是否需要回复对策】=「是」时必填，最多输入 500 个字符 【临时改善对策】文本输入框，默认空，当明细【是否需要回复对策】=「是」时必填，最多输入 500 个字符 【长期改善对策】文本输入框，默认空，当明细【是否需要回复对策】=「是」时必填... ]]></description>
-    <pubDate>Wed, 08 Jul 2026 07:49:15 GMT</pubDate>
+    <title>调整单-导出-调整单列表</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E5%AF%BC%E5%87%BA-%E8%B0%83%E6%95%B4%E5%8D%95%E5%88%97%E8%A1%A8</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E5%AF%BC%E5%87%BA-%E8%B0%83%E6%95%B4%E5%8D%95%E5%88%97%E8%A1%A8</guid>
+    <description><![CDATA[ 调整单-导出-调整单列表 导出入口 在「调整单列表」点击右上角下载图标，触发调整单列表导出。 导出范围 默认按当前列表查询条件导出所有匹配数据，查询条件包含【查询字段】【搜索关键字】【创建时间】【仓库】【创建人】。 原型未展示勾选行和批量导出逻辑，是否支持仅导出选中行待确认。 导出文件 【文件名称】默认为 调整单列表导出.xlsx；是否需要拼接导出时间待确认。 【文件格式】为 Excel 文件。 【导出方式】原型未展示异步任务或下载中心，默认点击后直接下载；当数据量过大时是否转为异步导出待确认。 导出字段 【调整单号】调整单唯一编号。 【仓库】调整单生效仓库。 【调整类型】数量调整、盘点调整或... ]]></description>
+    <pubDate>Wed, 08 Jul 2026 14:51:59 GMT</pubDate>
   </item><item>
-    <title>查询-质检异常跟进单列表</title>
-    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E6%9F%A5%E8%AF%A2-%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95%E5%88%97%E8%A1%A8</link>
-    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E6%9F%A5%E8%AF%A2-%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95%E5%88%97%E8%A1%A8</guid>
-    <description><![CDATA[ 查询-质检异常跟进单列表 列表数据 【图片】展示关联 SKU 图片 【跟进单号】按 FU+年月日+供应商编号+两位自增序列号 生成 【状态】展示「待处理」「待审核」「已完成」 【产品名称】取 Msku 关联信息 【产品SKU】取 Msku 关联信息 【Msku(库存SKU)】取关联来源单据的 Msku 【销售平台】取 Msku 关联信息 【目的国】取 Msku 关联信息 【店铺】取 Msku 关联信息 【关联单据】展示来源单据 【质检类型】展示「样品质检」「新品质检」「大货质检」 【供应商】取关联来源单据的供应商 【责任方】取关联来源单据的责任方 【QE】取业务配置-品质配置-供应商质检配置中... ]]></description>
-    <pubDate>Wed, 08 Jul 2026 07:49:15 GMT</pubDate>
+    <title>调整单-操作-新建编辑换标调整单</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E6%93%8D%E4%BD%9C-%E6%96%B0%E5%BB%BA%E7%BC%96%E8%BE%91%E6%8D%A2%E6%A0%87%E8%B0%83%E6%95%B4%E5%8D%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E6%93%8D%E4%BD%9C-%E6%96%B0%E5%BB%BA%E7%BC%96%E8%BE%91%E6%8D%A2%E6%A0%87%E8%B0%83%E6%95%B4%E5%8D%95</guid>
+    <description><![CDATA[ 调整单-操作-新建编辑换标调整单 页面入口 从「调整单列表」点击「新建换标调整单」，进入「新建换标调整单」页面。 原型页面标题为「新建/编辑换标调整单」，但列表未展示明确编辑入口；编辑入口、可编辑状态、已完成调整单是否允许编辑以及编辑后的库存差异处理待确认。 页面功能 「新建/编辑换标调整单」用于将同一仓库、同一商品 SKU 下的原 Msku/标签库存转换为新 Msku/标签库存。点击「确定」并通过校验后，生成调整单并触发库存换标调整。 顶部操作 点击「添加商品」，打开「添加商品」弹窗；原型说明中也出现「添加产品」文案，页面按钮以「添加商品」为准。 点击「取消」，放弃本次新建或编辑，返回上一页... ]]></description>
+    <pubDate>Wed, 08 Jul 2026 14:51:59 GMT</pubDate>
   </item><item>
-    <title>系统-自动触发-生成质检异常跟进单</title>
-    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E7%B3%BB%E7%BB%9F-%E8%87%AA%E5%8A%A8%E8%A7%A6%E5%8F%91-%E7%94%9F%E6%88%90%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95/%E7%B3%BB%E7%BB%9F-%E8%87%AA%E5%8A%A8%E8%A7%A6%E5%8F%91-%E7%94%9F%E6%88%90%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8%E8%B7%9F%E8%BF%9B%E5%8D%95</guid>
-    <description><![CDATA[ 系统-自动触发-生成质检异常跟进单 业务规则 当上游单据提交评估意见后，系统自动生成或更新「质检异常跟进单」。 触发条件： 从「样品评估报告详情」执行「提交评估意见」后进入数据 从「质检单（大货-详情）」执行「提交评估意见」后进入数据 从「质检单（新品-详情）」执行「提交评估意见」后进入数据 分组规则： 按【Msku(库存SKU)】、【供应商】、【责任方】分组展示数据；同一分组生成一张「质检异常跟进单」。 取值逻辑： 【跟进单号】按 FU+年月日+供应商编号+两位自增序列号 自动生成 【状态】默认「待处理」；当明细【是否需要回复对策】均为「否」时，默认「已完成」 【产品名称】取 Msku 关联... ]]></description>
-    <pubDate>Wed, 08 Jul 2026 07:49:15 GMT</pubDate>
+    <title>调整单-操作-新建编辑数量调整单</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E6%93%8D%E4%BD%9C-%E6%96%B0%E5%BB%BA%E7%BC%96%E8%BE%91%E6%95%B0%E9%87%8F%E8%B0%83%E6%95%B4%E5%8D%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E6%93%8D%E4%BD%9C-%E6%96%B0%E5%BB%BA%E7%BC%96%E8%BE%91%E6%95%B0%E9%87%8F%E8%B0%83%E6%95%B4%E5%8D%95</guid>
+    <description><![CDATA[ 调整单-操作-新建编辑数量调整单 页面入口 从「调整单列表」点击「新建数量调整单」，进入「新建数量调整单」页面。 原型页面标题为「新建/编辑数量调整单」，但列表未展示明确编辑入口；编辑入口、可编辑状态、已完成调整单是否允许编辑以及编辑后的库存差异处理待确认。 页面功能 「新建/编辑数量调整单」用于选择仓库和商品，对商品 Msku 的可用库存进行正向增加或负向减少。点击「确定」并通过校验后，生成调整单并触发库存调整。 顶部操作 点击「添加商品」，打开「添加商品」弹窗；若【仓库】为空，前端将【仓库】标红并提示「请输入」，不打开弹窗。 点击「取消」，放弃本次新建或编辑，返回上一页；如果页面存在未保存... ]]></description>
+    <pubDate>Wed, 08 Jul 2026 14:51:59 GMT</pubDate>
   </item><item>
-    <title>系统-自动触发-生成问题跟进清单</title>
-    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8/%E8%B4%A8%E6%A3%80%E9%97%AE%E9%A2%98%E8%B7%9F%E8%BF%9B%E6%B8%85%E5%8D%95/%E7%B3%BB%E7%BB%9F-%E8%87%AA%E5%8A%A8%E8%A7%A6%E5%8F%91-%E7%94%9F%E6%88%90%E9%97%AE%E9%A2%98%E8%B7%9F%E8%BF%9B%E6%B8%85%E5%8D%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E5%BC%82%E5%B8%B8/%E8%B4%A8%E6%A3%80%E9%97%AE%E9%A2%98%E8%B7%9F%E8%BF%9B%E6%B8%85%E5%8D%95/%E7%B3%BB%E7%BB%9F-%E8%87%AA%E5%8A%A8%E8%A7%A6%E5%8F%91-%E7%94%9F%E6%88%90%E9%97%AE%E9%A2%98%E8%B7%9F%E8%BF%9B%E6%B8%85%E5%8D%95</guid>
-    <description><![CDATA[ 业务规则 当「QE」评审报告并完成「NG项」归类后，系统生成问题跟进清单；触发方式是系统自动生成还是用户点击生成，待确定。 触发条件： 上游报告存在「NG项」。 「QE」已评审报告。 「QE」已将「NG项」归类为「内部问题」或「供应商问题」。 取值逻辑： 【NG项】取自评估报告或大货质检报告，具体来源字段待确定 【问题分类】取自「QE」对「NG项」的归类，可选值包含「内部问题」「供应商问题」 【临时方案】由供应商在「供应商SRM」处理问题清单时提供，字段结构待确定 【解决方案】由供应商在「供应商SRM」处理问题清单时提供，字段结构待确定 【问题图片】需要针对问题项上传，是否继承报告图片或重新上... ]]></description>
-    <pubDate>Wed, 08 Jul 2026 03:35:10 GMT</pubDate>
+    <title>调整单-查询-调整单列表</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E6%9F%A5%E8%AF%A2-%E8%B0%83%E6%95%B4%E5%8D%95%E5%88%97%E8%A1%A8</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E6%9F%A5%E8%AF%A2-%E8%B0%83%E6%95%B4%E5%8D%95%E5%88%97%E8%A1%A8</guid>
+    <description><![CDATA[ 调整单-查询-调整单列表 页面入口 从库存模块进入「库存 &gt; 出入库 &gt; 调整单」，打开「调整单」列表页。 页面功能 「调整单列表」用于按关键字、创建时间、仓库、创建人查询调整单，查看调整单基础信息，展开查看调整明细，并进入新建数量调整单、新建换标调整单、详情和导出操作。 查询条件 【查询字段】下拉单选，默认展示「调整单号」，可选项包含「调整单号」「产品名称」「sku」「Msku」「备注」。 【搜索关键字】文本输入框，提示文案为「请输入搜索关键字」，按【查询字段】选择的字段进行模糊查询。 【时间字段】下拉单选，原型仅展示「创建时间」。 【开始日期 - 结束日期】日期范围选择器，用于... ]]></description>
+    <pubDate>Wed, 08 Jul 2026 14:51:59 GMT</pubDate>
   </item><item>
-    <title>设计需求管理-操作-新建编辑设计需求</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%AE%BE%E8%AE%A1%E7%AE%A1%E7%90%86/%E8%AE%BE%E8%AE%A1%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E8%AE%BE%E8%AE%A1%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86-%E6%93%8D%E4%BD%9C-%E6%96%B0%E5%BB%BA%E7%BC%96%E8%BE%91%E8%AE%BE%E8%AE%A1%E9%9C%80%E6%B1%82</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%AE%BE%E8%AE%A1%E7%AE%A1%E7%90%86/%E8%AE%BE%E8%AE%A1%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E8%AE%BE%E8%AE%A1%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86-%E6%93%8D%E4%BD%9C-%E6%96%B0%E5%BB%BA%E7%BC%96%E8%BE%91%E8%AE%BE%E8%AE%A1%E9%9C%80%E6%B1%82</guid>
-    <description><![CDATA[ 设计需求管理-操作-新建编辑设计需求 业务规则 入口：从「设计需求管理-需求视图」点击「新建设计需求」打开「新建设计需求」弹窗。 入口：从「设计需求管理-需求视图」列表点击「编辑」打开「编辑设计需求」弹窗。 展示逻辑：弹窗包含「列表」和「商品」区域，可添加商品，也可手动填写 MSKU。 展示逻辑：任务排期后编辑不允许修改【设计需求名】。 展示逻辑：导入后的设计需求状态为已排期，导入后是否允许编辑【设计需求名】待确定。 基础信息 【设计需求编号】自动生成，字段说明格式为「SJ」+ yymmdd + 三位天序列号，序列号跨日清零，从1开始，例如「SJ240101001」；确认弹窗样例使用「DPJ2... ]]></description>
-    <pubDate>Wed, 08 Jul 2026 01:20:07 GMT</pubDate>
+    <title>调整单-查询-调整单详情</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E6%9F%A5%E8%AF%A2-%E8%B0%83%E6%95%B4%E5%8D%95%E8%AF%A6%E6%83%85</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E6%9F%A5%E8%AF%A2-%E8%B0%83%E6%95%B4%E5%8D%95%E8%AF%A6%E6%83%85</guid>
+    <description><![CDATA[ 调整单-查询-调整单详情 页面入口 从「调整单列表」点击某一调整单行的「详情」，进入「调整单详情」页面。 页面功能 「调整单详情」用于查看调整单基础信息、状态、备注和调整明细。详情页原型标题示例为「HBD2211140001详情」，单号前缀与调整单规则不一致，实际展示以当前调整单【调整单号】为准。 顶部操作 点击「取消」，关闭详情页或返回上一页，不修改调整单数据。 点击「确定」，关闭详情页或返回上一页，不修改调整单数据。原型未体现确认、审核或再次提交语义，若「确定」需要执行业务动作待确认。 基础信息 【调整单号】展示当前调整单编号，用于详情页标题和业务追溯。 【仓库】展示调整单生效仓库，原型样... ]]></description>
+    <pubDate>Wed, 08 Jul 2026 14:51:59 GMT</pubDate>
   </item><item>
-    <title>设计需求管理-全局说明</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%AE%BE%E8%AE%A1%E7%AE%A1%E7%90%86/%E8%AE%BE%E8%AE%A1%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E8%AE%BE%E8%AE%A1%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86-%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%AE%BE%E8%AE%A1%E7%AE%A1%E7%90%86/%E8%AE%BE%E8%AE%A1%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E8%AE%BE%E8%AE%A1%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86-%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</guid>
-    <description><![CDATA[ 设计需求管理-全局说明 需求状态变更 stateDiagram-v2 [*] --&gt; 待排期 : 新建/导入新增 待排期 --&gt; 待开始 : 提交任务排期且当前时间小于最早任务预计开始时间 待排期 --&gt; 进行中 : 提交任务排期且当前时间大于最早任务预计开始时间 待开始 --&gt; 进行中 : 当前时间到达任务预计开始时间 进行中 --&gt; 待上架 : 未废弃任务全部完成 待开始 --&gt; 待上架 : 未废弃任务全部完成 待上架 --&gt; 已上架 : 完成上架 待排期 --&gt; 已暂停 : 暂停 待开始 --&gt; 已暂停 : 暂停 进行中 --&gt;... ]]></description>
-    <pubDate>Wed, 08 Jul 2026 01:19:59 GMT</pubDate>
+    <title>调整单-系统-自动触发-库存调整</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E7%B3%BB%E7%BB%9F-%E8%87%AA%E5%8A%A8%E8%A7%A6%E5%8F%91-%E5%BA%93%E5%AD%98%E8%B0%83%E6%95%B4</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E7%B3%BB%E7%BB%9F-%E8%87%AA%E5%8A%A8%E8%A7%A6%E5%8F%91-%E5%BA%93%E5%AD%98%E8%B0%83%E6%95%B4</guid>
+    <description><![CDATA[ 调整单-系统-自动触发-库存调整 触发场景 当用户在「新建/编辑数量调整单」点击「确定」并通过前端校验和后端库存校验后，系统自动触发数量库存调整。 当用户在「新建/编辑换标调整单」点击「确定」并通过前端校验和后端库存校验后，系统自动触发换标库存调整。 触发条件 【调整单】已成功生成基础信息和明细信息。 【状态】为「已完成」。 【仓库】有效且可执行库存调整。 【明细】至少存在 1 行有效明细。 【产品库存可用量】满足本次扣减或换标要求。 触发来源字段 【调整单号】取调整单基础信息，用于库存流水追溯。 【仓库】取调整单基础信息，用于定位库存所在仓库。 【调整类型】取调整单基础信息，区分数量调整和换... ]]></description>
+    <pubDate>Wed, 08 Jul 2026 14:51:59 GMT</pubDate>
   </item>
     </channel>
   </rss>
