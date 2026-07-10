@@ -6,65 +6,65 @@
       <description>最近的10条笔记 on test-ob</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>手动新建样品需求</title>
-    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82-%E2%80%94-%E5%88%9B%E5%BB%BA/%E6%89%8B%E5%8A%A8%E6%96%B0%E5%BB%BA%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82</link>
-    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82-%E2%80%94-%E5%88%9B%E5%BB%BA/%E6%89%8B%E5%8A%A8%E6%96%B0%E5%BB%BA%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82</guid>
-    <description><![CDATA[ 业务规则 点击新建样品需求弹出弹窗，界面展示如下字段： 【样品需求编号】置灰输入框，文案固定为自动生成 【样品用途】单选框，选项：更换供应商、T0样品、竞品样品 【Sku】单选异步选择器，选项格式为“产品名称/Sku”，根据选项的不同查询逻辑不一致，切换选项时清空本选项框 更换供应商：查出启用的产品管理数据 T0样品：查出项目类型为通货、改款、拓变体、拓产品并且项目状态≠已废弃/已完成的项目对应绑定的Sku 竞品样品：启用的产品管理数据和开发产品管理剔除“已废弃”的数据 在点击确定后生成样品需求，取值逻辑： 填写字段见上方与填写一致 非填写字段取值逻辑 【项目编号】按照不同样品用途的取值不一致... ]]></description>
-    <pubDate>Thu, 09 Jul 2026 08:00:50 GMT</pubDate>
+    <title>质检标准需求1.0.1</title>
+    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%821.0.1</link>
+    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%821.0.1</guid>
+    <description><![CDATA[ V1.0.1 1.质检标准生成触发节点调整 1.项目类型=自研，当手板认证存在实际开始时间时，生成质检标准需求 2.项目类型=通货/改款/拓产品/拓变体，当采购寻源存在实际开始时间时，生成质检标准需求 3.当新的Msku绑定至新品项目时，若关联的sku未生成质检标准需求时，则生成质检标准需求 2当Msku解绑项目并触发了解绑sku时，删除质检用例 【需求状态】草稿 相关文件：新品项目创建质检用例 3.新品项目-质检标签事件开始时，将同项目同sku的质检用例需求的状态从草稿⇒待提交 4.质检标准用例新增草稿状态，草稿状态的质检标准的提交弹窗内只有“保存”提交质检标准需求 5.新增了质检用例数和质... ]]></description>
+    <pubDate>Fri, 10 Jul 2026 07:28:42 GMT</pubDate>
   </item><item>
-    <title>退市流程</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%B0%83%E7%A0%94%E6%96%87%E6%A1%A3/%E9%80%80%E5%B8%82%E6%B5%81%E7%A8%8B</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%B0%83%E7%A0%94%E6%96%87%E6%A1%A3/%E9%80%80%E5%B8%82%E6%B5%81%E7%A8%8B</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Thu, 09 Jul 2026 02:57:59 GMT</pubDate>
+    <title>新品项目删除质检用例</title>
+    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E6%96%B0%E5%93%81%E9%A1%B9%E7%9B%AE%E5%88%A0%E9%99%A4%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B</link>
+    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E6%96%B0%E5%93%81%E9%A1%B9%E7%9B%AE%E5%88%A0%E9%99%A4%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B</guid>
+    <description><![CDATA[ 当Msku解绑项目并触发了解绑sku时，删除质检用例. ]]></description>
+    <pubDate>Fri, 10 Jul 2026 07:28:12 GMT</pubDate>
   </item><item>
-    <title>调整单-全局说明</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</guid>
-    <description><![CDATA[ 调整单-全局说明 业务范围 调整单用于在库存管理中对仓库内已有商品库存执行数量调整或换标调整。数量调整用于直接增减指定商品 Msku 的可用库存；换标调整用于在同一仓库、同一商品 SKU 下，将原 Msku/标签库存转换为新 Msku/标签库存。 本模块包含「调整单列表」「调整单详情」「新建数量调整单」「编辑数量调整单」「新建换标调整单」「编辑换标调整单」「库存调整自动触发」「调整单列表导出」。 原型未展示独立「提交」「作废」「删除」入口；列表中存在「更多」操作但未展开具体菜单项，是否包含编辑、作废或其他操作待确认，本版本不单独定义作废调整单操作。 原型未展示【批次】字段；若库存按批次管理，【... ]]></description>
-    <pubDate>Wed, 08 Jul 2026 14:51:59 GMT</pubDate>
+    <title>新品项目创建质检用例</title>
+    <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E6%96%B0%E5%93%81%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B</link>
+    <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E6%96%B0%E5%93%81%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA%E8%B4%A8%E6%A3%80%E7%94%A8%E4%BE%8B</guid>
+    <description><![CDATA[ 项目管理自动触发质检标准需求 触发节点： 1.项目类型=自研，当手板认证存在实际开始时间时，生成质检标准需求 2.项目类型=通货/改款/拓产品/拓变体，当采购寻源存在实际开始时间时，生成质检标准需求 3.当新的Msku绑定至新品项目时，若关联的sku未生成质检标准需求时，则生成质检标准需求 生成规则 取开发产品管理的数据 【图片】sku信息 【产品名称】 【Sku】 【项目名称】项目信息 【项目编号】产生质检标准的项目编号 【项目类型】项目信息 【产品分类】sku的信息 【产品类型】sku的信息 【产品材质】sku的信息 【产品尺寸】sku的信息 【产品状态】 【产品尺寸】sku的信息 【需求... ]]></description>
+    <pubDate>Fri, 10 Jul 2026 07:27:11 GMT</pubDate>
   </item><item>
-    <title>调整单-变更记录</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</guid>
-    <description><![CDATA[ 调整单-变更记录 V1.0.0 新增《调整单-全局说明》，定义调整单业务范围、调整类型、状态、通用规则和待确认项。 新增《调整单-查询-调整单列表》，定义列表筛选项、列表字段、展开明细、行操作和分页。 新增《调整单-查询-调整单详情》，定义详情页基础信息、明细字段和详情页待确认字段。 新增《调整单-操作-新建编辑数量调整单》，定义数量调整单新建/编辑字段、添加商品弹窗、校验和执行结果。 新增《调整单-操作-新建编辑换标调整单》，定义换标调整单新建/编辑字段、添加商品弹窗、校验和执行结果。 新增《调整单-系统-自动触发-库存调整》，定义确认调整后库存自动调整规则、库存流水、幂等和事务要求。 新增... ]]></description>
-    <pubDate>Wed, 08 Jul 2026 14:51:59 GMT</pubDate>
+    <title>01-查询说明</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8F%98%E6%9B%B4%E5%8D%95/01-%E6%9F%A5%E8%AF%A2%E8%AF%B4%E6%98%8E</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8F%98%E6%9B%B4%E5%8D%95/01-%E6%9F%A5%E8%AF%A2%E8%AF%B4%E6%98%8E</guid>
+    <description><![CDATA[ 调柜变更单查询说明 列表数据 【调柜变更单号】表格内容 【调柜单号】 【发货单号】 【变更类型】枚举包含「编辑调柜单」「调柜单装柜减货」「废弃调柜单」 【变更标签】当【变更类型】为「编辑调柜单」时，若存在添加明细或增加【计划调柜数】【实际调柜数】展示「加货」；若存在移除明细或减少【计划调柜数】【实际调柜数】展示「减货」；其余字段按实际变更字段记录标签，包括【发货仓】【目的仓】【目的仓类型】【目的国家】【计划编号】【运输方式】【运送模式】【平台官方物流】【柜型】【散货拼整柜】【最晚提货时间】【供应商】【装柜供应商】【报关退税】【是否商检】【货好时间】；当【变更类型】为「调柜单装柜减货」时展示「减... ]]></description>
+    <pubDate>Fri, 10 Jul 2026 07:20:45 GMT</pubDate>
   </item><item>
-    <title>调整单-导出-调整单列表</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E5%AF%BC%E5%87%BA-%E8%B0%83%E6%95%B4%E5%8D%95%E5%88%97%E8%A1%A8</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E5%AF%BC%E5%87%BA-%E8%B0%83%E6%95%B4%E5%8D%95%E5%88%97%E8%A1%A8</guid>
-    <description><![CDATA[ 调整单-导出-调整单列表 导出入口 在「调整单列表」点击右上角下载图标，触发调整单列表导出。 导出范围 默认按当前列表查询条件导出所有匹配数据，查询条件包含【查询字段】【搜索关键字】【创建时间】【仓库】【创建人】。 原型未展示勾选行和批量导出逻辑，是否支持仅导出选中行待确认。 导出文件 【文件名称】默认为 调整单列表导出.xlsx；是否需要拼接导出时间待确认。 【文件格式】为 Excel 文件。 【导出方式】原型未展示异步任务或下载中心，默认点击后直接下载；当数据量过大时是否转为异步导出待确认。 导出字段 【调整单号】调整单唯一编号。 【仓库】调整单生效仓库。 【调整类型】数量调整、盘点调整或... ]]></description>
-    <pubDate>Wed, 08 Jul 2026 14:51:59 GMT</pubDate>
+    <title>全局说明</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</guid>
+    <description><![CDATA[ 全局说明 状态变更 stateDiagram-v2 [*] --&gt; 待分配 : 自动生成头程发货单 待分配 --&gt; 待订舱 : 分配物流商 待订舱 --&gt; 待提货 : 确认订舱 待提货 --&gt; 已发货 : 确认提货 已发货 --&gt; 已上架 : 确认上架 待分配 --&gt; 已废弃 : 废弃 待订舱 --&gt; 已废弃 : 废弃 待提货 --&gt; 已废弃 : 废弃 状态与操作对照 状态可执行的操作所有状态详情待分配分配物流商、分配OA信息、分配物流人员、编辑舱位信息、编辑提货信息、编辑资料信息待订舱分配OA信息、分配物流人员、分配物流商信息、编辑舱位信息、编... ]]></description>
+    <pubDate>Fri, 10 Jul 2026 06:29:56 GMT</pubDate>
   </item><item>
-    <title>调整单-操作-新建编辑换标调整单</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E6%93%8D%E4%BD%9C-%E6%96%B0%E5%BB%BA%E7%BC%96%E8%BE%91%E6%8D%A2%E6%A0%87%E8%B0%83%E6%95%B4%E5%8D%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E6%93%8D%E4%BD%9C-%E6%96%B0%E5%BB%BA%E7%BC%96%E8%BE%91%E6%8D%A2%E6%A0%87%E8%B0%83%E6%95%B4%E5%8D%95</guid>
-    <description><![CDATA[ 调整单-操作-新建编辑换标调整单 页面入口 从「调整单列表」点击「新建换标调整单」，进入「新建换标调整单」页面。 原型页面标题为「新建/编辑换标调整单」，但列表未展示明确编辑入口；编辑入口、可编辑状态、已完成调整单是否允许编辑以及编辑后的库存差异处理待确认。 页面功能 「新建/编辑换标调整单」用于将同一仓库、同一商品 SKU 下的原 Msku/标签库存转换为新 Msku/标签库存。点击「确定」并通过校验后，生成调整单并触发库存换标调整。 顶部操作 点击「添加商品」，打开「添加商品」弹窗；原型说明中也出现「添加产品」文案，页面按钮以「添加商品」为准。 点击「取消」，放弃本次新建或编辑，返回上一页... ]]></description>
-    <pubDate>Wed, 08 Jul 2026 14:51:59 GMT</pubDate>
+    <title>变更记录</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95</guid>
+    <description><![CDATA[ 变更记录 V1.0.0 新增「头程发货单」PRD 拆分 全局说明 查询-头程发货单列表 系统-自动触发-生成头程发货单 系统-自动触发-调柜单重新确认更新头程发货单 系统-自动触发-生成费用明细与分摊 操作-分配物流商 操作-分配物流人员 操作-分配OA信息 操作-维护订舱信息 操作-维护提货信息 操作-维护资料信息 操作-录入计提费用 操作-录入实际费用 操作-费用核对驳回 操作-编辑计量体积重量 操作-生成更新报关单 操作-录入物流日志 操作-编辑物流备注 操作-拦截 导出-提货资料 导出-发票资料 导出-商检资料 . ]]></description>
+    <pubDate>Fri, 10 Jul 2026 06:29:56 GMT</pubDate>
   </item><item>
-    <title>调整单-操作-新建编辑数量调整单</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E6%93%8D%E4%BD%9C-%E6%96%B0%E5%BB%BA%E7%BC%96%E8%BE%91%E6%95%B0%E9%87%8F%E8%B0%83%E6%95%B4%E5%8D%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E6%93%8D%E4%BD%9C-%E6%96%B0%E5%BB%BA%E7%BC%96%E8%BE%91%E6%95%B0%E9%87%8F%E8%B0%83%E6%95%B4%E5%8D%95</guid>
-    <description><![CDATA[ 调整单-操作-新建编辑数量调整单 页面入口 从「调整单列表」点击「新建数量调整单」，进入「新建数量调整单」页面。 原型页面标题为「新建/编辑数量调整单」，但列表未展示明确编辑入口；编辑入口、可编辑状态、已完成调整单是否允许编辑以及编辑后的库存差异处理待确认。 页面功能 「新建/编辑数量调整单」用于选择仓库和商品，对商品 Msku 的可用库存进行正向增加或负向减少。点击「确定」并通过校验后，生成调整单并触发库存调整。 顶部操作 点击「添加商品」，打开「添加商品」弹窗；若【仓库】为空，前端将【仓库】标红并提示「请输入」，不打开弹窗。 点击「取消」，放弃本次新建或编辑，返回上一页；如果页面存在未保存... ]]></description>
-    <pubDate>Wed, 08 Jul 2026 14:51:59 GMT</pubDate>
+    <title>导出-发票资料</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E5%AF%BC%E5%87%BA-%E5%8F%91%E7%A5%A8%E8%B5%84%E6%96%99</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E5%AF%BC%E5%87%BA-%E5%8F%91%E7%A5%A8%E8%B5%84%E6%96%99</guid>
+    <description><![CDATA[ 导出-发票资料 业务规则 入口：从「头程发货单」列表点击「导出发票资料」或「导出发票」 导出范围：只支持单个头程发货单导出多发票 导出文件：xlsx名称格式为 {运单号}-{箱数}箱-发票 导出字段 基础信息 【编号】取调柜单明细编号 【发货单号】取调柜单信息发货单号 【运单号】取发货单号的运单号 【Msku】字段描述 【品牌brand】取产品库SKU基础信息品牌 【型号model number】取产品库SKU物流信息规格型号 【店铺】取Msku店铺 【国外海关编码 HS Code】取产品库SKU物流信息清关编码 【中文品名 Name (Chinese)】取产品库SKU物流信息清关中文品名 【... ]]></description>
+    <pubDate>Fri, 10 Jul 2026 06:29:56 GMT</pubDate>
   </item><item>
-    <title>调整单-查询-调整单列表</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E6%9F%A5%E8%AF%A2-%E8%B0%83%E6%95%B4%E5%8D%95%E5%88%97%E8%A1%A8</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E6%9F%A5%E8%AF%A2-%E8%B0%83%E6%95%B4%E5%8D%95%E5%88%97%E8%A1%A8</guid>
-    <description><![CDATA[ 调整单-查询-调整单列表 页面入口 从库存模块进入「库存 &gt; 出入库 &gt; 调整单」，打开「调整单」列表页。 页面功能 「调整单列表」用于按关键字、创建时间、仓库、创建人查询调整单，查看调整单基础信息，展开查看调整明细，并进入新建数量调整单、新建换标调整单、详情和导出操作。 查询条件 【查询字段】下拉单选，默认展示「调整单号」，可选项包含「调整单号」「产品名称」「sku」「Msku」「备注」。 【搜索关键字】文本输入框，提示文案为「请输入搜索关键字」，按【查询字段】选择的字段进行模糊查询。 【时间字段】下拉单选，原型仅展示「创建时间」。 【开始日期 - 结束日期】日期范围选择器，用于... ]]></description>
-    <pubDate>Wed, 08 Jul 2026 14:51:59 GMT</pubDate>
+    <title>导出-商检资料</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E5%AF%BC%E5%87%BA-%E5%95%86%E6%A3%80%E8%B5%84%E6%96%99</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E5%AF%BC%E5%87%BA-%E5%95%86%E6%A3%80%E8%B5%84%E6%96%99</guid>
+    <description><![CDATA[ 导出-商检资料 业务规则 入口：从「头程发货单」列表点击「导出商检资料」 导出范围：当任意一条调柜单明细【是否商检】为「物流商检」或「工厂商检」时展示按钮 导出文件：zip文件名称为 商检资料信息导出_yyyymmdd_hhmmss.zip 导出字段 压缩包结构 【供应商编号】用于文件夹名称 【运单号】用于文件夹名称 【合同协议号】用于文件夹名称 【文件夹名称】格式为 供应商编号_运单号_{合同协议号}_商检资料 【商检单】文件名格式为 供应商编号_运单号_{合同协议号}_商检单 【合同】文件名格式为 供应商编号_运单号_{合同协议号}_合同 【发票】文件名格式为 供应商编号_运单号_{合同协... ]]></description>
+    <pubDate>Fri, 10 Jul 2026 06:29:56 GMT</pubDate>
   </item><item>
-    <title>调整单-查询-调整单详情</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E6%9F%A5%E8%AF%A2-%E8%B0%83%E6%95%B4%E5%8D%95%E8%AF%A6%E6%83%85</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E6%9F%A5%E8%AF%A2-%E8%B0%83%E6%95%B4%E5%8D%95%E8%AF%A6%E6%83%85</guid>
-    <description><![CDATA[ 调整单-查询-调整单详情 页面入口 从「调整单列表」点击某一调整单行的「详情」，进入「调整单详情」页面。 页面功能 「调整单详情」用于查看调整单基础信息、状态、备注和调整明细。详情页原型标题示例为「HBD2211140001详情」，单号前缀与调整单规则不一致，实际展示以当前调整单【调整单号】为准。 顶部操作 点击「取消」，关闭详情页或返回上一页，不修改调整单数据。 点击「确定」，关闭详情页或返回上一页，不修改调整单数据。原型未体现确认、审核或再次提交语义，若「确定」需要执行业务动作待确认。 基础信息 【调整单号】展示当前调整单编号，用于详情页标题和业务追溯。 【仓库】展示调整单生效仓库，原型样... ]]></description>
-    <pubDate>Wed, 08 Jul 2026 14:51:59 GMT</pubDate>
+    <title>导出-提货资料</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E5%AF%BC%E5%87%BA-%E6%8F%90%E8%B4%A7%E8%B5%84%E6%96%99</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E5%AF%BC%E5%87%BA-%E6%8F%90%E8%B4%A7%E8%B5%84%E6%96%99</guid>
+    <description><![CDATA[ 导出-提货资料 业务规则 入口：从「头程发货单」列表点击「导出提货资料」 导出范围：支持导出多个发货单的提货资料 导出文件：勾选多个发货单时导出同一个xlsx文件，文件名格式为 提货信息yyyymmddhhmmss.xlsx，每个发货单一个sheet页，sheet页名称为 {发货单号} 导出字段 基础信息 【发货单号】字段描述 【发货仓】字段描述 【目的国家】字段描述 【目的仓类型】字段描述 【目的仓】字段描述 【运输方式】字段描述 【物流人员】字段描述 【定柜时间】字段描述 【运单号】字段描述 明细信息 【model number】字段描述 【产品名称】字段描述 【出货数量】取调柜数 【装箱... ]]></description>
+    <pubDate>Fri, 10 Jul 2026 06:29:56 GMT</pubDate>
   </item><item>
-    <title>调整单-系统-自动触发-库存调整</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E7%B3%BB%E7%BB%9F-%E8%87%AA%E5%8A%A8%E8%A7%A6%E5%8F%91-%E5%BA%93%E5%AD%98%E8%B0%83%E6%95%B4</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%BF%9B%E9%94%80%E5%AD%98/%E8%B0%83%E6%95%B4%E5%8D%95/%E8%B0%83%E6%95%B4%E5%8D%95-%E7%B3%BB%E7%BB%9F-%E8%87%AA%E5%8A%A8%E8%A7%A6%E5%8F%91-%E5%BA%93%E5%AD%98%E8%B0%83%E6%95%B4</guid>
-    <description><![CDATA[ 调整单-系统-自动触发-库存调整 触发场景 当用户在「新建/编辑数量调整单」点击「确定」并通过前端校验和后端库存校验后，系统自动触发数量库存调整。 当用户在「新建/编辑换标调整单」点击「确定」并通过前端校验和后端库存校验后，系统自动触发换标库存调整。 触发条件 【调整单】已成功生成基础信息和明细信息。 【状态】为「已完成」。 【仓库】有效且可执行库存调整。 【明细】至少存在 1 行有效明细。 【产品库存可用量】满足本次扣减或换标要求。 触发来源字段 【调整单号】取调整单基础信息，用于库存流水追溯。 【仓库】取调整单基础信息，用于定位库存所在仓库。 【调整类型】取调整单基础信息，区分数量调整和换... ]]></description>
-    <pubDate>Wed, 08 Jul 2026 14:51:59 GMT</pubDate>
+    <title>操作-分配OA信息</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E6%93%8D%E4%BD%9C-%E5%88%86%E9%85%8DOA%E4%BF%A1%E6%81%AF</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E6%93%8D%E4%BD%9C-%E5%88%86%E9%85%8DOA%E4%BF%A1%E6%81%AF</guid>
+    <description><![CDATA[ 操作-分配OA信息 业务规则 入口：从「头程发货单」列表点击「分配OA信息」 展示逻辑：打开「分配OA信息」弹窗 当用户点击「确定」时，系统保存是否OA。 操作信息 【是否OA】单选选择器，默认空，可选值待确定，列表样例展示「OA」「非OA」 点击提交/确定时校验 校验1：后端校验头程发货单状态是否为「已废弃」；若为「已废弃」提示：{头程发货单1，头程发货单2}已废弃，无法变更是否OA 校验2：后端校验当前用户是否有操作权限；不满足提示：无权限操作 通过校验后执行 执行1：当状态为「待分配」「待订舱」「待提货」时，变更【是否OA】，并清空分配物流商数据、费用标准金额、计提金额，同时状态回退到「... ]]></description>
+    <pubDate>Fri, 10 Jul 2026 06:29:56 GMT</pubDate>
   </item>
     </channel>
   </rss>
