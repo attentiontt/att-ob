@@ -6,6 +6,12 @@
       <description>最近的10条笔记 on test-ob</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>废弃样品需求</title>
+    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82-%E2%80%94-%E6%93%8D%E4%BD%9C/%E5%BA%9F%E5%BC%83%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82</link>
+    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82%E7%AE%A1%E7%90%86/%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82-%E2%80%94-%E6%93%8D%E4%BD%9C/%E5%BA%9F%E5%BC%83%E6%A0%B7%E5%93%81%E9%9C%80%E6%B1%82</guid>
+    <description><![CDATA[ 交互展示： 只有样品类型如下的 更换供应商、T0样品、试模T0样品、竞品样品、手板样样品 并且样品状态等于待打样才展示废弃按钮 在点击废弃的时候，进行校验 1.样品需求的状态是否满足等于待打样 2.样品用途是否正确 满足校验后 执行：将样品需求的状态变更为已废弃. ]]></description>
+    <pubDate>Mon, 13 Jul 2026 10:10:21 GMT</pubDate>
+  </item><item>
     <title>质检标准需求1.0.1</title>
     <link>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%821.0.1</link>
     <guid>https://attentiontt.github.io/att-ob/%E5%93%81%E8%B4%A8%E7%AE%A1%E7%90%86/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%82/%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E8%B4%A8%E6%A3%80%E6%A0%87%E5%87%86%E9%9C%80%E6%B1%821.0.1</guid>
@@ -58,12 +64,6 @@
     <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E5%AF%BC%E5%87%BA-%E6%8F%90%E8%B4%A7%E8%B5%84%E6%96%99</link>
     <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E5%AF%BC%E5%87%BA-%E6%8F%90%E8%B4%A7%E8%B5%84%E6%96%99</guid>
     <description><![CDATA[ 导出-提货资料 业务规则 入口：从「头程发货单」列表点击「导出提货资料」 导出范围：支持导出多个发货单的提货资料 导出文件：勾选多个发货单时导出同一个xlsx文件，文件名格式为 提货信息yyyymmddhhmmss.xlsx，每个发货单一个sheet页，sheet页名称为 {发货单号} 导出字段 基础信息 【发货单号】字段描述 【发货仓】字段描述 【目的国家】字段描述 【目的仓类型】字段描述 【目的仓】字段描述 【运输方式】字段描述 【物流人员】字段描述 【定柜时间】字段描述 【运单号】字段描述 明细信息 【model number】字段描述 【产品名称】字段描述 【出货数量】取调柜数 【装箱... ]]></description>
-    <pubDate>Fri, 10 Jul 2026 06:29:56 GMT</pubDate>
-  </item><item>
-    <title>操作-分配OA信息</title>
-    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E6%93%8D%E4%BD%9C-%E5%88%86%E9%85%8DOA%E4%BF%A1%E6%81%AF</link>
-    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%A4%B4%E7%A8%8B%E5%8F%91%E8%B4%A7%E5%8D%95/%E6%93%8D%E4%BD%9C-%E5%88%86%E9%85%8DOA%E4%BF%A1%E6%81%AF</guid>
-    <description><![CDATA[ 操作-分配OA信息 业务规则 入口：从「头程发货单」列表点击「分配OA信息」 展示逻辑：打开「分配OA信息」弹窗 当用户点击「确定」时，系统保存是否OA。 操作信息 【是否OA】单选选择器，默认空，可选值待确定，列表样例展示「OA」「非OA」 点击提交/确定时校验 校验1：后端校验头程发货单状态是否为「已废弃」；若为「已废弃」提示：{头程发货单1，头程发货单2}已废弃，无法变更是否OA 校验2：后端校验当前用户是否有操作权限；不满足提示：无权限操作 通过校验后执行 执行1：当状态为「待分配」「待订舱」「待提货」时，变更【是否OA】，并清空分配物流商数据、费用标准金额、计提金额，同时状态回退到「... ]]></description>
     <pubDate>Fri, 10 Jul 2026 06:29:56 GMT</pubDate>
   </item>
     </channel>
