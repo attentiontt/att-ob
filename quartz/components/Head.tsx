@@ -26,6 +26,7 @@ export default (() => {
     const path = url.pathname as FullSlug
     const baseDir = fileData.slug === "404" ? path : pathToRoot(fileData.slug!)
     const iconPath = joinSegments(baseDir, "static/icon.png")
+    const flexOrderPath = joinSegments(baseDir, "static/flex-order.js")
 
     // Url of current page
     const socialUrl =
@@ -39,7 +40,7 @@ export default (() => {
     return (
       <head>
         <title>{title}</title>
-                        <meta charSet="utf-8" />
+        <meta charSet="utf-8" />
         {cfg.theme.cdnCaching && cfg.theme.fontOrigin === "googleFonts" && (
           <>
             <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -82,6 +83,7 @@ export default (() => {
           </>
         )}
         <link rel="icon" href={iconPath} />
+        <script src={flexOrderPath} data-persist></script>
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
 

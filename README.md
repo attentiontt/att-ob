@@ -42,10 +42,12 @@ cd D:\test-ob-site
 `deploy.ps1` 会依次执行：
 
 1. **挂载 Z:** — 将 `\\192.168.100.253\10技术部\临时` 映射为 Z 盘
-2. **同步笔记** — 从 `Z:\test-ob` 复制最新 `.md` 文件到 `content/`
-3. **更新排序** — 运行 `update-flex-order.cjs` 生成排序数据
-4. **构建站点** — `npx quartz build` 生成 HTML 到 `public/`
-5. **推送 GitHub** — 提交并推送，触发 GitHub Actions 自动部署
+2. **增量同步笔记** — 从 `Z:\test-ob` 仅复制新增或有变化的文件到 `content/`
+3. **更新排序** — 运行 `update-flex-order.cjs` 生成共享的导航排序数据
+4. **快速校验** — 在临时目录完成本地构建，校验后自动清理，不提交 `public/`
+5. **推送 GitHub** — 只提交源文件，触发 GitHub Actions 完成唯一一次正式构建和部署
+
+> 站点使用统一的社交分享预览图。这样可以避免每次发布都为近千篇文档重新生成 WebP 图片。
 
 ### 手动构建（仅本地预览）
 
@@ -57,13 +59,13 @@ npx quartz build --serve   # 本地预览
 
 ## 技术栈
 
-| 层 | 技术 |
-| --- | --- |
-| 笔记格式 | Markdown（Obsidian 方言） |
+| 层       | 技术                                   |
+| -------- | -------------------------------------- |
+| 笔记格式 | Markdown（Obsidian 方言）              |
 | 站点框架 | [Quartz v4](https://quartz.jzhao.xyz/) |
-| 构建引擎 | esbuild |
-| 部署 | GitHub Pages（GitHub Actions） |
-| 域名 | https://attentiontt.github.io/att-ob |
+| 构建引擎 | esbuild                                |
+| 部署     | GitHub Pages（GitHub Actions）         |
+| 域名     | https://attentiontt.github.io/att-ob   |
 
 ## GitHub 仓库
 

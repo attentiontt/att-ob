@@ -13,5 +13,6 @@ export declare global {
   interface Window {
     spaNavigate(url: URL, isBack: boolean = false)
     addCleanup(fn: (...args: any[]) => void)
+    __FLEX_ORDER__?: Record<string, string[]>
   }
 }

@@ -6,7 +6,16 @@ document.body.appendChild(container)
 const overlayImg = container.querySelector<HTMLImageElement>(".image-zoom-img")!
 const closeBtn = container.querySelector<HTMLButtonElement>(".image-zoom-close")!
 
+function ensureOverlay() {
+  // Quartz SPA navigation morphs <body>. Runtime-only elements are not present in
+  // the next page's HTML, so micromorph removes this overlay unless we reattach it.
+  if (!container.isConnected) {
+    document.body.appendChild(container)
+  }
+}
+
 function openZoom(img: HTMLImageElement) {
+  ensureOverlay()
   overlayImg.src = img.currentSrc || img.src
   container.classList.add("active")
   document.body.style.overflow = "hidden"
@@ -27,6 +36,7 @@ document.addEventListener("keydown", (e) => {
 })
 
 function initZoom() {
+  ensureOverlay()
   const imgs = document.querySelectorAll<HTMLImageElement>(
     ".article img, .popover-hint img, article img",
   )
@@ -51,6 +61,7 @@ document.addEventListener("click", (e) => {
 
 // Run on nav event (SPA navigation) and immediately on load
 document.addEventListener("nav", initZoom)
+document.addEventListener("prenav", closeZoom)
 if (document.readyState !== "loading") {
   initZoom()
 } else {
