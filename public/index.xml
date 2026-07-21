@@ -6,65 +6,65 @@
       <description>最近的10条笔记 on test-ob</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>未命名</title>
-    <link>https://attentiontt.github.io/att-ob/Project/V1.14.0/%E6%9C%AA%E5%91%BD%E5%90%8D</link>
-    <guid>https://attentiontt.github.io/att-ob/Project/V1.14.0/%E6%9C%AA%E5%91%BD%E5%90%8D</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Mon, 20 Jul 2026 05:52:41 GMT</pubDate>
+    <title>市场分类-操作-编辑市场分类</title>
+    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/Amazon%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E7%B1%BB-%E6%93%8D%E4%BD%9C-%E7%BC%96%E8%BE%91%E5%B8%82%E5%9C%BA%E5%88%86%E7%B1%BB</link>
+    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/Amazon%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E7%B1%BB-%E6%93%8D%E4%BD%9C-%E7%BC%96%E8%BE%91%E5%B8%82%E5%9C%BA%E5%88%86%E7%B1%BB</guid>
+    <description><![CDATA[ 操作-编辑市场分类 业务规则 入口：从「市场调研列表」行操作点击「编辑」 展示逻辑：打开「新增细化市场分析」弹窗，弹窗按当前记录回填字段；一级分类进入「编辑-一级分类」状态，二级分类进入「编辑-二级分类」状态。 操作信息同新建市场分类-操作-新建市场分类 预填数据 点击确定时校验 同新建 通过校验后执行 执行1：更新并刷新「市场调研列表」 执行2：编辑可能变更分类之间的关系，需重算【Asin数量】【品牌数量】【近12月销售额(万)】 异常场景 不在范围内. ]]></description>
+    <pubDate>Tue, 21 Jul 2026 05:43:06 GMT</pubDate>
   </item><item>
-    <title>ERP-10150</title>
-    <link>https://attentiontt.github.io/att-ob/Project/V1.14.0/ERP-10150</link>
-    <guid>https://attentiontt.github.io/att-ob/Project/V1.14.0/ERP-10150</guid>
-    <description><![CDATA[ 发货单/物流跟踪/产品管理增加操作日志. ]]></description>
-    <pubDate>Mon, 20 Jul 2026 02:16:45 GMT</pubDate>
+    <title>系统操作-卖家精灵按Asin拉取</title>
+    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/Amazon%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C-%E5%8D%96%E5%AE%B6%E7%B2%BE%E7%81%B5%E6%8C%89Asin%E6%8B%89%E5%8F%96</link>
+    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/Amazon%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C-%E5%8D%96%E5%AE%B6%E7%B2%BE%E7%81%B5%E6%8C%89Asin%E6%8B%89%E5%8F%96</guid>
+    <description><![CDATA[ 触发条件 1.新增拉取清单触发：用户添加 Asin 后，系统基于用户添加的【国家/站点】+【Asin】去重结果登记数据拉取清单，新清单状态为「待拉取」。 2.用户点击界面的拉取Asin 执行规则 按照Asin+国家，查出该asin+国家无数据的月份&amp;最新的月份，将Asin+国家+月份数据推送至爬虫，爬虫拉取数据 请求数据 当前日期若⇐20. ]]></description>
+    <pubDate>Tue, 21 Jul 2026 03:35:33 GMT</pubDate>
+  </item><item>
+    <title>系统操作-卖家精灵数据按月拉取</title>
+    <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/Amazon%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C-%E5%8D%96%E5%AE%B6%E7%B2%BE%E7%81%B5%E6%95%B0%E6%8D%AE%E6%8C%89%E6%9C%88%E6%8B%89%E5%8F%96</link>
+    <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/Amazon%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C-%E5%8D%96%E5%AE%B6%E7%B2%BE%E7%81%B5%E6%95%B0%E6%8D%AE%E6%8C%89%E6%9C%88%E6%8B%89%E5%8F%96</guid>
+    <description><![CDATA[ 触发条件 新增拉取清单触发：用户添加 Asin 后，系统基于用户添加的【国家/站点】+【Asin】去重结果登记数据拉取清单，新清单状态为「待拉取」。 月度定时触发：每个月21号凌晨0点5分 执行规则 按照国家+Asin进行全量拉取 （用户添加 Asin 后，系统基于用户添加的【国家/站点】+【Asin】去重结果登记数据拉取清单） 请求上一个月的数据 按Asin+月份去查询卖家精灵数据并存入数据库 只要有任意一条数据抓取成功则登记【数据最新月份】. ]]></description>
+    <pubDate>Tue, 21 Jul 2026 03:25:25 GMT</pubDate>
+  </item><item>
+    <title>全局说明</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E5%85%A8%E5%B1%80%E8%AF%B4%E6%98%8E</guid>
+    <description><![CDATA[ 模块说明 调研报告 变更记录 头程发货单支持按供应商核对标签 SRM-供应商发货单 查看文件权限细分至供应商维度 调柜单变更单取消核对细分至供应商维度 调柜变更单审批增加条件-目的仓类型、变更标签. ]]></description>
+    <pubDate>Tue, 21 Jul 2026 02:56:40 GMT</pubDate>
   </item><item>
     <title>ERP-10112</title>
     <link>https://attentiontt.github.io/att-ob/Project/V1.14.0/ERP-10112</link>
     <guid>https://attentiontt.github.io/att-ob/Project/V1.14.0/ERP-10112</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Mon, 20 Jul 2026 02:09:23 GMT</pubDate>
+    <description><![CDATA[ 海外仓-.增加审批流需求 头程发货单支持按供应商核对标签 1.头程发货单 调柜单变更单取消核对细分至供应商维度 调柜变更单审批通过逻辑： 从调柜变更单通过之后，确定涉及变更内明细的供应商 执行： 将对应头程发货单的供应商对应的文件的核对状态变更为未核对 三方仓外箱标签、入仓单、货代外箱标识 调柜单/SRM-供应商发货单 查看文件权限细分至供应商维度 导出-三方仓外箱标签 列表文件展示逻辑：头程发货单的对应供应商已核对时展示对应文件，未核对时展示内容为空。 导出-入仓单 列表文件展示逻辑：头程发货单的对应供应商已核对时展示对应文件，未核对时展示内容为空。 导出-货代外箱标识 列表文件展示逻辑：头... ]]></description>
+    <pubDate>Tue, 21 Jul 2026 02:56:27 GMT</pubDate>
   </item><item>
-    <title>ERP-10147</title>
-    <link>https://attentiontt.github.io/att-ob/Project/V1.14.0/ERP-10147</link>
-    <guid>https://attentiontt.github.io/att-ob/Project/V1.14.0/ERP-10147</guid>
-    <description><![CDATA[ 仓库提货单、仓库收货单加字段 查询、导出均增加 仓库提货单 仓库收货单 . ]]></description>
-    <pubDate>Mon, 20 Jul 2026 02:07:23 GMT</pubDate>
+    <title>导出-货代外箱标识</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E8%B4%A7%E4%BB%A3%E5%A4%96%E7%AE%B1%E6%A0%87%E8%AF%86</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E8%B4%A7%E4%BB%A3%E5%A4%96%E7%AE%B1%E6%A0%87%E8%AF%86</guid>
+    <description><![CDATA[ 业务规则 入口：从「调柜单列表」或调柜单详情点击「导出货代外箱标识」。 按钮展示逻辑：发货标识为「是」时展示按钮；点击后打开头程发货单详情中的「查看」弹窗； 列表文件展示逻辑：头程发货单的对应供应商已核对时展示对应文件，未核对时展示内容为空。 通过校验后执行 执行1：点击导出货代外箱标识文件，格式和文件均取的是头程发货单处上传的. ]]></description>
+    <pubDate>Tue, 21 Jul 2026 02:34:33 GMT</pubDate>
   </item><item>
-    <title>转单管理</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E6%9C%AA%E5%91%BD%E5%90%8D-1/%E8%AE%A1%E6%8D%9F%E7%AE%A1%E7%90%86/%E8%BD%AC%E5%8D%95%E7%AE%A1%E7%90%86</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E6%9C%AA%E5%91%BD%E5%90%8D-1/%E8%AE%A1%E6%8D%9F%E7%AE%A1%E7%90%86/%E8%BD%AC%E5%8D%95%E7%AE%A1%E7%90%86</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Fri, 17 Jul 2026 10:58:49 GMT</pubDate>
+    <title>导出-入仓单</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E5%85%A5%E4%BB%93%E5%8D%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E5%85%A5%E4%BB%93%E5%8D%95</guid>
+    <description><![CDATA[ 业务规则 入口：从「调柜单列表」或调柜单详情点击「导出入仓单」。 按钮展示逻辑：发货标识为「是」时展示按钮；点击后打开头程发货单详情中的「查看」弹窗； 列表文件展示逻辑：头程发货单的对应供应商已核对时展示对应文件，未核对时展示内容为空。 通过校验后执行 执行1：点击导出入仓单文件，格式和文件均取的是头程发货单处上传的. ]]></description>
+    <pubDate>Tue, 21 Jul 2026 02:34:18 GMT</pubDate>
   </item><item>
-    <title>计损实施</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E6%9C%AA%E5%91%BD%E5%90%8D-1/%E8%AE%A1%E6%8D%9F%E7%AE%A1%E7%90%86/%E8%AE%A1%E6%8D%9F%E5%AE%9E%E6%96%BD</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E6%9C%AA%E5%91%BD%E5%90%8D-1/%E8%AE%A1%E6%8D%9F%E7%AE%A1%E7%90%86/%E8%AE%A1%E6%8D%9F%E5%AE%9E%E6%96%BD</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Fri, 17 Jul 2026 10:58:38 GMT</pubDate>
+    <title>导出-三方仓外箱标签</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E4%B8%89%E6%96%B9%E4%BB%93%E5%A4%96%E7%AE%B1%E6%A0%87%E7%AD%BE</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E4%B8%89%E6%96%B9%E4%BB%93%E5%A4%96%E7%AE%B1%E6%A0%87%E7%AD%BE</guid>
+    <description><![CDATA[ 业务规则 入口：从「调柜单列表」或调柜单详情点击「导出三方仓外箱标签」。 按钮展示逻辑：发货标识为「是」时展示按钮；点击后打开头程发货单详情中的「查看」弹窗； 列表文件展示逻辑：头程发货单的对应供应商已核对时展示对应文件，未核对时展示内容为空。 通过校验后执行 执行1：点击导出三方仓外箱标签文件，格式和文件均取的是头程发货单处上传的. ]]></description>
+    <pubDate>Tue, 21 Jul 2026 02:33:40 GMT</pubDate>
   </item><item>
-    <title>生成计损实施清单</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E6%9C%AA%E5%91%BD%E5%90%8D-1/%E8%AE%A1%E6%8D%9F%E7%AE%A1%E7%90%86/%E7%94%9F%E6%88%90%E8%AE%A1%E6%8D%9F%E5%AE%9E%E6%96%BD%E6%B8%85%E5%8D%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E6%9C%AA%E5%91%BD%E5%90%8D-1/%E8%AE%A1%E6%8D%9F%E7%AE%A1%E7%90%86/%E7%94%9F%E6%88%90%E8%AE%A1%E6%8D%9F%E5%AE%9E%E6%96%BD%E6%B8%85%E5%8D%95</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Fri, 17 Jul 2026 10:58:26 GMT</pubDate>
+    <title>导出-调柜单</title>
+    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E8%B0%83%E6%9F%9C%E5%8D%95</link>
+    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E8%B0%83%E6%9F%9C%E5%8D%95</guid>
+    <description><![CDATA[ 操作：导出调柜单 业务规则 入口：从「调柜单列表」或调柜单详情点击「导出调柜单」。 执行 执行1：导出 xlsx 文件 执行2：文件名称为「{发货单号}-送货单-yyyymmddhhmmss」 执行3：按调柜单关联供应商拆分多个 sheet 执行4：sheet 名称为「{供应商编号}」. ]]></description>
+    <pubDate>Tue, 21 Jul 2026 02:31:43 GMT</pubDate>
   </item><item>
-    <title>生成转单实施清单</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E6%9C%AA%E5%91%BD%E5%90%8D-1/%E8%AE%A1%E6%8D%9F%E7%AE%A1%E7%90%86/%E7%94%9F%E6%88%90%E8%BD%AC%E5%8D%95%E5%AE%9E%E6%96%BD%E6%B8%85%E5%8D%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E6%9C%AA%E5%91%BD%E5%90%8D-1/%E8%AE%A1%E6%8D%9F%E7%AE%A1%E7%90%86/%E7%94%9F%E6%88%90%E8%BD%AC%E5%8D%95%E5%AE%9E%E6%96%BD%E6%B8%85%E5%8D%95</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Fri, 17 Jul 2026 10:58:04 GMT</pubDate>
-  </item><item>
-    <title>提交库存决策</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E6%9C%AA%E5%91%BD%E5%90%8D-1/%E5%95%86%E5%93%81%E9%80%80%E5%87%BA%E7%AE%A1%E7%90%86/%E6%8F%90%E4%BA%A4%E5%BA%93%E5%AD%98%E5%86%B3%E7%AD%96</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E6%9C%AA%E5%91%BD%E5%90%8D-1/%E5%95%86%E5%93%81%E9%80%80%E5%87%BA%E7%AE%A1%E7%90%86/%E6%8F%90%E4%BA%A4%E5%BA%93%E5%AD%98%E5%86%B3%E7%AD%96</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Fri, 17 Jul 2026 10:57:06 GMT</pubDate>
-  </item><item>
-    <title>提交发货决策</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E6%9C%AA%E5%91%BD%E5%90%8D-1/%E5%95%86%E5%93%81%E9%80%80%E5%87%BA%E7%AE%A1%E7%90%86/%E6%8F%90%E4%BA%A4%E5%8F%91%E8%B4%A7%E5%86%B3%E7%AD%96</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E8%8D%89%E7%A8%BF/%E6%9C%AA%E5%91%BD%E5%90%8D-1/%E5%95%86%E5%93%81%E9%80%80%E5%87%BA%E7%AE%A1%E7%90%86/%E6%8F%90%E4%BA%A4%E5%8F%91%E8%B4%A7%E5%86%B3%E7%AD%96</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Fri, 17 Jul 2026 10:56:55 GMT</pubDate>
+    <title>05-PRD模板-变更记录-v1.1</title>
+    <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/%E5%8A%9F%E8%83%BD%E7%82%B9%E6%A8%A1%E6%9D%BF/05-PRD%E6%A8%A1%E6%9D%BF-%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95-v1.1</link>
+    <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/%E5%8A%9F%E8%83%BD%E7%82%B9%E6%A8%A1%E6%9D%BF/05-PRD%E6%A8%A1%E6%9D%BF-%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95-v1.1</guid>
+    <description><![CDATA[ PRD模板-变更记录-v1.1 V1.0.0 新增功能 全局说明 查询列表 操作xxx 系统自动触发xxx V1.0.1 调整xxx 修复xxx . ]]></description>
+    <pubDate>Tue, 21 Jul 2026 02:26:17 GMT</pubDate>
   </item>
     </channel>
   </rss>
