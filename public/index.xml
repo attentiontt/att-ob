@@ -6,6 +6,12 @@
       <description>最近的10条笔记 on test-ob</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>ERP-10108</title>
+    <link>https://attentiontt.github.io/att-ob/Project/V1.14.0/ERP-10108</link>
+    <guid>https://attentiontt.github.io/att-ob/Project/V1.14.0/ERP-10108</guid>
+    <description><![CDATA[ 0200报关单允许毛重修改 报关单的编辑功能新增毛重 1.增加【毛重(kg)】数值输入框，只能输入正数，小数点最多两位 修改明细毛重后，总毛重相应增加 . ]]></description>
+    <pubDate>Tue, 21 Jul 2026 07:30:50 GMT</pubDate>
+  </item><item>
     <title>ERP-10150</title>
     <link>https://attentiontt.github.io/att-ob/Project/V1.14.0/ERP-10150</link>
     <guid>https://attentiontt.github.io/att-ob/Project/V1.14.0/ERP-10150</guid>
@@ -59,12 +65,6 @@
     <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E4%B8%89%E6%96%B9%E4%BB%93%E5%A4%96%E7%AE%B1%E6%A0%87%E7%AD%BE</guid>
     <description><![CDATA[ 业务规则 入口：从「调柜单列表」或调柜单详情点击「导出三方仓外箱标签」。 按钮展示逻辑：发货标识为「是」时展示按钮；点击后打开头程发货单详情中的「查看」弹窗； 列表文件展示逻辑：头程发货单的对应供应商已核对时展示对应文件，未核对时展示内容为空。 通过校验后执行 执行1：点击导出三方仓外箱标签文件，格式和文件均取的是头程发货单处上传的. ]]></description>
     <pubDate>Tue, 21 Jul 2026 02:33:40 GMT</pubDate>
-  </item><item>
-    <title>导出-调柜单</title>
-    <link>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E8%B0%83%E6%9F%9C%E5%8D%95</link>
-    <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E8%B0%83%E6%9F%9C%E5%8D%95</guid>
-    <description><![CDATA[ 操作：导出调柜单 业务规则 入口：从「调柜单列表」或调柜单详情点击「导出调柜单」。 执行 执行1：导出 xlsx 文件 执行2：文件名称为「{发货单号}-送货单-yyyymmddhhmmss」 执行3：按调柜单关联供应商拆分多个 sheet 执行4：sheet 名称为「{供应商编号}」. ]]></description>
-    <pubDate>Tue, 21 Jul 2026 02:31:43 GMT</pubDate>
   </item>
     </channel>
   </rss>
