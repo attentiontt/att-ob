@@ -6,6 +6,12 @@
       <description>最近的10条笔记 on test-ob</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>ERP-10150</title>
+    <link>https://attentiontt.github.io/att-ob/Project/V1.14.0/ERP-10150</link>
+    <guid>https://attentiontt.github.io/att-ob/Project/V1.14.0/ERP-10150</guid>
+    <description><![CDATA[ 发货单/物流跟踪/产品管理增加操作日志 1.产品管理新增操作日志 基于之前的操作日志展示至产品详情 1.产品管理-sku的详情 操作日志 【操作人】展示操作人 【操作时间】展示操作时间 【操作类型】展示「新建」「编辑」「删除」「启用」「禁用」等 【操作内容】展示变更内容；字段变更按原值到新值记录 支持切换sku和Msku页签数据，Msku页签展示当前sku对应所有goods id的数据 2.产品管理-Msku的详情 操作日志 【操作人】展示操作人 【操作时间】展示操作时间 【操作类型】展示操作类型 【操作内容】展示操作内容 支持切换sku和Msku页签数据，Msku页签只展示当前goods i... ]]></description>
+    <pubDate>Tue, 21 Jul 2026 05:48:03 GMT</pubDate>
+  </item><item>
     <title>市场分类-操作-编辑市场分类</title>
     <link>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/Amazon%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E7%B1%BB-%E6%93%8D%E4%BD%9C-%E7%BC%96%E8%BE%91%E5%B8%82%E5%9C%BA%E5%88%86%E7%B1%BB</link>
     <guid>https://attentiontt.github.io/att-ob/%E4%BA%A7%E5%93%81%E5%BC%80%E5%8F%91/Amazon%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90/%E5%B8%82%E5%9C%BA%E5%88%86%E7%B1%BB-%E6%93%8D%E4%BD%9C-%E7%BC%96%E8%BE%91%E5%B8%82%E5%9C%BA%E5%88%86%E7%B1%BB</guid>
@@ -59,12 +65,6 @@
     <guid>https://attentiontt.github.io/att-ob/%E7%89%A9%E6%B5%81%E7%AE%A1%E7%90%86/%E8%B0%83%E6%9F%9C%E5%8D%95/%E5%AF%BC%E5%87%BA-%E8%B0%83%E6%9F%9C%E5%8D%95</guid>
     <description><![CDATA[ 操作：导出调柜单 业务规则 入口：从「调柜单列表」或调柜单详情点击「导出调柜单」。 执行 执行1：导出 xlsx 文件 执行2：文件名称为「{发货单号}-送货单-yyyymmddhhmmss」 执行3：按调柜单关联供应商拆分多个 sheet 执行4：sheet 名称为「{供应商编号}」. ]]></description>
     <pubDate>Tue, 21 Jul 2026 02:31:43 GMT</pubDate>
-  </item><item>
-    <title>05-PRD模板-变更记录-v1.1</title>
-    <link>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/%E5%8A%9F%E8%83%BD%E7%82%B9%E6%A8%A1%E6%9D%BF/05-PRD%E6%A8%A1%E6%9D%BF-%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95-v1.1</link>
-    <guid>https://attentiontt.github.io/att-ob/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6/%E5%8A%9F%E8%83%BD%E7%82%B9%E6%A8%A1%E6%9D%BF/05-PRD%E6%A8%A1%E6%9D%BF-%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95-v1.1</guid>
-    <description><![CDATA[ PRD模板-变更记录-v1.1 V1.0.0 新增功能 全局说明 查询列表 操作xxx 系统自动触发xxx V1.0.1 调整xxx 修复xxx . ]]></description>
-    <pubDate>Tue, 21 Jul 2026 02:26:17 GMT</pubDate>
   </item>
     </channel>
   </rss>
