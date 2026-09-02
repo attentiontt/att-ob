@@ -1,3 +1,5 @@
 public
 node_modules
 .quartz-cache
+quartz/static/flex-order.js
+quartz/static/flex-order.json

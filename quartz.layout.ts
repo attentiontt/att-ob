@@ -1,5 +1,37 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import { FileTrieNode } from "./quartz/util/fileTrie"
+
+const flexplorerSort = (a: FileTrieNode, b: FileTrieNode) => {
+  const flexOrder = window.__FLEX_ORDER__ ?? {}
+  const aFilePath = a.isFolder ? undefined : a.data?.filePath
+  const bFilePath = b.isFolder ? undefined : b.data?.filePath
+  const aFileName = aFilePath?.split("/").at(-1)
+  const bFileName = bFilePath?.split("/").at(-1)
+  const aName = (aFileName ?? a.displayName).replace(/\.(md|html)$/i, "")
+  const bName = (bFileName ?? b.displayName).replace(/\.(md|html)$/i, "")
+
+  let slug: string = a.slug
+  if (slug.endsWith("/index")) slug = slug.slice(0, -6)
+  const separatorIndex = slug.lastIndexOf("/")
+  const parentPath = separatorIndex >= 0 ? slug.slice(0, separatorIndex) : "/"
+  const customOrder = flexOrder[parentPath]
+
+  if (customOrder) {
+    const aIndex = customOrder.indexOf(aName)
+    const bIndex = customOrder.indexOf(bName)
+    if (aIndex >= 0 && bIndex >= 0) return aIndex - bIndex
+
+    // FLEXPLORER falls back to natural name sorting if either item is not yet
+    // present in a custom order (for example, before its data file is synced).
+    return aName.localeCompare(bName, undefined, { numeric: true, sensitivity: "base" })
+  }
+
+  // FLEXPLORER's default non-custom order is folders first, followed by a
+  // case-insensitive natural file-name sort.
+  if (a.isFolder !== b.isFolder) return a.isFolder ? -1 : 1
+  return aName.localeCompare(bName, undefined, { numeric: true, sensitivity: "base" })
+}
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -39,28 +71,7 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({
-      sortFn: (a, b) => {
-        const FO = window.__FLEX_ORDER__ ?? {}
-        let s: string = a.slug
-        if (s.endsWith("/index")) s = s.slice(0, -6)
-        const i = s.lastIndexOf("/")
-        const p = i >= 0 ? s.slice(0, i) : "/"
-        const o = FO[p]
-        if (o) {
-          const ai = o.indexOf(a.displayName)
-          const bi = o.indexOf(b.displayName)
-          if (ai >= 0 && bi >= 0) return ai - bi
-          if (ai >= 0) return -1
-          if (bi >= 0) return 1
-        }
-        if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
-          return a.displayName.localeCompare(b.displayName, undefined, {
-            numeric: true,
-            sensitivity: "base",
-          })
-        }
-        return a.isFolder ? -1 : 1
-      },
+      sortFn: flexplorerSort,
     }),
   ],
   right: [Component.TableOfContents({ layout: "legacy" })],
@@ -83,28 +94,7 @@ export const defaultListPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({
-      sortFn: (a, b) => {
-        const FO = window.__FLEX_ORDER__ ?? {}
-        let s: string = a.slug
-        if (s.endsWith("/index")) s = s.slice(0, -6)
-        const i = s.lastIndexOf("/")
-        const p = i >= 0 ? s.slice(0, i) : "/"
-        const o = FO[p]
-        if (o) {
-          const ai = o.indexOf(a.displayName)
-          const bi = o.indexOf(b.displayName)
-          if (ai >= 0 && bi >= 0) return ai - bi
-          if (ai >= 0) return -1
-          if (bi >= 0) return 1
-        }
-        if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
-          return a.displayName.localeCompare(b.displayName, undefined, {
-            numeric: true,
-            sensitivity: "base",
-          })
-        }
-        return a.isFolder ? -1 : 1
-      },
+      sortFn: flexplorerSort,
     }),
   ],
   right: [Component.TableOfContents({ layout: "legacy" })],

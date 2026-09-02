@@ -1,5 +1,7 @@
 ﻿import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import flexOrder from "./quartz/static/flex-order.json"
+import { byFlexOrder } from "./quartz/util/flexOrder"
 
 const config: QuartzConfig = {
   configuration: {
@@ -64,7 +66,7 @@ const config: QuartzConfig = {
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
-      Plugin.FolderPage(),
+      Plugin.FolderPage({ sort: byFlexOrder(flexOrder) }),
       Plugin.TagPage(),
       Plugin.ContentIndex({ enableSiteMap: true, enableRSS: true }),
       // Use one shared social image. Generating a unique image for every note made

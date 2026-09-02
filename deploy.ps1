@@ -103,7 +103,7 @@ try {
 
 # ---- STEP 4: COMMIT SOURCE AND PUSH ----
 Write-Host "Step 4/4: Publishing source changes..." -ForegroundColor Yellow
-git add -A -- . ":(exclude)public/**"
+git add -A -- . ":(exclude)public/**" ":(exclude).workbuddy/**"
 if ($LASTEXITCODE -ne 0) {
   throw "Failed to stage changes"
 }

@@ -43,7 +43,7 @@ cd D:\test-ob-site
 
 1. **挂载 Z:** — 将 `\\192.168.100.253\10技术部\临时` 映射为 Z 盘
 2. **增量同步笔记** — 从 `Z:\test-ob` 仅复制新增或有变化的文件到 `content/`
-3. **更新排序** — 运行 `update-flex-order.cjs` 生成共享的导航排序数据
+3. **更新排序** — 运行 `update-flex-order.cjs`，让侧边栏与文件夹页面共用 FLEXPLORER 顺序
 4. **快速校验** — 在临时目录完成本地构建，校验后自动清理，不提交 `public/`
 5. **推送 GitHub** — 只提交源文件，触发 GitHub Actions 完成唯一一次正式构建和部署
 
